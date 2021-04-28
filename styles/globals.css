@@ -2,8 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply font-primary;
+  }
+  p,
+  button,
+  a {
+    @apply font-secondary;
+  }
+}
 @layer components {
   .btn {
-    @apply py-2 px-4 bg-lt-clear backdrop-filter backdrop-blur-2xl backdrop-saturate-150  text-white font-semibold rounded;
+    @apply py-2 px-4 bg-lt-clear backdrop-filter backdrop-blur-2xl backdrop-saturate-150 text-white rounded;
+  }
+  @font-face {
+    font-family: "Poppins";
+    font-weight: 400;
+    src: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+  }
+  @font-face {
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    src: url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
   }
 }

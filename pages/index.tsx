@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
 
       {/* Page One */}
-      <section className="relative h-screen w-screen overflow-hidden grid grid-row-2 bg-gray-400 ">
+      <section className="relative h-screen w-screen overflow-hidden grid grid-row-2 bg-gray-400 sm:flex">
         <header className="absolute w-screen flex align-middle justify-between top-0 mx-std">
           <nav className="flex align-middle justify-start">
             <a className="mr-1" href="#">
@@ -41,18 +41,24 @@ export default function Home() {
           <div className="circle circle--3"></div>
           <div className="circle circle--4"></div>
         </div>
-        <div className="m-std grid border-red-600 border-solid border-2">
-          <img className="m-auto w-3/4" src="assets/page_one.svg" alt="" />
+        <div className="mx-std grid sm:mx-0 sm:mr-std sm:order-2">
+          <img
+            className="m-auto w-3/4 sm:w-full"
+            src="assets/page_one.svg"
+            alt="stock image"
+          />
         </div>
-        <article className="flex flex-col mx-std border-red-600 border-solid border-2">
-          <h1 className="text-5xl my-6">The market data we deserve</h1>
-          <div className="space-y-8">
-            <p className="text-lg">
+        <article className="flex flex-col mx-std space-y-5 lg:space-y-10 sm:mx-0 sm:ml-std sm:order-1 sm:justify-center">
+          <h1 className="text-mobile-h font-semibold sm:text-5vw sm:w-11/12 md:text-6vw xl:text-6vw">
+            The market data we deserve
+          </h1>
+          <div className="space-y-5 xl:space-y-8">
+            <p className="text-mobile-p sm:text-sm md:text-base lg:text-lg xl:text-2xl sm:w-7/12">
               Trade like never before - visualized data, insights, and
               statistics to make sense of complicated financial markets
             </p>
-            <div className="w-full flex justify-center">
-              <button className="btn text-lg py-3 px-8">
+            <div className="w-full flex justify-center sm:block">
+              <button className="btn text-mobile-p px-6 py-3 sm:text-sm lg:text-base xl:text-xl">
                 Get Early Access
               </button>
             </div>

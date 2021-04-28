@@ -4,8 +4,20 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        'primary' : ["Poppins", "sans-serif"],
+        'secondary' : ["Source Sans Pro", "sans-serif"],
+      },
+      fontSize: {
+        'mobile-p' : 'calc(2vw + 1vh)',
+        'mobile-h' : ['10vw', '1'],
+        '3vw' : '3vw',
+        '4vw' : '4vw',
+        '5vw' : '5vw',
+        '6vw' : '6vw',
+      },
       margin: {
-        'std': "8vw",
+        'std' : "8vw",
       },
       colors: {
         'hot-pink': '#d9a3d9',
