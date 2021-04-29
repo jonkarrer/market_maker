@@ -1,5 +1,5 @@
 import Head from "next/head";
-
+import MobileHeader from "../components/MobileHeader";
 export default function Home() {
   return (
     <div>
@@ -11,6 +11,7 @@ export default function Home() {
 
       {/* Page One */}
       <section className="relative h-screen w-screen overflow-hidden grid grid-row-2 bg-gray-400 sm:flex">
+        <MobileHeader />
         <header className="hidden w-5/6 absolute sm:flex items-center justify-between top-3 mx-std">
           <nav id="links" className="flex items-center justify-start">
             <a className="mr-10" href="#">
