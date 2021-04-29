@@ -11,26 +11,26 @@ export default function Home() {
 
       {/* Page One */}
       <section className="relative h-screen w-screen overflow-hidden grid grid-row-2 bg-gray-400 sm:flex">
-        <header className="absolute w-screen flex align-middle justify-between top-0 mx-std">
-          <nav className="flex align-middle justify-start">
-            <a className="mr-1" href="#">
+        <header className="w-5/6 absolute flex items-center justify-between top-3 mx-std">
+          <nav id="links" className="flex items-center justify-start">
+            <a className="mr-10" href="#">
               <img className="w-10" src="./assets/piggy.svg" alt="" />
             </a>
-            <a className="mr-1" href="">
+            <a className="mr-10" href="">
               Products
             </a>
-            <a className="mr-1" href="">
+            <a className="mr-10" href="">
               Learn
             </a>
             <a className="mr-1" href="">
               Support
             </a>
           </nav>
-          <nav className="flex align-middle justify-start w-1/2">
-            <a className="mr-1" href="">
+          <nav id="sign-up" className="flex items-center justify-end w-1/2">
+            <a className="mr-10" href="">
               Sign In
             </a>
-            <a className="mr-1" href="">
+            <a href="">
               <button className="btn">Sign Up</button>
             </a>
           </nav>
