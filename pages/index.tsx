@@ -6,30 +6,36 @@ export default function Home() {
       <Head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          href={`https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap`}
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href={`https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap`}
+        />
         <title>Market Maker</title>
       </Head>
 
       {/* Page One */}
-      <section className="relative h-screen w-screen overflow-hidden grid grid-row-2 bg-gray-400 sm:flex">
+      <section className="relative h-screen w-screen overflow-hidden grid grid-row-2 sm:flex sm:items-center">
         <MobileHeader />
-        <header className="hidden w-5/6 absolute sm:flex items-center justify-between top-3 mx-std">
+        <header className="hidden w-5/6 absolute sm:flex items-center justify-between top-3 mx-std z-10 text-white">
           <nav id="links" className="flex items-center justify-start">
-            <a className="mr-10" href="#">
+            <a className="mr-9" href="#">
               <img
                 className="w-10 min-w-full"
                 src="./assets/piggy.svg"
                 alt=""
               />
             </a>
-            <a className="mr-10" href="">
+            <a className="mr-9" href="">
               Products
             </a>
-            <a className="mr-10" href="">
+            <a className="mr-9" href="">
               Learn
             </a>
-            <a className="mr-1" href="">
-              Support
-            </a>
+            <a href="">Support</a>
           </nav>
           <nav id="sign-up" className="flex items-center justify-end w-1/2">
             <a className="mr-10" href="">
@@ -40,30 +46,30 @@ export default function Home() {
             </a>
           </nav>
         </header>
-        <div className="shapeHeader">
-          <div className="circle circle--1"></div>
-          <div className="circle circle--2"></div>
-          <div className="circle circle--3"></div>
-          <div className="circle circle--4"></div>
+        <div className="h-screen w-screen absolute scale-150 rotate-45 translate-y-10 backdrop-filter backdrop-blur-3xl backdrop-saturate-150">
+          <div className="circle h-5/6 w-5/6 bg-circle-1 -top-20 -left-1/3 opacity-90"></div>
+          <div className="circle h-full w-5/6 bg-circle-2 -top-1/3 -right-20 opacity-80"></div>
+          <div className="circle h-full w-5/6 bg-circle-3 -bottom-1/2 -left-1/3 opacity-80"></div>
+          <div className="circle h-full w-5/6 bg-circle-4 -bottom-1/4 -right-1/4 opacity-90"></div>
         </div>
-        <div className="mx-std flex items-center justify-center sm:mx-0 sm:mr-std sm:order-2">
+        <div className="mx-std flex items-center justify-center sm:mx-0 sm:mr-std sm:w-2/5 sm:order-2 z-10">
           <img
-            className="w-2/3 sm:w-full"
+            className="w-2/3 sm:w-full xl:max-w-7xl"
             src="assets/page_one.svg"
             alt="stock image"
           />
         </div>
-        <article className="flex flex-col mx-std space-y-8 lg:space-y-10 sm:mx-0 sm:ml-std sm:order-1 sm:justify-center">
-          <h1 className="text-mobile-h font-semibold sm:text-5vw sm:w-11/12 md:text-6vw xl:text-6vw">
+        <article className="z-10 text-white flex flex-col mx-std sm:mx-0 sm:ml-std sm:order-1 sm:justify-center sm:w-2/3">
+          <h1 className="text-mobile-h font-normal leading-none sm:text-5vw sm:mr-5">
             The market data we deserve
           </h1>
-          <div className="space-y-8 xl:space-y-8">
-            <p className="text-mobile-p sm:text-sm md:text-base lg:text-lg xl:text-2xl sm:w-7/12">
+          <div className="space-y-5 md:space-y-8 xl:space-y-12">
+            <p className="text-mobile-p sm:text-2vw sm:mr-20% sm:mt-12%">
               Trade like never before - visualized data, insights, and
               statistics to make sense of complicated financial markets
             </p>
             <div className="w-full flex justify-center sm:block">
-              <button className="btn text-mobile-p px-8 py-3 sm:text-sm lg:text-base xl:text-xl">
+              <button className="btn text-mobile-p px-8 py-3 sm:px-4 sm:py-2 sm:text-base md:text-lg lg:text-xl xl:text-2xl">
                 Get Early Access
               </button>
             </div>

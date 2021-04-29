@@ -23,14 +23,7 @@
   .btn {
     @apply py-2 px-4 bg-lt-clear backdrop-filter backdrop-blur-2xl backdrop-saturate-150 text-white rounded;
   }
-  @font-face {
-    font-family: "Poppins";
-    font-weight: 400;
-    src: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-  }
-  @font-face {
-    font-family: "Source Sans Pro";
-    font-weight: 600;
-    src: url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+  .circle {
+    @apply absolute rounded-full border-black border-8 filter blur-3xl;
   }
 }
