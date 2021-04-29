@@ -11,10 +11,14 @@ export default function Home() {
 
       {/* Page One */}
       <section className="relative h-screen w-screen overflow-hidden grid grid-row-2 bg-gray-400 sm:flex">
-        <header className="w-5/6 absolute flex items-center justify-between top-3 mx-std">
+        <header className="hidden w-5/6 absolute sm:flex items-center justify-between top-3 mx-std">
           <nav id="links" className="flex items-center justify-start">
             <a className="mr-10" href="#">
-              <img className="w-10" src="./assets/piggy.svg" alt="" />
+              <img
+                className="w-10 min-w-full"
+                src="./assets/piggy.svg"
+                alt=""
+              />
             </a>
             <a className="mr-10" href="">
               Products
@@ -41,24 +45,24 @@ export default function Home() {
           <div className="circle circle--3"></div>
           <div className="circle circle--4"></div>
         </div>
-        <div className="mx-std grid sm:mx-0 sm:mr-std sm:order-2">
+        <div className="mx-std flex items-center justify-center sm:mx-0 sm:mr-std sm:order-2">
           <img
-            className="m-auto w-3/4 sm:w-full"
+            className="w-2/3 sm:w-full"
             src="assets/page_one.svg"
             alt="stock image"
           />
         </div>
-        <article className="flex flex-col mx-std space-y-5 lg:space-y-10 sm:mx-0 sm:ml-std sm:order-1 sm:justify-center">
+        <article className="flex flex-col mx-std space-y-8 lg:space-y-10 sm:mx-0 sm:ml-std sm:order-1 sm:justify-center">
           <h1 className="text-mobile-h font-semibold sm:text-5vw sm:w-11/12 md:text-6vw xl:text-6vw">
             The market data we deserve
           </h1>
-          <div className="space-y-5 xl:space-y-8">
+          <div className="space-y-8 xl:space-y-8">
             <p className="text-mobile-p sm:text-sm md:text-base lg:text-lg xl:text-2xl sm:w-7/12">
               Trade like never before - visualized data, insights, and
               statistics to make sense of complicated financial markets
             </p>
             <div className="w-full flex justify-center sm:block">
-              <button className="btn text-mobile-p px-6 py-3 sm:text-sm lg:text-base xl:text-xl">
+              <button className="btn text-mobile-p px-8 py-3 sm:text-sm lg:text-base xl:text-xl">
                 Get Early Access
               </button>
             </div>

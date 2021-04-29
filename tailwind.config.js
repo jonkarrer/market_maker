@@ -9,8 +9,8 @@ module.exports = {
         'secondary' : ["Source Sans Pro", "sans-serif"],
       },
       fontSize: {
-        'mobile-p' : 'calc(2vw + 1vh)',
-        'mobile-h' : ['10vw', '1'],
+        'mobile-p' : 'calc(2vw + 1.6vh)',
+        'mobile-h' : ['10vw', '1.1'],
         '3vw' : '3vw',
         '4vw' : '4vw',
         '5vw' : '5vw',
