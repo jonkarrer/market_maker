@@ -21,9 +21,9 @@
 }
 @layer components {
   .btn {
-    @apply py-2 px-4 bg-lt-clear backdrop-filter backdrop-blur-2xl backdrop-saturate-150 text-white rounded;
+    @apply py-2 px-4 bg-lt-clear backdrop-filter backdrop-blur-3xl backdrop-saturate-150 text-white rounded;
   }
   .circle {
-    @apply absolute rounded-full border-black border-8 filter blur-3xl;
+    @apply absolute rounded-full border-black border-8 filter blur-2xl sm:blur-3xl;
   }
 }

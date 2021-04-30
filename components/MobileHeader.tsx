@@ -5,7 +5,7 @@ const MobileHeader = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="sm:hidden font-primary">
-      <a className="w-8 absolute top-5 left-5" href="#">
+      <a className="w-8 absolute top-5 left-5 z-10" href="#">
         <img className="w" src="./assets/piggy.svg" alt="" />
       </a>
       <div

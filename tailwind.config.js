@@ -21,6 +21,7 @@ module.exports = {
         'std' : "8vw",
         '20%' : "20%",
         '12%' : "12%",
+        '10%' : '10%',
       },
       colors: {
         'hot-pink': '#d9a3d9',
@@ -33,7 +34,8 @@ module.exports = {
         'circle-1' : '#4053fc',
         'circle-2' : '#c880f8',
         'circle-3' : '#ff6c98',
-        'circle-4' : '#2889f7'
+        'circle-4' : '#2889f7',
+        'btn-hover' : 'rgba(0, 0, 0, 0.2)',
       },
     },
   },

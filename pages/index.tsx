@@ -42,17 +42,25 @@ export default function Home() {
               Sign In
             </a>
             <a href="">
-              <button className="btn">Sign Up</button>
+              <button className="btn sm:px-4 sm:py-2 hover:bg-btn-hover">
+                Sign Up
+              </button>
             </a>
           </nav>
         </header>
-        <div className="h-screen w-screen absolute scale-150 rotate-45 translate-y-10 backdrop-filter backdrop-blur-3xl backdrop-saturate-150">
+        <div
+          id="gradient-background"
+          className="h-screen w-screen absolute scale-150 rotate-45 translate-y-10 backdrop-filter backdrop-blur-3xl backdrop-saturate-150"
+        >
           <div className="circle h-5/6 w-5/6 bg-circle-1 -top-20 -left-1/3 opacity-90"></div>
           <div className="circle h-full w-5/6 bg-circle-2 -top-1/3 -right-20 opacity-80"></div>
-          <div className="circle h-full w-5/6 bg-circle-3 -bottom-1/2 -left-1/3 opacity-80"></div>
+          <div className="circle h-full w-11/12 bg-circle-3 -bottom-1/2 -left-1/3 opacity-80"></div>
           <div className="circle h-full w-5/6 bg-circle-4 -bottom-1/4 -right-1/4 opacity-90"></div>
         </div>
-        <div className="mx-std flex items-center justify-center sm:mx-0 sm:mr-std sm:w-2/5 sm:order-2 z-10">
+        <div
+          id="home-image"
+          className="mx-std flex items-center justify-center sm:mx-0 sm:mr-std sm:w-2/5 sm:order-2 z-10"
+        >
           <img
             className="w-2/3 sm:w-full xl:max-w-7xl"
             src="assets/page_one.svg"
@@ -63,13 +71,13 @@ export default function Home() {
           <h1 className="text-mobile-h font-normal leading-none sm:text-5vw sm:mr-5">
             The market data we deserve
           </h1>
-          <div className="space-y-5 md:space-y-8 xl:space-y-12">
-            <p className="text-mobile-p sm:text-2vw sm:mr-20% sm:mt-12%">
+          <div className="space-y-6 md:space-y-8 xl:space-y-12">
+            <p className="text-mobile-p mt-10% sm:text-2vw sm:mr-20% sm:mt-12%">
               Trade like never before - visualized data, insights, and
               statistics to make sense of complicated financial markets
             </p>
             <div className="w-full flex justify-center sm:block">
-              <button className="btn text-mobile-p px-8 py-3 sm:px-4 sm:py-2 sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+              <button className="btn text-mobile-p px-8 py-3 sm:px-4 sm:py-2 sm:text-sm md:text-base lg:text-lg xl:text-2xl hover:bg-btn-hover">
                 Get Early Access
               </button>
             </div>
