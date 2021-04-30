@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./public/readme.png)
+![](./public/assets/readme.png)
 
 ## My process
 
