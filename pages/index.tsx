@@ -105,7 +105,7 @@ export default function Home() {
         {/* Three Info Blocks */}
         <div
           id="blocks-container"
-          className="my-10% grid gap-8 sm:flex sm:justify-evenly"
+          className="my-20% grid gap-12 sm:flex sm:justify-evenly"
         >
           <div className="info-block text-center mx-std">
             <img src="./assets/four-circles.svg" alt="4 square icon" />
@@ -137,8 +137,11 @@ export default function Home() {
           </div>
         </div>
         {/* Two Price Cards*/}
-        <div className="price-cards">
-          <div>
+        <div
+          id="price-cards"
+          className="grid gap-10 justify-items-center w-11/12 mx-auto"
+        >
+          <div className="price-card">
             <h2>Free</h2>
             <p>Try out the platform for free</p>
             <h2>$0 / mo</h2>
@@ -163,7 +166,7 @@ export default function Home() {
 
             <button className="btn">Get Started</button>
           </div>
-          <div>
+          <div className="price-card">
             <h2>Premium</h2>
             <p>Ready to play in the big leauges?</p>
             <h2>$40 / mo</h2>

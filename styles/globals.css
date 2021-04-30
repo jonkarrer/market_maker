@@ -20,12 +20,14 @@
   }
 }
 @layer components {
+  /*General*/
   .btn {
     @apply py-2 px-4 bg-lt-clear backdrop-filter backdrop-blur-3xl backdrop-saturate-150 text-white rounded;
   }
   .circle {
     @apply absolute rounded-full border-black border-8 filter blur-2xl sm:blur-3xl;
   }
+  /*Home Page*/
   .info-block {
     /*3 blocks, icon has 4 circles*/
     @apply flex flex-col items-center text-center mx-std space-y-3 sm:mx-0;
@@ -38,5 +40,27 @@
   }
   .info-block p {
     @apply text-mobile-p sm:text-desktop-p;
+  }
+  .price-card {
+    /*2 blue cards explaining price options*/
+    @apply h-auto grid grid-rows-price-cards gap-5 text-center w-11/12 sm:w-2/5 py-3 sm:hover:shadow-xl cursor-pointer bg-gradient-to-br from-lt-blue to-lt-teal rounded-md;
+  }
+  .price-card h2 {
+    @apply text-mobile-h sm:text-desktop-h;
+  }
+  .price-card p {
+    @apply text-mobile-p sm:text-desktop-p;
+  }
+  .price-card ul {
+    @apply list-none space-y-3 my-5 mx-std;
+  }
+  .price-card li {
+    @apply flex items-center h-auto text-left;
+  }
+  .price-card li img {
+    @apply w-1/12 mr-6;
+  }
+  .price-card button {
+    @apply w-11/12 bg-dk-black py-3 m-auto;
   }
 }
