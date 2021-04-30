@@ -23,11 +23,7 @@ export default function Home() {
         <header className="hidden w-5/6 absolute sm:flex items-center justify-between top-3 mx-std z-10 text-white">
           <nav id="links" className="flex items-center justify-start">
             <a className="mr-9" href="#">
-              <img
-                className="w-10 min-w-full"
-                src="./assets/piggy.svg"
-                alt=""
-              />
+              <img className="w-10 min-w-full" src="./assets/logo.svg" alt="" />
             </a>
             <a className="mr-9" href="">
               Products
@@ -68,16 +64,16 @@ export default function Home() {
           />
         </div>
         <article className="z-10 text-white flex flex-col mx-std sm:mx-0 sm:ml-std sm:order-1 sm:justify-center sm:w-2/3">
-          <h1 className="text-mobile-h font-normal leading-none sm:text-5vw sm:mr-5">
+          <h1 className="text-mobile-h font-normal leading-none sm:text-desktop-h sm:mr-5">
             The market data we deserve
           </h1>
           <div className="space-y-6 md:space-y-8 xl:space-y-12">
-            <p className="text-mobile-p mt-10% sm:text-2vw sm:mr-20% sm:mt-12%">
+            <p className="text-mobile-p mt-10% sm:text-desktop-p sm:mr-20% sm:mt-12%">
               Trade like never before - visualized data, insights, and
               statistics to make sense of complicated financial markets
             </p>
             <div className="w-full flex justify-center sm:block">
-              <button className="btn text-mobile-p px-8 py-3 sm:px-4 sm:py-2 sm:text-sm md:text-base lg:text-lg xl:text-2xl hover:bg-btn-hover">
+              <button className="btn text-mobile-p px-8 py-3 sm:px-4 sm:py-2 sm:text-1.5vw hover:bg-btn-hover">
                 Get Early Access
               </button>
             </div>
@@ -85,23 +81,34 @@ export default function Home() {
         </article>
       </section>
       {/* Page Two */}
-      <div id="banner-butt-container">
-        <button className="btn" id="banner-button">
+      <div
+        id="banner-butt-container"
+        className="w-11/12 sm:w-4/5 mx-auto my-10% flex justify-center"
+      >
+        <button
+          id="banner-button"
+          className="btn shadow-md bg-lt-blue w-max text-3vw sm:text-1.5vw py-3 px-8 sm:py-5 sm:px-14"
+        >
           Make a market today! Invite a friend and recieve $10 off each month
           they subscribe.* Learn More {">"}
         </button>
       </div>
-      <section className="page-two">
-        <h1>Make Sense of Complicated Markets</h1>
-        <p className="summary">
+      <section className="h-auto sm:mx-std">
+        <h1 className="text-center text-mobile-h sm:text-desktop-h">
+          Make Sense of Complicated Markets
+        </h1>
+        <p className="text-mobile-p sm:text-desktop-p mx-std my-10%">
           Trading is difficult. That's why we created a financial information
           platform built for everyone. Get the coverage you need, delivered
           through an elegant interface.
         </p>
-        {/* Page Three */}
-        <div className="info-blocks">
-          <div>
-            <img src="./assets/logo.svg" alt="4 square icon" />
+        {/* Three Info Blocks */}
+        <div
+          id="blocks-container"
+          className="my-10% grid gap-8 sm:flex sm:justify-evenly"
+        >
+          <div className="info-block text-center mx-std">
+            <img src="./assets/four-circles.svg" alt="4 square icon" />
             <h3>Be a Market Maker</h3>
             <p>
               Easily sign up in the app, and keep your number and phone or
@@ -109,8 +116,8 @@ export default function Home() {
               and minutes for one (really) low price.
             </p>
           </div>
-          <div>
-            <img src="./assets/logo.svg" alt="4 square icon" />
+          <div className="info-block">
+            <img src="./assets/four-circles.svg" alt="4 square icon" />
             <h3>Experience our Service</h3>
             <p>
               After activating your SIM in the app, you're ready to experience
@@ -119,8 +126,8 @@ export default function Home() {
               true.
             </p>
           </div>
-          <div>
-            <img src="./assets/logo.svg" alt="4 square icon" />
+          <div className="info-block">
+            <img src="./assets/four-circles.svg" alt="4 square icon" />
             <h3>Bring some Friends</h3>
             <p>
               Since trading only gets better with friends, it makes sense to

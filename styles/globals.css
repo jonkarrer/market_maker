@@ -26,4 +26,17 @@
   .circle {
     @apply absolute rounded-full border-black border-8 filter blur-2xl sm:blur-3xl;
   }
+  .info-block {
+    /*3 blocks, icon has 4 circles*/
+    @apply flex flex-col items-center text-center mx-std space-y-3 sm:mx-0;
+  }
+  .info-block img {
+    @apply w-1/4;
+  }
+  .info-block h3 {
+    @apply text-5vw sm:text-2vw sm:my-5;
+  }
+  .info-block p {
+    @apply text-mobile-p sm:text-desktop-p;
+  }
 }

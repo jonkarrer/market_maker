@@ -5,10 +5,15 @@ const MobileHeader = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="sm:hidden font-primary">
-      <a className="w-8 absolute top-5 left-5 z-10" href="#">
-        <img className="w" src="./assets/piggy.svg" alt="" />
+      <a
+        id="logo-container"
+        className="w-8 absolute top-5 left-5 z-10"
+        href="#"
+      >
+        <img src="./assets/logo.svg" alt="logo" />
       </a>
       <div
+        id="circle-dot-dropdown"
         onClickCapture={() => setOpen(true)}
         className={`absolute transition-all z-20 bg-white
        ${
@@ -18,17 +23,22 @@ const MobileHeader = () => {
        } overflow-hidden`}
       >
         <div
+          id="dropdown-content-container"
           className={`${
             open ? `text-mobile-h space-y-8 list-none` : `hidden`
           } bg-white relative flex justify-center items-center w-full h-full `}
         >
           <div
+            id="exit-button"
             onClick={() => setOpen(false)}
             className="absolute top-5 right-5 text-mobile-h"
           >
             X
           </div>
-          <ul className="text-mobile-h space-y-8 list-none">
+          <ul
+            id="dropdown-content"
+            className="text-mobile-h space-y-8 list-none"
+          >
             <Link href="">
               <li>Products</li>
             </Link>
@@ -50,3 +60,7 @@ const MobileHeader = () => {
 };
 
 export default MobileHeader;
+
+//Need to add link destinations
+
+//Need to test
