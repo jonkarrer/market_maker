@@ -35,38 +35,48 @@ Users should be able to:
 
 ## My process
 
+- One section at a time.
+- Optimized before moving to next section
+- Responsive design testing
+- Document all unique code and 'gotchas'
+
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
-- [TailwindCSS](https://styled-components.com/) - For styles
+- [TailwindCSS](https://tailwindcss.com/) - For styles
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+- For tailwindcss, you have to name your components folder 'components' not 'comps'.
 
-To see how you can add code snippets, see below:
+Some unique code snippets:
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
+- Dynamic Styles for TailwindCSS
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+```jsx
+  <div
+    onClickCapture={() => setOpen(true)}
+    className={`absolute transition-all z-20 bg-white
+    ${
+      open
+        ? `top-0 right-0 w-screen h-screen`
+        : `top-5 right-5 w-8 h-8 rounded-full`
+    } overflow-hidden`}
+  >
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Need to integrate testing with Cypress
 
 ### Useful resources
 
@@ -75,10 +85,10 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Jon K.](https://jonkarrer.com)
+- LinkedIN - [Jon Karrer](https://www.linkedin.com/in/jon-karrer-6b8a18186/)
+- CodePen - [@jonkarrer](https://codepen.io/jonkarrer)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+Working directly with the owner
