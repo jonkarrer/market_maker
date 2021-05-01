@@ -105,9 +105,9 @@ export default function Home() {
         {/* Three Info Blocks */}
         <div
           id="blocks-container"
-          className="my-20% grid gap-12 sm:flex sm:justify-evenly"
+          className="my-20% sm:my-12% grid gap-12 text-center sm:flex sm:justify-center"
         >
-          <div className="info-block text-center mx-std">
+          <div className="info-block">
             <img src="./assets/four-circles.svg" alt="4 square icon" />
             <h3>Be a Market Maker</h3>
             <p>
@@ -139,7 +139,7 @@ export default function Home() {
         {/* Two Price Cards*/}
         <div
           id="price-cards"
-          className="grid gap-10 justify-items-center w-11/12 mx-auto"
+          className="grid gap-10 justify-items-center w-11/12 mx-auto sm:flex sm:justify-around"
         >
           <div className="price-card">
             <h2>Free</h2>
@@ -148,7 +148,7 @@ export default function Home() {
             <ul>
               <li>
                 <img src="./assets/checkmark.svg" alt="checkmark icon" />
-                Twitter Alerts(15 min delay)
+                Twitter Alerts (15 min delay)
               </li>
               <li>
                 <img src="./assets/checkmark.svg" alt="checkmark icon" />
