@@ -266,10 +266,10 @@ export default function Home() {
           average investor
         </p>
       </section>
-      <footer className="my-12% sm:py-5 mx-std text-xl sm:w-1/2 m-auto">
+      <footer className="my-12% m-auto sm:my-10 sm:w-11/12 lg:w-4/5 lg:text-xl ">
         <nav
           id="links"
-          className="grid grid-cols-2 gap-3 sm:flex sm:justify-around"
+          className="grid grid-cols-2 gap-3 sm:text-2vw sm:flex sm:justify-around lg:text-1.5vw"
         >
           <a>MML C 2021</a>
           <a href="">About Us</a>
@@ -283,7 +283,7 @@ export default function Home() {
         </nav>
         <nav
           id="icons"
-          className="flex justify-around sm:justify-center my-8 sm:my-5"
+          className="flex justify-around my-8 sm:justify-evenly sm:w-2/3 mx-auto sm:my-12"
         >
           <a href="">
             <img src="./assets/Social/reddit-dk.svg" alt="reddit icon" />
