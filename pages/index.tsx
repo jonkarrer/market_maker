@@ -208,7 +208,7 @@ export default function Home() {
       <section className="sm:flex sm:justify-evenly items-center mx-std">
         <div
           id="left-panel"
-          className="flex flex-col items-center my-20% sm:my-8% sm:space-y-12"
+          className="flex flex-col items-center my-12% sm:my-8% sm:space-y-12"
         >
           <img
             className="w-1/2 my-10% sm:my-0"
@@ -216,7 +216,7 @@ export default function Home() {
             alt="4 circles logo"
           />
           <article className="space-y-5">
-            <h2 className="text-mobile-h sm:text-2vw">Options</h2>
+            <h2 className="text-8vw sm:text-2vw">Options</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Exercitationem, mollitia eaque. Neque animi perferendis, ducimus
@@ -231,10 +231,10 @@ export default function Home() {
         </div>
         <div
           id="right-panel"
-          className="flex flex-col items-center my-20% sm:my-8% sm:space-y-12"
+          className="flex flex-col items-center my-12% sm:my-8% sm:space-y-12"
         >
           <article className="space-y-5 order-2 sm:order-1">
-            <h2 className="text-mobile-h sm:text-2vw">Stocks</h2>
+            <h2 className="text-8vw sm:text-2vw">Stocks</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Exercitationem, mollitia eaque. Neque animi perferendis, ducimus
@@ -259,15 +259,18 @@ export default function Home() {
         className="sm:py-8 bg-gradient-to-tr from-lt-blue to-lt-teal"
       >
         <h1># made by friends with a passion for markets</h1>
-        <p className="text-center text-white sm:text-1.5vw sm:mx-std sm:mt-8 sm:leading-8">
+        <p className="text-center text-white text-sm mx-std pb-3 sm:text-1.5vw sm:mx-std sm:mt-8 sm:leading-8">
           Our team has a diverse background of academic and industry experiences
           including finance, engineering, and media. We aren't paid by in large
           by the banks, we don't sell your information, we stay commited to the
           average investor
         </p>
       </section>
-      <footer className="py-5">
-        <nav className="flex justify-center">
+      <footer className="my-12% sm:py-5 mx-std text-xl sm:w-1/2 m-auto">
+        <nav
+          id="links"
+          className="grid grid-cols-2 gap-3 sm:flex sm:justify-around"
+        >
           <a>MML C 2021</a>
           <a href="">About Us</a>
           <a href="">Support</a>
@@ -278,7 +281,10 @@ export default function Home() {
           <a href="">Log in</a>
           <a href="">Sign in</a>
         </nav>
-        <nav className="icons">
+        <nav
+          id="icons"
+          className="flex justify-around sm:justify-center my-8 sm:my-5"
+        >
           <a href="">
             <img src="./assets/Social/reddit-dk.svg" alt="reddit icon" />
           </a>

@@ -23,6 +23,8 @@ module.exports = {
         '4vw' : '4vw',
         '5vw' : '5.2vw',
         '6vw' : '6vw',
+        '8vw' : '8vw',
+        '9vw' : '9vw',
       },
       margin: {
         'std' : "8vw",
