@@ -43,7 +43,7 @@
   }
   .price-card {
     /*2 blue cards explaining price options*/
-    @apply h-auto grid grid-rows-price-cards gap-5 sm:gap-10 text-center w-11/12 sm:w-2/5 py-3 sm:hover:shadow-xl cursor-pointer bg-gradient-to-br from-lt-blue to-lt-teal rounded-md;
+    @apply h-auto grid grid-rows-price-cards gap-5 sm:gap-10 text-center w-11/12 py-3 sm:w-40vw sm:hover:shadow-xl cursor-pointer bg-gradient-to-br from-lt-blue to-lt-teal rounded-md;
   }
   .price-card h2 {
     @apply text-mobile-h sm:text-4vw;

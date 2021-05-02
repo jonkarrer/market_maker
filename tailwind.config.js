@@ -5,7 +5,8 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        '8vw' : '8vw'
+        '8vw' : '8vw',
+        '40vw' : '40vw',
       },
       fontFamily: {
         'primary' : ["Poppins", "sans-serif"],

@@ -83,7 +83,7 @@ export default function Home() {
       {/* Page Two */}
       <div
         id="banner-butt-container"
-        className="w-11/12 sm:w-4/5 mx-auto my-10% sm:my-10 flex justify-center"
+        className="w-11/12 sm:w-5/6 mx-auto my-10% sm:my-10 flex justify-center"
       >
         <button
           id="banner-button"
@@ -139,7 +139,7 @@ export default function Home() {
         {/* Two Price Cards*/}
         <div
           id="price-cards"
-          className="grid gap-10 justify-items-center w-11/12 mx-auto sm:flex sm:justify-around"
+          className="grid gap-10 justify-items-center w-11/12 sm:w-auto mx-auto sm:flex sm:justify-between border-blue-500 border-solid border-2"
         >
           <div className="price-card">
             <h2>Free</h2>
