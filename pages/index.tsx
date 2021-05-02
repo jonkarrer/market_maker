@@ -139,7 +139,7 @@ export default function Home() {
         {/* Two Price Cards*/}
         <div
           id="price-cards"
-          className="grid gap-10 justify-items-center w-11/12 sm:w-auto mx-auto sm:flex sm:justify-between border-blue-500 border-solid border-2"
+          className="grid gap-10 justify-items-center w-11/12 sm:w-auto mx-auto sm:flex sm:justify-between"
         >
           <div className="price-card">
             <h2>Free</h2>
@@ -253,17 +253,21 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="bottom-banner">
+      {/* Bottom Banner */}
+      <section
+        id="bottom-banner"
+        className="sm:py-8 bg-gradient-to-tr from-lt-blue to-lt-teal"
+      >
         <h1># made by friends with a passion for markets</h1>
-        <p>
+        <p className="text-center text-white sm:text-1.5vw sm:mx-std sm:mt-8 sm:leading-8">
           Our team has a diverse background of academic and industry experiences
           including finance, engineering, and media. We aren't paid by in large
           by the banks, we don't sell your information, we stay commited to the
           average investor
         </p>
       </section>
-      <footer>
-        <nav>
+      <footer className="py-5">
+        <nav className="flex justify-center">
           <a>MML C 2021</a>
           <a href="">About Us</a>
           <a href="">Support</a>
