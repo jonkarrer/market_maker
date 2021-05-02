@@ -205,7 +205,7 @@ export default function Home() {
         </div>
       </section>
       {/* Page Three */}
-      <section className="sm:flex sm:justify-evenly items-center mx-std">
+      <section className="sm:flex sm:justify-between items-center mx-std">
         <div
           id="left-panel"
           className="flex flex-col items-center my-12% sm:my-8% sm:space-y-12"
@@ -216,8 +216,8 @@ export default function Home() {
             alt="4 circles logo"
           />
           <article className="space-y-5">
-            <h2 className="text-8vw sm:text-2vw">Options</h2>
-            <p>
+            <h2 className="text-8vw sm:text-4vw md:text-3vw">Options</h2>
+            <p className="sm:mr-5 sm:text-sm xl:text-xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Exercitationem, mollitia eaque. Neque animi perferendis, ducimus
               veritatis harum mollitia iste, magni nam unde ut error. Enim culpa
@@ -234,8 +234,8 @@ export default function Home() {
           className="flex flex-col items-center my-12% sm:my-8% sm:space-y-12"
         >
           <article className="space-y-5 order-2 sm:order-1">
-            <h2 className="text-8vw sm:text-2vw">Stocks</h2>
-            <p>
+            <h2 className="text-8vw sm:text-4vw md:text-3vw">Stocks</h2>
+            <p className="sm:mr-5 sm:text-sm xl:text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Exercitationem, mollitia eaque. Neque animi perferendis, ducimus
               veritatis harum mollitia iste, magni nam unde ut error. Enim culpa
@@ -266,10 +266,10 @@ export default function Home() {
           average investor
         </p>
       </section>
-      <footer className="my-12% m-auto sm:my-10 sm:w-11/12 lg:w-4/5 lg:text-xl ">
+      <footer className="my-12% m-auto sm:my-8 sm:w-11/12 lg:w-4/5 lg:text-xl lg:my-10 ">
         <nav
           id="links"
-          className="grid grid-cols-2 gap-3 sm:text-2vw sm:flex sm:justify-around lg:text-1.5vw"
+          className="grid grid-cols-2 gap-3 w-11/12 pb-3 mx-auto sm:flex sm:justify-around sm:text-1.5vw"
         >
           <a>MML C 2021</a>
           <a href="">About Us</a>
@@ -283,7 +283,7 @@ export default function Home() {
         </nav>
         <nav
           id="icons"
-          className="flex justify-around my-8 sm:justify-evenly sm:w-2/3 mx-auto sm:my-12"
+          className="flex justify-around my-8 sm:justify-evenly sm:w-2/3 mx-auto"
         >
           <a href="">
             <img src="./assets/Social/reddit-dk.svg" alt="reddit icon" />
