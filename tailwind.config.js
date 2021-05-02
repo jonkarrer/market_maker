@@ -4,6 +4,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      width: {
+        '8vw' : '8vw'
+      },
       fontFamily: {
         'primary' : ["Poppins", "sans-serif"],
         'secondary' : ["Source Sans Pro", "sans-serif"],
@@ -11,7 +14,7 @@ module.exports = {
       fontSize: {
         'mobile-p' : 'calc(2vw + 1.6vh)',
         'mobile-h' : ['10vw', '1.1'],
-        'desktop-h' : ['5vw', '1'],
+        'desktop-h' : ['5vw', '1.4'],
         'desktop-p' : ['2vw', '1.4'],
         '1.5vw' : '1.5vw',
         '2vw' : '2vw',
@@ -25,6 +28,8 @@ module.exports = {
         '20%' : "20%",
         '12%' : "12%",
         '10%' : '10%',
+        '8%' : '8%',
+        '6%' : '6%',
       },
       colors: {
         'hot-pink': '#d9a3d9',

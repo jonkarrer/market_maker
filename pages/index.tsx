@@ -83,7 +83,7 @@ export default function Home() {
       {/* Page Two */}
       <div
         id="banner-butt-container"
-        className="w-11/12 sm:w-4/5 mx-auto my-10% flex justify-center"
+        className="w-11/12 sm:w-4/5 mx-auto my-10% sm:my-10 flex justify-center"
       >
         <button
           id="banner-button"
@@ -93,11 +93,11 @@ export default function Home() {
           they subscribe.* Learn More {">"}
         </button>
       </div>
-      <section className="h-auto sm:mx-std">
+      <section className="h-auto sm:mx-std sm:my-16">
         <h1 className="text-center text-mobile-h sm:text-desktop-h">
           Make Sense of Complicated Markets
         </h1>
-        <p className="text-mobile-p sm:text-desktop-p mx-std my-10%">
+        <p className="text-mobile-p sm:text-desktop-p mx-std my-10% sm:mx-6% sm:my-14">
           Trading is difficult. That's why we created a financial information
           platform built for everyone. Get the coverage you need, delivered
           through an elegant interface.
@@ -105,7 +105,7 @@ export default function Home() {
         {/* Three Info Blocks */}
         <div
           id="blocks-container"
-          className="my-20% sm:my-12% grid gap-12 text-center sm:flex sm:justify-center"
+          className="my-20% sm:my-10% grid gap-12 text-center sm:flex sm:justify-start sm:items-start"
         >
           <div className="info-block">
             <img src="./assets/four-circles.svg" alt="4 square icon" />
@@ -205,11 +205,18 @@ export default function Home() {
         </div>
       </section>
       {/* Page Three */}
-      <section className="page-three">
-        <div className="panel">
-          <img src="./assets/logo.svg" alt="4 circles logo" />
-          <article>
-            <h2>Options</h2>
+      <section className="sm:flex sm:justify-evenly items-center mx-std">
+        <div
+          id="left-panel"
+          className="flex flex-col items-center my-20% sm:my-8% sm:space-y-12"
+        >
+          <img
+            className="w-1/2 my-10% sm:my-0"
+            src="./assets/four-circles.svg"
+            alt="4 circles logo"
+          />
+          <article className="space-y-5">
+            <h2 className="text-mobile-h sm:text-2vw">Options</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Exercitationem, mollitia eaque. Neque animi perferendis, ducimus
@@ -222,9 +229,12 @@ export default function Home() {
             </p>
           </article>
         </div>
-        <div className="panel">
-          <article>
-            <h2>Stocks</h2>
+        <div
+          id="right-panel"
+          className="flex flex-col items-center my-20% sm:my-8% sm:space-y-12"
+        >
+          <article className="space-y-5 order-2 sm:order-1">
+            <h2 className="text-mobile-h sm:text-2vw">Stocks</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Exercitationem, mollitia eaque. Neque animi perferendis, ducimus
@@ -236,7 +246,11 @@ export default function Home() {
               quisquam impedit unde pariatur!
             </p>
           </article>
-          <img src="./assets/logo.svg" alt="4 circles logo" />
+          <img
+            className="w-1/2 my-10% sm:my-0 order-1"
+            src="./assets/four-circles.svg"
+            alt="4 circles logo"
+          />
         </div>
       </section>
       <section className="bottom-banner">

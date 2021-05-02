@@ -16,7 +16,7 @@
   p,
   button,
   a {
-    @apply font-secondary;
+    @apply font-secondary font-semibold;
   }
 }
 @layer components {
@@ -30,16 +30,16 @@
   /*Home Page*/
   .info-block {
     /*3 blocks, icon has 4 circles*/
-    @apply flex flex-col items-center justify-center text-center mx-std space-y-3 sm:mx-5;
+    @apply h-full flex flex-col items-center justify-center text-center mx-std sm:mx-5;
   }
   .info-block img {
-    @apply w-1/4;
+    @apply w-1/4 sm:w-8vw;
   }
   .info-block h3 {
     @apply text-5vw sm:text-2vw sm:my-5;
   }
   .info-block p {
-    @apply text-mobile-p sm:text-1.5vw sm:mx-8 leading-6;
+    @apply text-mobile-p leading-10 sm:text-1.5vw sm:leading-4 md:leading-6 lg:mx-8% lg:leading-7 xl:leading-10;
   }
   .price-card {
     /*2 blue cards explaining price options*/
