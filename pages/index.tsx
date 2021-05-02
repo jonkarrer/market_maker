@@ -256,10 +256,10 @@ export default function Home() {
       {/* Bottom Banner */}
       <section
         id="bottom-banner"
-        className="sm:py-8 bg-gradient-to-tr from-lt-blue to-lt-teal"
+        className="py-3 sm:py-8 bg-gradient-to-tr from-lt-blue to-lt-teal"
       >
         <h1># made by friends with a passion for markets</h1>
-        <p className="text-center text-white text-sm mx-std py-3 sm:text-1.5vw sm:mx-std sm:mt-8 sm:leading-8">
+        <p className="text-center text-white text-sm mx-std pt-3 sm:text-1.5vw sm:mx-std sm:mt-8 sm:leading-8">
           Our team has a diverse background of academic and industry experiences
           including finance, engineering, and media. We aren't paid by in large
           by the banks, we don't sell your information, we stay commited to the
