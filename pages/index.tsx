@@ -1,7 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
-import MobileHeader from "../components/MobileHeader";
+import { useState } from "react";
+
 export default function Home() {
+  const [open, setOpen] = useState(false);
   return (
     <div>
       <Head>
@@ -22,8 +24,62 @@ export default function Home() {
         id="home_page-one-gradient"
         className="relative h-screen overflow-hidden grid grid-row-2 sm:flex sm:items-center"
       >
-        <MobileHeader />
-        <header className="hidden w-5/6 absolute sm:flex items-center justify-between top-3 mx-std z-10 text-white">
+        <div id="mobile-header" className="sm:hidden font-primary">
+          <a
+            id="logo-container"
+            className="w-8 absolute top-5 left-5 z-10"
+            href="#"
+          >
+            <img src="./assets/logo.svg" alt="logo" />
+          </a>
+          <div
+            id="circle-dot-dropdown"
+            onClickCapture={() => setOpen(true)}
+            className={`absolute transition-all z-20 bg-white
+       ${
+         open
+           ? `top-0 right-0 w-screen h-screen`
+           : `top-5 right-5 w-8 h-8 rounded-full`
+       } overflow-hidden`}
+          >
+            <div
+              id="dropdown-content-container"
+              className={`${
+                open ? `text-mobile-h space-y-8 list-none` : `hidden`
+              } bg-white relative flex justify-center items-center w-full h-full `}
+            >
+              <div
+                id="exit-button"
+                onClick={() => setOpen(false)}
+                className="absolute top-5 right-5 text-mobile-h"
+              >
+                X
+              </div>
+              <ul
+                id="dropdown-content"
+                className="text-mobile-h space-y-8 list-none font-secondary font-semibold"
+              >
+                <Link href="/products">
+                  <li>Products</li>
+                </Link>
+                <Link href="/learn">
+                  <li>Learn</li>
+                </Link>
+                <Link href="/support">
+                  <li>Support</li>
+                </Link>
+              </ul>
+              <div className="absolute bottom-28 font-semibold w-full h-1/12 flex justify-around ite ">
+                <Link href="sign-up">Sign Up</Link>
+                <Link href="sign-in">Sign In</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <header
+          id="desktop-header"
+          className="hidden w-5/6 absolute sm:flex items-center justify-between top-3 mx-std z-10 text-white"
+        >
           <nav id="links" className="flex items-center justify-start">
             <a className="mr-9" href="#">
               <img className="w-10 min-w-full" src="./assets/logo.svg" alt="" />

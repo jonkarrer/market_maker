@@ -7,9 +7,9 @@ interface ISupport {
 const SupportSquare = ({ title, link }: ISupport) => (
   <div>
     <Link href={link}>
-      <div className="py-5 w-72 h-72 shadow-supp-boxes grid justify-items-center place-content-around cursor-pointer">
-        <img src="/cogs.svg" alt="cog" />
-        <h2 className="text-3xl">{title}</h2>
+      <div className=" w-64 h-64 sm:py-5 sm:w-72 sm:h-72 shadow-supp-boxes grid justify-items-center place-content-around cursor-pointer">
+        <img className="" src="/cogs.svg" alt="cog" />
+        <p className="text-2xl font-medium">{title}</p>
       </div>
     </Link>
   </div>
