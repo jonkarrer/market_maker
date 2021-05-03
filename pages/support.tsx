@@ -42,12 +42,12 @@ export default function Support() {
         id="squares-container"
         className="mx-std my-10 grid justify-items-center place-content-around gap-16 sm:grid-cols-2 lg:grid-cols-3"
       >
-        <SupportSquare />
-        <SupportSquare />
-        <SupportSquare />
-        <SupportSquare />
-        <SupportSquare />
-        <SupportSquare />
+        <SupportSquare title="Getting Started" link="/getting-started" />
+        <SupportSquare title="Pricing" link="/pricing" />
+        <SupportSquare title="Roadmap" link="/roadmap" />
+        <SupportSquare title="About Us" link="/about" />
+        <SupportSquare title="Terms & Privacy" link="/terms" />
+        <SupportSquare title="Contact" link="/contact" />
       </div>
     </div>
   );

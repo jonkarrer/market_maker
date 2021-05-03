@@ -53,6 +53,9 @@ module.exports = {
         'btn-hover' : 'rgba(0, 0, 0, 0.2)',
         'aqua' : '#00ffff',
       },
+      boxShadow: {
+        'supp-boxes' : '0 5px 10px rgba(0, 0, 0, 0.3)'
+      },
       gridTemplateRows: {
         'price-cards' : 'auto auto auto auto 100px'
       }
