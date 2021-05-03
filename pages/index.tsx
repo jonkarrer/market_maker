@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import MobileHeader from "../components/MobileHeader";
 export default function Home() {
   return (
@@ -16,11 +17,10 @@ export default function Home() {
         />
         <title>Market Maker</title>
       </Head>
-
       {/* Page One */}
       <section
-        id="page-one"
-        className="relative h-screen w-screen overflow-hidden grid grid-row-2 sm:flex sm:items-center"
+        id="home_page-one-gradient"
+        className="relative h-screen overflow-hidden grid grid-row-2 sm:flex sm:items-center"
       >
         <MobileHeader />
         <header className="hidden w-5/6 absolute sm:flex items-center justify-between top-3 mx-std z-10 text-white">
@@ -34,7 +34,7 @@ export default function Home() {
             <a className="mr-9" href="">
               Learn
             </a>
-            <a href="">Support</a>
+            <Link href="/support">Support</Link>
           </nav>
           <nav id="sign-up" className="flex items-center justify-end w-1/2">
             <a className="mr-10" href="">
@@ -249,7 +249,7 @@ export default function Home() {
       </section>
       {/* Bottom Banner */}
       <section
-        id="bottom-banner"
+        id="home_bottom-banner"
         className="py-3 sm:py-8 bg-gradient-to-tr from-lt-blue to-lt-teal"
       >
         <h1># made by friends with a passion for markets</h1>
@@ -276,7 +276,7 @@ export default function Home() {
           <a href="">Sign in</a>
         </nav>
         <nav
-          id="icons"
+          id="home_nav-icons"
           className="flex justify-around my-8 sm:justify-evenly sm:w-2/3 mx-auto"
         >
           <a href="">

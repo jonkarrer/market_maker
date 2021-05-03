@@ -8,6 +8,9 @@ module.exports = {
         '8vw' : '8vw',
         '40vw' : '40vw',
       },
+      height: {
+        '10vh' : '10vh',
+      },
       fontFamily: {
         'primary' : ["Poppins", "sans-serif"],
         'secondary' : ["Source Sans Pro", "sans-serif"],
