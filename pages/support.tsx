@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SupportSquare from "../components/SupportSquare";
 export default function Support() {
   return (
     <div className="h-screen w-screen">
@@ -30,12 +31,23 @@ export default function Support() {
             <a className="mr-10">Sign In</a>
           </Link>
           <Link href="/sign-up">
-            <a>Sign Up</a>
+            <button className="sm:px-4 sm:py-2">Sign Up</button>
           </Link>
         </nav>
       </header>
-      <div className="text-white font-semibold bg-gradient-to-r from-hot-pink to-lt-blue">
-        <h1 className="mx-std">Support</h1>
+      <div className="text-white font-semibold flex items-center sm:h-44 bg-gradient-to-r from-hot-pink to-lt-blue">
+        <h1 className="mx-std text-6xl xl:text-6xl">Support</h1>
+      </div>
+      <div
+        id="squares-container"
+        className="mx-std my-10 grid justify-items-center place-content-around gap-16 sm:grid-cols-2 lg:grid-cols-3"
+      >
+        <SupportSquare />
+        <SupportSquare />
+        <SupportSquare />
+        <SupportSquare />
+        <SupportSquare />
+        <SupportSquare />
       </div>
     </div>
   );

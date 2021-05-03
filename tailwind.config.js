@@ -10,6 +10,7 @@ module.exports = {
       },
       height: {
         '10vh' : '10vh',
+        '11vh' : '11vh',
       },
       fontFamily: {
         'primary' : ["Poppins", "sans-serif"],
