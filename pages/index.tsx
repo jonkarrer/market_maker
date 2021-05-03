@@ -1,6 +1,5 @@
 import Head from "next/head";
 import MobileHeader from "../components/MobileHeader";
-
 export default function Home() {
   return (
     <div>
@@ -48,10 +47,6 @@ export default function Home() {
             </a>
           </nav>
         </header>
-        <div
-          id="gradient-background"
-          className="h-screen w-screen absolute scale-150 rotate-45 translate-y-10 backdrop-filter backdrop-blur-3xl backdrop-saturate-150"
-        ></div>
         <div
           id="home-image"
           className="mx-std flex items-center justify-center sm:mx-0 sm:mr-std sm:w-2/5 sm:order-2 z-10"
