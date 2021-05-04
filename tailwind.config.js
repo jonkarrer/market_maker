@@ -56,7 +56,7 @@ module.exports = {
       },
       boxShadow: {
         'supp-boxes' : '0 5px 10px rgba(0, 0, 0, 0.3)',
-        'term-panel' : '10px 0px 5px -5px rgba(0, 0, 0, 0.3)'
+        'term-panel' : '10px 0px 5px -5px rgba(0, 0, 0, 0.1)'
       },
       gridTemplateRows: {
         'price-cards' : 'auto auto auto auto 100px'
