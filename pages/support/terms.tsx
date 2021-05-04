@@ -13,8 +13,8 @@ export default function Terms() {
         <h1 className="mx-std text-4xl sm:text-6xl">Terms and Privacy</h1>
       </div>
       <div id="page-container" className="flex h-auto">
-        <div className="shadow-term-panel pr-5">
-          <ul className="w-44 ml-24 mt-10 space-y-7">
+        <div className="shadow-term-panel pr-5 hidden sm:block">
+          <ul className=" sm:w-32 sm:ml-20 sm:text-sm md:w-40 md:ml-24 md:text-base lg:w-44 lg:text-lg mt-10 space-y-7">
             <li>
               <a href="#finance" className="font-normal">
                 Not Financial Advice
@@ -46,7 +46,7 @@ export default function Terms() {
           <h2 id="finance" className="text-3xl mb-5">
             Not Financial Advice
           </h2>
-          <p className="font-normal mr-10">
+          <p className="font-normal mr-6%">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
             vulputate augue viverra nisi pretium, sed maximus lacus pulvinar.
             Curabitur vitae laoreet ligula, et porttitor velit. Suspendisse sit
@@ -84,7 +84,7 @@ export default function Terms() {
           <h2 id="terms" className="text-3xl mt-8% mb-5">
             Terms and Conditions
           </h2>
-          <p className="font-normal mr-10">
+          <p className="font-normal mr-6%">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
             vulputate augue viverra nisi pretium, sed maximus lacus pulvinar.
             Curabitur vitae laoreet ligula, et porttitor velit. Suspendisse sit
@@ -122,7 +122,7 @@ export default function Terms() {
           <h2 id="privacy" className="text-3xl mt-8% mb-5">
             Privacy Policy
           </h2>
-          <p className="font-normal mr-10">
+          <p className="font-normal mr-6%">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
             vulputate augue viverra nisi pretium, sed maximus lacus pulvinar.
             Curabitur vitae laoreet ligula, et porttitor velit. Suspendisse sit
@@ -160,7 +160,7 @@ export default function Terms() {
           <h2 id="payment" className="text-3xl mt-8% mb-5">
             Payment Terms
           </h2>
-          <p className="font-normal mr-10">
+          <p className="font-normal mr-6%">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
             vulputate augue viverra nisi pretium, sed maximus lacus pulvinar.
             Curabitur vitae laoreet ligula, et porttitor velit. Suspendisse sit
@@ -198,7 +198,7 @@ export default function Terms() {
           <h2 id="disclosures" className="text-3xl mt-8% mb-5">
             Disclosures
           </h2>
-          <p className="font-normal mr-10">
+          <p className="font-normal mr-6%">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
             vulputate augue viverra nisi pretium, sed maximus lacus pulvinar.
             Curabitur vitae laoreet ligula, et porttitor velit. Suspendisse sit
