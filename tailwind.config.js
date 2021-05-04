@@ -19,7 +19,7 @@ module.exports = {
       fontSize: {
         'mobile-p' : 'calc(2vw + 1.6vh)',
         'mobile-h' : ['10vw', '1.1'],
-        'desktop-h' : ['5vw', '1.4'],
+        'desktop-h' : ['5vw', '1.2'],
         'desktop-p' : ['2vw', '1.4'],
         '1.5vw' : '1.5vw',
         '2vw' : '2vw',

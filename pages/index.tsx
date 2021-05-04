@@ -114,7 +114,7 @@ export default function Home() {
           />
         </div>
         <article className="z-10 text-white flex flex-col mx-std sm:mx-0 sm:ml-std sm:order-1 sm:justify-center sm:w-2/3">
-          <h1 className="text-mobile-h font-normal leading-none sm:text-desktop-h sm:mr-5">
+          <h1 className="text-mobile-h font-normal leading-none sm:text-desktop-h sm:mr-5 xl:mr-10">
             The market data we deserve
           </h1>
           <div className="space-y-6 md:space-y-8 xl:space-y-12">
