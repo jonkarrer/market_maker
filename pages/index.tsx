@@ -30,7 +30,7 @@ export default function Home() {
             className="w-8 absolute top-5 left-5 z-10"
             href="#"
           >
-            <img src="./assets/logo.svg" alt="logo" />
+            <img src="/logo.svg" alt="logo" />
           </a>
           <div
             id="circle-dot-dropdown"
@@ -65,7 +65,7 @@ export default function Home() {
                 <Link href="/learn">
                   <li>Learn</li>
                 </Link>
-                <Link href="/support">
+                <Link href="/support/support">
                   <li>Support</li>
                 </Link>
               </ul>

@@ -3,7 +3,7 @@ import DesktopHeader from "../../components/DesktopHeader";
 
 export default function Terms() {
   return (
-    <div className="h-screen overflow-hidden">
+    <div className="h-screen fixed">
       <MobileHeader />
       <DesktopHeader />
       <div
@@ -26,7 +26,7 @@ export default function Terms() {
               </a>
             </li>
             <li>
-              <a href="privacy" className="font-normal">
+              <a href="#privacy" className="font-normal">
                 Privacy Policy
               </a>
             </li>
@@ -119,7 +119,7 @@ export default function Terms() {
             curae; Aenean euismod facilisis odio in vestibulum. Cras suscipit
             sodales maximus.
           </p>
-          <h2 id="Privacy" className="text-3xl mt-8% mb-5">
+          <h2 id="privacy" className="text-3xl mt-8% mb-5">
             Privacy Policy
           </h2>
           <p className="font-normal mr-10">
