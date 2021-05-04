@@ -40,13 +40,14 @@ module.exports = {
       },
       colors: {
         'hot-pink': '#d9a3d9',
+        'dk-pink' : '#D57EEB',
         'lt-teal' : '#ddf5ff',
         'lt-pink' : '#d4b4fc',
         'lt-blue' : '#7580fc',
         'dk-blue' : '#071544',
         'dk-black' : '#121212',
         'lt-clear' : 'rgba(0, 0, 0, 0.1)',
-        'circle-1' : '#4053fc',
+        'salmon' : 'hsla(22, 100%, 77%, 1)',
         'circle-2' : '#c880f8',
         'circle-3' : '#ff6c98',
         'circle-4' : '#2889f7',
@@ -54,7 +55,8 @@ module.exports = {
         'aqua' : '#00ffff',
       },
       boxShadow: {
-        'supp-boxes' : '0 5px 10px rgba(0, 0, 0, 0.3)'
+        'supp-boxes' : '0 5px 10px rgba(0, 0, 0, 0.3)',
+        'term-panel' : '10px 0px 5px -5px rgba(0, 0, 0, 0.3)'
       },
       gridTemplateRows: {
         'price-cards' : 'auto auto auto auto 100px'

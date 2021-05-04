@@ -82,7 +82,7 @@ export default function Home() {
         >
           <nav id="links" className="flex items-center justify-start">
             <a className="mr-9" href="#">
-              <img className="w-10 min-w-full" src="./assets/logo.svg" alt="" />
+              <img className="w-10 min-w-full" src="/logo.svg" alt="" />
             </a>
             <a className="mr-9" href="">
               Products
@@ -90,7 +90,7 @@ export default function Home() {
             <a className="mr-9" href="">
               Learn
             </a>
-            <Link href="/support">Support</Link>
+            <Link href="/support/support">Support</Link>
           </nav>
           <nav id="sign-up" className="flex items-center justify-end w-1/2">
             <a className="mr-10" href="">

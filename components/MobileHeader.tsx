@@ -6,11 +6,7 @@ const MobileHeader = () => {
   return (
     <div className="sm:hidden flex justify-between mx-3 my-3 font-primary">
       <a id="logo-container" href="#">
-        <img
-          className="bg-black object-fill w-8"
-          src="./assets/logo.svg"
-          alt="logo"
-        />
+        <img className="bg-black object-fill w-8" src="/logo.svg" alt="logo" />
       </a>
       <div
         id="circle-dot-dropdown"

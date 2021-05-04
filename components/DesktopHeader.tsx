@@ -5,11 +5,7 @@ const DesktopHeader = () => (
       <nav id="links" className="flex items-center justify-start">
         <Link href="/">
           <a className="mr-9" href="#">
-            <img
-              className="w-10 min-w-full bg-black"
-              src="./assets/logo.svg"
-              alt=""
-            />
+            <img className="w-10 min-w-full bg-black" src="/logo.svg" alt="" />
           </a>
         </Link>
         <Link href="/products">
@@ -17,10 +13,10 @@ const DesktopHeader = () => (
             Products
           </a>
         </Link>
-        <Link href="/learn">
+        <Link href="/support/learn">
           <a className="mr-9">Learn</a>
         </Link>
-        <Link href="/support">
+        <Link href="/support/support">
           <a>Support</a>
         </Link>
       </nav>
