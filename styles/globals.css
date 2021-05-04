@@ -1,4 +1,18 @@
-/********** Home Page **************/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins", "sans-serif";
+}
+p,
+a,
+button {
+  font-family: "Source Sans Pro", "sans-serif";
+}
+/******* Home Page *********/
 #home_page-one-gradient {
   background: #ff0000;
   background-image: radial-gradient(
@@ -48,28 +62,17 @@
   html {
     @apply antialiased;
   }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    @apply font-primary;
-  }
-  p,
-  button,
-  a {
-    @apply font-secondary font-semibold;
-  }
 }
 @layer components {
-  /*General*/
+  /**** General ****/
   .btn {
-    @apply py-2 px-4 bg-lt-clear backdrop-filter backdrop-blur-3xl backdrop-saturate-150 text-white rounded;
+    @apply py-2 px-4 font-semibold bg-lt-clear backdrop-filter backdrop-blur-3xl backdrop-saturate-150 text-white rounded;
   }
   .circle {
     @apply absolute rounded-full border-black border-8 filter blur-2xl sm:blur-3xl;
   }
-  /*Home Page*/
+  /**** Home Page ****/
+  /*3 blocks, icon has 4 circles*/
   .info-block {
     /*3 blocks, icon has 4 circles*/
     @apply flex flex-col items-center justify-start text-center mx-std sm:mx-5 space-y-5 xl:space-y-8;
@@ -83,8 +86,8 @@
   .info-block p {
     @apply text-mobile-p leading-8 sm:text-1.5vw sm:leading-4 md:text-1.5vw md:leading-6 lg:mx-8% lg:text-xl xl:leading-8 xl:text-2xl;
   }
+  /*2 blue cards explaining price options*/
   .price-card {
-    /*2 blue cards explaining price options*/
     @apply h-auto grid grid-rows-price-cards gap-5  text-center w-11/12 py-3 sm:w-40vw sm:hover:shadow-2xl cursor-pointer bg-gradient-to-br from-lt-blue to-lt-teal rounded-md;
   }
   .price-card h2 {

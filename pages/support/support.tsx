@@ -1,12 +1,8 @@
 import SupportSquare from "../../components/SupportSquare";
-import MobileHeader from "../../components/MobileHeader";
-import DesktopHeader from "../../components/DesktopHeader";
 
 export default function Support() {
   return (
     <div className="h-screen">
-      <MobileHeader />
-      <DesktopHeader />
       <div
         id="colorful-stripe"
         className="text-white font-semibold flex items-center h-28 sm:h-44 bg-gradient-to-r from-hot-pink to-lt-blue"

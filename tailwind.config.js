@@ -5,16 +5,12 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        '8vw' : '8vw',
+        '8vw' : '8vw', 
         '40vw' : '40vw',
       },
       height: {
         '10vh' : '10vh',
         '11vh' : '11vh',
-      },
-      fontFamily: {
-        'primary' : ["Poppins", "sans-serif"],
-        'secondary' : ["Source Sans Pro", "sans-serif"],
       },
       fontSize: {
         'mobile-p' : 'calc(2vw + 1.6vh)',

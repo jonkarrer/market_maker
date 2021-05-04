@@ -1,11 +1,6 @@
-import MobileHeader from "../../components/MobileHeader";
-import DesktopHeader from "../../components/DesktopHeader";
-
 export default function Terms() {
   return (
     <div className="h-screen fixed">
-      <MobileHeader />
-      <DesktopHeader />
       <div
         id="colorful-stripe"
         className="sticky text-white font-semibold flex items-center h-28 sm:h-44 bg-gradient-to-r from-salmon to-dk-pink"

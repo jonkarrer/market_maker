@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import { useState } from "react";
 
 export default function Home() {
@@ -9,14 +8,6 @@ export default function Home() {
       <Head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-          href={`https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap`}
-          rel="stylesheet"
-        />
-        <link
-          rel="stylesheet"
-          href={`https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap`}
-        />
         <title>Market Maker</title>
       </Head>
       {/* Page One */}
@@ -24,85 +15,6 @@ export default function Home() {
         id="home_page-one-gradient"
         className="relative h-screen overflow-hidden grid grid-row-2 sm:flex sm:items-center"
       >
-        <div id="mobile-header" className="sm:hidden font-primary">
-          <a
-            id="logo-container"
-            className="w-8 absolute top-5 left-5 z-10"
-            href="#"
-          >
-            <img src="/logo.svg" alt="logo" />
-          </a>
-          <div
-            id="circle-dot-dropdown"
-            onClickCapture={() => setOpen(true)}
-            className={`absolute transition-all z-20 bg-white
-       ${
-         open
-           ? `top-0 right-0 w-screen h-screen`
-           : `top-5 right-5 w-8 h-8 rounded-full`
-       } overflow-hidden`}
-          >
-            <div
-              id="dropdown-content-container"
-              className={`${
-                open ? `text-mobile-h space-y-8 list-none` : `hidden`
-              } bg-white relative flex justify-center items-center w-full h-full `}
-            >
-              <div
-                id="exit-button"
-                onClick={() => setOpen(false)}
-                className="absolute top-5 right-5 text-mobile-h"
-              >
-                X
-              </div>
-              <ul
-                id="dropdown-content"
-                className="text-mobile-h space-y-8 list-none font-secondary font-semibold"
-              >
-                <Link href="/products">
-                  <li>Products</li>
-                </Link>
-                <Link href="/learn">
-                  <li>Learn</li>
-                </Link>
-                <Link href="/support/support">
-                  <li>Support</li>
-                </Link>
-              </ul>
-              <div className="absolute bottom-28 font-semibold w-full h-1/12 flex justify-around ite ">
-                <Link href="sign-up">Sign Up</Link>
-                <Link href="sign-in">Sign In</Link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <header
-          id="desktop-header"
-          className="hidden w-5/6 absolute sm:flex items-center justify-between top-3 mx-std z-10 text-white"
-        >
-          <nav id="links" className="flex items-center justify-start">
-            <a className="mr-9" href="#">
-              <img className="w-10 min-w-full" src="/logo.svg" alt="" />
-            </a>
-            <a className="mr-9" href="">
-              Products
-            </a>
-            <a className="mr-9" href="">
-              Learn
-            </a>
-            <Link href="/support/support">Support</Link>
-          </nav>
-          <nav id="sign-up" className="flex items-center justify-end w-1/2">
-            <a className="mr-10" href="">
-              Sign In
-            </a>
-            <a href="">
-              <button className="btn sm:px-4 sm:py-2 hover:bg-btn-hover">
-                Sign Up
-              </button>
-            </a>
-          </nav>
-        </header>
         <div
           id="home-image"
           className="mx-std flex items-center justify-center sm:mx-0 sm:mr-std sm:w-2/5 sm:order-2 z-10"
@@ -113,7 +25,7 @@ export default function Home() {
             alt="stock image"
           />
         </div>
-        <article className="z-10 text-white flex flex-col mx-std sm:mx-0 sm:ml-std sm:order-1 sm:justify-center sm:w-2/3">
+        <article className="z-10 font-semibold text-white flex flex-col mx-std sm:mx-0 sm:ml-std sm:order-1 sm:justify-center sm:w-2/3">
           <h1 className="text-mobile-h font-normal leading-none sm:text-desktop-h sm:mr-5 xl:mr-10">
             The market data we deserve
           </h1>
@@ -255,7 +167,7 @@ export default function Home() {
         </div>
       </section>
       {/* Page Three */}
-      <section className="sm:flex sm:justify-between items-center mx-std">
+      <section className="items-center mx-std sm:flex sm:justify-between">
         <div
           id="left-panel"
           className="flex flex-col items-center my-12% sm:my-8% sm:space-y-12"
@@ -316,45 +228,6 @@ export default function Home() {
           average investor
         </p>
       </section>
-      <footer className="my-12% m-auto sm:my-8 sm:w-11/12 lg:w-4/5 lg:text-xl lg:my-10 ">
-        <nav
-          id="links"
-          className="grid grid-cols-2 gap-3 w-11/12 pb-3 mx-auto sm:flex sm:justify-around sm:text-1.5vw"
-        >
-          <a>MML C 2021</a>
-          <a href="">About Us</a>
-          <a href="">Support</a>
-          <a href="">Privacy {"&"} Legal</a>
-          <a href="">Disclosures</a>
-          <a href="">Sitemap</a>
-          <a href="">Pricing</a>
-          <a href="">Log in</a>
-          <a href="">Sign in</a>
-        </nav>
-        <nav
-          id="home_nav-icons"
-          className="flex justify-around my-8 sm:justify-evenly sm:w-2/3 mx-auto"
-        >
-          <a href="">
-            <img src="./assets/Social/reddit-dk.svg" alt="reddit icon" />
-          </a>
-          <a href="">
-            <img src="./assets/Social/twitter-dk.svg" alt="twitter icon" />
-          </a>
-          <a href="">
-            <img src="./assets/Social/Discord-dk.svg" alt="discord icon" />
-          </a>
-          <a href="">
-            <img src="./assets/Social/IG-dk.svg" alt="instagram icon" />
-          </a>
-          <a href="">
-            <img src="./assets/Social/pinterest-dk.svg" alt="pinterest icon" />
-          </a>
-          <a href="">
-            <img src="./assets/Social/youtube-dk.svg" alt="youtube icon" />
-          </a>
-        </nav>
-      </footer>
     </div>
   );
 }
