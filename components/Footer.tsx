@@ -17,7 +17,7 @@ const Footer = () => (
       </nav>
       <nav
         id="home_nav-icons"
-        className="flex justify-around my-4 sm:justify-evenly sm:w-2/3 mx-auto"
+        className="flex justify-around my-5 sm:justify-evenly sm:w-2/3 mx-auto"
       >
         <a href="">
           <img src="/assets/Social/reddit-dk.svg" alt="reddit icon" />

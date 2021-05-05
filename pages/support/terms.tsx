@@ -32,7 +32,7 @@ const Terms = () => {
   };
   return (
     <div className="h-auto sticky top-0">
-      <Gradient title="Terms and Privacy" />
+      <Gradient title="Terms & Privacy" />
       <div
         id="page-container"
         className="flex h-auto rounded-3xl sm:py-16 sm:w-11/12 md:w-4/5 max-w-screen-xl m-auto sm:-mt-20 md:-mt-32 xl:-mt-36 bg-white"
@@ -84,7 +84,7 @@ const Terms = () => {
         <div
           ref={container}
           onScroll={handleScroll}
-          className="ml-6% h-1000px sm:mt-5 overflow-y-auto pb-32 lg:pb-72"
+          className="ml-6% h-auto mt-8 sm:h-screen sm:mt-5 overflow-y-auto pb-32 lg:pb-72"
         >
           <h2 id="finance" className="text-3xl font-bold mb-5 sm:text-4xl">
             Not Financial Advice

@@ -51,8 +51,8 @@ export default function Nav() {
               </Link>
             </ul>
             <div className="absolute bottom-28 font-semibold w-full h-1/12 flex justify-around ite ">
-              <Link href="sign-up">Sign Up</Link>
-              <Link href="sign-in">Sign In</Link>
+              <Link href="/sign-up">Sign Up</Link>
+              <Link href="/sign-in">Sign In</Link>
             </div>
           </div>
         </div>
