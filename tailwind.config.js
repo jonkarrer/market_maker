@@ -10,11 +10,12 @@ module.exports = {
         '40vw' : '40vw',
       },
       height: {
+        '1000px' : '1000px',
         '10vh' : '10vh',
         '11vh' : '11vh',
         'square' : '23vh',
         '22vh' : '22vh',
-        '33vh' : '42vh',
+        '43vh' : '43vh',
       },
       minHeight: {
         'gradient' : '300px'
@@ -60,7 +61,7 @@ module.exports = {
       },
       boxShadow: {
         'supp-boxes' : '0 5px 10px rgba(0, 0, 0, 0.3)',
-        'term-panel' : '10px 0px 5px -5px rgba(0, 0, 0, 0.1)'
+        'term-panel' : '10px 0px 5px -6px rgba(0, 0, 0, 0.2)'
       },
       gridTemplateRows: {
         'price-cards' : 'auto auto auto auto 100px'

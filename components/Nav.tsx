@@ -59,7 +59,7 @@ export default function Nav() {
       </div>
       <header
         id="desktop-header"
-        className="hidden sm:flex w-5/6 absolute font-semibold items-center justify-between top-3 mx-std z-10 text-white"
+        className="hidden sm:flex w-5/6 max-w-screen-2xl absolute font-semibold items-center justify-between top-3 mx-std z-10 text-white"
       >
         <nav id="links" className="flex items-center justify-start md:text-xl">
           <Link href="/">
@@ -83,10 +83,8 @@ export default function Nav() {
           id="sign-up"
           className="flex items-center justify-end w-1/2 md:text-xl"
         >
-          <a className="mr-10" href="">
-            Sign In
-          </a>
-          <a href="">
+          <a className="mr-10">Sign In</a>
+          <a>
             <button className="btn md:text-xl sm:px-4 sm:py-2 hover:bg-btn-hover">
               Sign Up
             </button>

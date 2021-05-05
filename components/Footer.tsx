@@ -1,6 +1,6 @@
 const Footer = () => (
   <div>
-    <footer className="my-10% mx-std sm:m-auto sm:my-8 sm:w-11/12 lg:w-3/4 lg:text-xl xl:w-3/5 lg:mt-8%">
+    <footer className="my-10% mx-std sm:m-auto sm:my-8 sm:w-11/12 sm:max-w-screen-2xl lg:w-3/4 lg:text-xl xl:w-3/5 lg:mt-8%">
       <nav
         id="links"
         className="grid grid-cols-2 gap-3 w-11/12 sm:w-full pb-3 mx-auto sm:flex sm:justify-around sm:text-sm md:text-base lg:text-lg"
@@ -12,8 +12,8 @@ const Footer = () => (
         <a href="">Disclosures</a>
         <a href="">Sitemap</a>
         <a href="">Pricing</a>
-        <a href="">Sign In</a>
-        <a href="">Sign Up</a>
+        <a>Sign In</a>
+        <a>Sign Up</a>
       </nav>
       <nav
         id="home_nav-icons"
