@@ -6,7 +6,7 @@ export default function Support() {
       <Gradient />
       <div
         id="squares-container"
-        className="mx-std py-10 grid justify-items-center place-content-around gap-10 grid-cols-2 sm:gap-16 sm:-mt-20 md:-mt-28 sm:grid-cols-3"
+        className="mx-std py-8 grid justify-items-center place-content-around gap-10 grid-cols-2 sm:gap-16 sm:-mt-20 md:-mt-28 sm:grid-cols-3"
       >
         <SupportSquare
           title="Getting Started"
