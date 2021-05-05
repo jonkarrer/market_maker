@@ -1,6 +1,6 @@
 const Footer = () => (
   <div>
-    <footer className="my-12% m-auto sm:my-8 sm:w-11/12 lg:w-3/4 lg:text-xl xl:w-3/5 lg:mt-8%">
+    <footer className="my-10% m-auto sm:my-8 sm:w-11/12 lg:w-3/4 lg:text-xl xl:w-3/5 lg:mt-8%">
       <nav
         id="links"
         className="grid grid-cols-2 gap-3 w-11/12 sm:w-full pb-3 mx-auto sm:flex sm:justify-around sm:text-sm md:text-base lg:text-lg"
@@ -17,7 +17,7 @@ const Footer = () => (
       </nav>
       <nav
         id="home_nav-icons"
-        className="flex justify-around my-8 sm:justify-evenly sm:w-2/3 mx-auto"
+        className="flex justify-around my-4 sm:justify-evenly sm:w-2/3 mx-auto"
       >
         <a href="">
           <img src="/assets/Social/reddit-dk.svg" alt="reddit icon" />

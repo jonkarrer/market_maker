@@ -6,11 +6,14 @@ module.exports = {
     extend: {
       width: {
         '8vw' : '8vw', 
+        'square' : '23vh',
         '40vw' : '40vw',
       },
       height: {
         '10vh' : '10vh',
         '11vh' : '11vh',
+        'square' : '23vh',
+        '22vh' : '22vh',
         '33vh' : '42vh',
       },
       fontSize: {
