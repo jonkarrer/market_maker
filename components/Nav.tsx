@@ -61,10 +61,12 @@ export default function Nav() {
         id="desktop-header"
         className="hidden sm:flex w-5/6 absolute font-semibold items-center justify-between top-3 mx-std z-10 text-white"
       >
-        <nav id="links" className="flex items-center justify-start">
-          <a className="mr-9" href="#">
-            <img className="w-10 min-w-full" src="/logo.svg" alt="" />
-          </a>
+        <nav id="links" className="flex items-center justify-start md:text-xl">
+          <Link href="/">
+            <a className="mr-9" href="#">
+              <img className="w-12 min-w-full" src="/logo.svg" alt="" />
+            </a>
+          </Link>
           <Link href="/products">
             <a className="mr-9" href="">
               Products
@@ -75,15 +77,17 @@ export default function Nav() {
               Learn
             </a>
           </Link>
-
           <Link href="/support/support">Support</Link>
         </nav>
-        <nav id="sign-up" className="flex items-center justify-end w-1/2">
+        <nav
+          id="sign-up"
+          className="flex items-center justify-end w-1/2 md:text-xl"
+        >
           <a className="mr-10" href="">
             Sign In
           </a>
           <a href="">
-            <button className="btn sm:px-4 sm:py-2 hover:bg-btn-hover">
+            <button className="btn md:text-xl sm:px-4 sm:py-2 hover:bg-btn-hover">
               Sign Up
             </button>
           </a>

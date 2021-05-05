@@ -74,6 +74,18 @@ Some unique code snippets:
   >
 ```
 
+- Add absolute imports and module aliases
+
+```javascript
+//tsconfig.json
+ "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["components/*"]
+    }
+  }
+```
+
 ### Continued development
 
 Need to integrate testing with Cypress

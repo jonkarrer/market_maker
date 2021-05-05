@@ -1,9 +1,9 @@
 const Footer = () => (
   <div>
-    <footer className="my-12% m-auto sm:my-8 sm:w-11/12 lg:w-4/5 lg:text-xl lg:my-10 ">
+    <footer className="my-12% m-auto sm:my-8 sm:w-11/12 lg:w-3/4 lg:text-xl xl:w-3/5 lg:mt-8%">
       <nav
         id="links"
-        className="grid grid-cols-2 gap-3 w-11/12 pb-3 mx-auto sm:flex sm:justify-around sm:text-1.5vw"
+        className="grid grid-cols-2 gap-3 w-11/12 sm:w-full pb-3 mx-auto sm:flex sm:justify-around sm:text-sm md:text-base lg:text-lg"
       >
         <a>MML C 2021</a>
         <a href="">About Us</a>
@@ -20,22 +20,22 @@ const Footer = () => (
         className="flex justify-around my-8 sm:justify-evenly sm:w-2/3 mx-auto"
       >
         <a href="">
-          <img src="./assets/Social/reddit-dk.svg" alt="reddit icon" />
+          <img src="/assets/Social/reddit-dk.svg" alt="reddit icon" />
         </a>
         <a href="">
-          <img src="./assets/Social/twitter-dk.svg" alt="twitter icon" />
+          <img src="/assets/Social/twitter-dk.svg" alt="twitter icon" />
         </a>
         <a href="">
-          <img src="./assets/Social/Discord-dk.svg" alt="discord icon" />
+          <img src="/assets/Social/Discord-dk.svg" alt="discord icon" />
         </a>
         <a href="">
-          <img src="./assets/Social/IG-dk.svg" alt="instagram icon" />
+          <img src="/assets/Social/IG-dk.svg" alt="instagram icon" />
         </a>
         <a href="">
-          <img src="./assets/Social/pinterest-dk.svg" alt="pinterest icon" />
+          <img src="/assets/Social/pinterest-dk.svg" alt="pinterest icon" />
         </a>
         <a href="">
-          <img src="./assets/Social/youtube-dk.svg" alt="youtube icon" />
+          <img src="/assets/Social/youtube-dk.svg" alt="youtube icon" />
         </a>
       </nav>
     </footer>

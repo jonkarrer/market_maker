@@ -11,6 +11,7 @@ module.exports = {
       height: {
         '10vh' : '10vh',
         '11vh' : '11vh',
+        '33vh' : '42vh',
       },
       fontSize: {
         'mobile-p' : 'calc(2vw + 1.6vh)',
