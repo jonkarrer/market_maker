@@ -16,6 +16,9 @@ module.exports = {
         '22vh' : '22vh',
         '33vh' : '42vh',
       },
+      minHeight: {
+        'gradient' : '300px'
+      },
       fontSize: {
         'mobile-p' : 'calc(2vw + 1.6vh)',
         'mobile-h' : ['10vw', '1.1'],
