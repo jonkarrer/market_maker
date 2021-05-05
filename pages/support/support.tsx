@@ -2,11 +2,11 @@ import SupportSquare from "@/components/SupportSquare";
 import Gradient from "@/components/Gradient";
 export default function Support() {
   return (
-    <div className="h-auto sm:h-screen">
+    <div className="h-auto sm:h-screen lg:h-auto">
       <Gradient />
       <div
         id="squares-container"
-        className="mx-std py-8 grid justify-items-center place-content-around gap-10 grid-cols-2 sm:gap-16 sm:-mt-20 md:-mt-28 sm:grid-cols-3"
+        className="mx-std py-8 grid justify-items-center place-content-around gap-10 grid-cols-2 sm:gap-16 sm:-mt-20 md:-mt-28 xl:-mt-36 sm:grid-cols-3"
       >
         <SupportSquare
           title="Getting Started"

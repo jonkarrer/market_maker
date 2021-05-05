@@ -35,7 +35,7 @@ export default function Home() {
               statistics to make sense of complicated financial markets
             </p>
             <div className="w-full flex justify-center sm:block">
-              <button className="btn text-mobile-p px-8 py-3 sm:px-4 sm:py-2 sm:text-1.5vw hover:bg-btn-hover">
+              <button className="btn text-mobile-p px-8 py-3 sm:px-4 sm:py-2 sm:text-1.5vw xl:text-1.3vw hover:bg-btn-hover">
                 Get Early Access
               </button>
             </div>
@@ -221,7 +221,7 @@ export default function Home() {
         className="py-3 sm:py-8 bg-gradient-to-tr from-lt-blue to-lt-teal"
       >
         <h1># made by friends with a passion for markets</h1>
-        <p className="text-center text-white text-sm mx-std pt-3 sm:text-1.5vw sm:mx-std sm:mt-8 sm:leading-8">
+        <p className="text-center text-white text-base mx-std pt-3 sm:text-1.5vw sm:mx-std sm:mt-8 sm:leading-8">
           Our team has a diverse background of academic and industry experiences
           including finance, engineering, and media. We aren't paid by in large
           by the banks, we don't sell your information, we stay commited to the

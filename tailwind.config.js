@@ -21,6 +21,7 @@ module.exports = {
         'mobile-h' : ['10vw', '1.1'],
         'desktop-h' : ['5vw', '1.2'],
         'desktop-p' : ['2vw', '1.4'],
+        '1.3vw' : '1.3vw',
         '1.5vw' : '1.5vw',
         '2vw' : '2vw',
         '3vw' : '3vw',
