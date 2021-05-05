@@ -35,10 +35,10 @@ const Terms = () => {
       <Gradient title="Terms & Privacy" />
       <div
         id="page-container"
-        className="flex h-auto rounded-3xl sm:py-16 sm:w-11/12 md:w-4/5 max-w-screen-xl m-auto sm:-mt-20 md:-mt-32 xl:-mt-36 bg-white"
+        className="flex h-auto rounded-3xl sm:pt-10 sm:w-11/12 md:w-4/5 max-w-screen-xl m-auto sm:-mt-20 md:-mt-24 xl:-mt-32 bg-white"
       >
         <div className="shadow-term-panel pr-2 hidden sm:block">
-          <ul className=" sm:w-36 ml-8 sm:mt-5 sm:text-sm md:w-40 md:text-base lg:w-44 lg:text-lg space-y-6">
+          <ul className=" sm:w-36 ml-8 sm:mt-5 sm:text-sm md:w-40 md:text-base lg:w-44 lg:text-lg space-y-5">
             <li>
               <a
                 href="#terms"

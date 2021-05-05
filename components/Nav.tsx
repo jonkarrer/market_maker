@@ -63,8 +63,8 @@ export default function Nav() {
       >
         <nav id="links" className="flex items-center justify-start md:text-xl">
           <Link href="/">
-            <a className="mr-9" href="#">
-              <img className="w-12 min-w-full" src="/logo.svg" alt="" />
+            <a className="w-10 mr-9" href="#">
+              <img className="h-full" src="/logo.svg" alt="" />
             </a>
           </Link>
           <Link href="/products">
