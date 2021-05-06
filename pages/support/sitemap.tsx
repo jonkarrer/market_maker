@@ -3,14 +3,14 @@ import Wrapper from "@/components/support_pages/Wrapper";
 import List from "@/components/support_pages/List";
 
 const Sitemap = () => (
-  <div>
+  <div className="pb-8 h-1000px">
     <Gradient title="Sitemap" />
     <Wrapper display="flex">
-      <div className="grid gap-10 place-content-center w-full border-2 border-solid border-red-500">
-        <h1 className="text-center font-bold sm:text-4xl lg:text-5xl ">
+      <div className="grid gap-10 lg:gap-14 place-content-center w-screen">
+        <h1 className="text-center font-bold text-mobile-h py-8 sm:text-4xl lg:text-5xl ">
           Explore Market Maker Lite
         </h1>
-        <div className="flex justify-between border-black border-solid border-2 w-full">
+        <div className="space-y-16 sm:space-y-0 sm:flex sm:justify-between items-start">
           <List title="Home">
             <li>About Us</li>
             <li>Learn</li>
