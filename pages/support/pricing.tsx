@@ -1,4 +1,4 @@
-import Gradient from "@/components/Gradient";
+import Gradient from "@/components/support_pages/Gradient";
 
 const Pricing = () => (
   <div>

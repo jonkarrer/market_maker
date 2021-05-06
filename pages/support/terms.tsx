@@ -1,5 +1,5 @@
-import Gradient from "@/components/Gradient";
-import Wrapper from "@/components/SuppWrapper";
+import Gradient from "@/components/support_pages/Gradient";
+import Wrapper from "@/components/support_pages/Wrapper";
 import { useRef, useState } from "react";
 const Terms = () => {
   const [bold, setBold] = useState(0);

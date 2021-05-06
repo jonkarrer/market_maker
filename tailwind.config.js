@@ -58,6 +58,10 @@ module.exports = {
         'circle-4' : '#2889f7',
         'btn-hover' : 'rgba(0, 0, 0, 0.2)',
         'aqua' : '#00ffff',
+        'blue-border' : '#4356ff',
+      },
+      borderWidth: {
+        '1px' : '1px',
       },
       boxShadow: {
         'supp-boxes' : '0 5px 10px rgba(0, 0, 0, 0.3)',
