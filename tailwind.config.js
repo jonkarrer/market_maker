@@ -5,6 +5,9 @@ module.exports = {
   theme: {
     extend: {
       width: {
+        '685px' : '685px',
+        '500px' : '500px',
+        '2000px' : '2000px',
         '8vw' : '8vw', 
         'square' : '23vh',
         '40vw' : '40vw',
@@ -15,7 +18,7 @@ module.exports = {
         '11vh' : '11vh',
         'square' : '23vh',
         '25vh' : '25vh',
-        '43vh' : '43vh',
+        '44vh' : '44vh',
       },
       minHeight: {
         'gradient' : '300px'
@@ -69,7 +72,7 @@ module.exports = {
       },
       gridTemplateRows: {
         'price-cards' : 'auto auto auto auto 100px'
-      }
+      },
     },
   },
   variants: {

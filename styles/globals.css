@@ -54,6 +54,21 @@ button {
 #home_nav-icons img:last-child {
   margin-right: 0;
 }
+/*Switch Animation*/
+#switch {
+  animation: switch 2s ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+@keyframes switch {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
