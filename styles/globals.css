@@ -113,14 +113,14 @@ button {
     @apply grid gap-8;
   }
   .column-1 div {
-    @apply flex space-x-2 text-base sm:text-base lg:text-xl xl:text-2xl font-semibold;
+    @apply flex space-x-2 text-base ml-3 sm:ml-0 sm:text-base lg:text-xl xl:text-2xl font-semibold;
   }
   .column-1 div img {
-    @apply w-3 sm:w-4 lg:w-5 cursor-pointer;
+    @apply w-4 sm:w-4 lg:w-5 cursor-pointer;
   }
   .column-2,
   .column-3 {
-    @apply flex flex-col space-y-8;
+    @apply flex flex-col space-y-14 sm:space-y-8;
   }
   .column-2 div,
   .column-3 div {

@@ -9,14 +9,14 @@ const Pricing = () => {
       <Gradient title="Pricing" />
       <Wrapper display="flex">
         <div className="flex flex-col space-y-10 lg:space-y-14 w-full">
-          <h1 className="text-center font-semibold text-mobile-h py-8 sm:py-0 sm:text-4xl lg:text-5xl ">
+          <h1 className="text-center font-semibold text-mobile-h pt-8 sm:py-0 sm:text-4xl lg:text-5xl ">
             Compare Plans
           </h1>
           {/**Toggle Switch */}
           <div
             id="monthly-annual-toggle"
             onClick={() => setToggle(!toggle)}
-            className="relative w-11/12 m-auto sm:w-500px lg:w-685px h-10 font-semibold flex justify-center items-center shadow-supp-boxes rounded-full text-xl lg:text-2xl cursor-pointer"
+            className="relative w-11/12 m-auto h-10 font-semibold flex justify-center items-center shadow-supp-boxes rounded-full text-xl sm:w-500px lg:w-685px lg:text-2xl cursor-pointer"
           >
             <div className="z-10 w-1/2 h-full rounded-full flex justify-center items-center text-white">
               <p className={`${toggle ? "text-black" : "text-white"}`}>
@@ -35,17 +35,17 @@ const Pricing = () => {
             </div>
           </div>
           {/**Free + Premium row */}
-          <div className="grid sm:mr-5 grid-cols-3 text-2xl sm:text-4xl lg:text-5xl">
+          <div className="grid grid-cols-3 text-2xl sm:mr-5  sm:text-4xl lg:text-5xl">
             <div>{/** Empty div to even out columns */}</div>
-            <div className="text-center grid gap-3 lg:gap-7 font-semibold">
+            <div className="text-center mr-5 grid gap-3  sm:mr-0 lg:gap-7 font-semibold">
               <h1>Free</h1>
               <p className="text-lg lg:text-2xl text-gray-500">
-                <strong className="sm:text-4xl lg:text-5xl font-bold">
+                <strong className="font-bold sm:text-4xl lg:text-5xl">
                   $0
                 </strong>{" "}
                 per month
               </p>
-              <button className=" shadow-lg rounded text-sm lg:text-2xl text-blue-border border-blue-border border-1px border-solid w-4/5 m-auto py-2">
+              <button className=" w-full sm:w-4/5 m-auto h-7 sm:py-2 shadow-lg rounded text-sm lg:text-2xl text-blue-border border-blue-border border-1px border-solid ">
                 Try for Free
               </button>
             </div>
@@ -57,7 +57,7 @@ const Pricing = () => {
                 </strong>{" "}
                 per month
               </p>
-              <button className="shadow-lg rounded text-sm text-white bg-blue-border px-2 sm:px-0 w-full sm:w-4/5 m-auto py-2 lg:text-2xl">
+              <button className=" w-full m-auto h-7 shadow-lg rounded text-sm text-white bg-blue-border sm:px-0 sm:py-2 sm:w-4/5 lg:text-2xl">
                 Subscribe Today
               </button>
             </div>
