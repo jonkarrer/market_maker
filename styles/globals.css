@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
 h1,
 h2,
 h3,
@@ -54,21 +54,7 @@ button {
 #home_nav-icons img:last-child {
   margin-right: 0;
 }
-/*Switch Animation*/
-#switch {
-  animation: switch 2s ease;
-  animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-}
-@keyframes switch {
-  from {
-    transform: translateX(0%);
-  }
 
-  to {
-    transform: translateX(100%);
-  }
-}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -89,7 +75,6 @@ button {
   /**** Home Page ****/
   /*3 blocks, icon has 4 circles*/
   .info-block {
-    /*3 blocks, icon has 4 circles*/
     @apply flex flex-col items-center justify-start text-center mx-std sm:mx-5 space-y-5 xl:space-y-8;
   }
   .info-block img {
@@ -122,5 +107,23 @@ button {
   }
   .price-card button {
     @apply w-11/12 bg-dk-black py-3 m-auto;
+  }
+  /**** Price Plans Page ****/
+  .column-1 {
+    @apply grid gap-8;
+  }
+  .column-1 div {
+    @apply flex space-x-2 text-base sm:text-base lg:text-xl xl:text-2xl font-semibold;
+  }
+  .column-1 div img {
+    @apply w-3 sm:w-4 lg:w-5 cursor-pointer;
+  }
+  .column-2,
+  .column-3 {
+    @apply flex flex-col space-y-8;
+  }
+  .column-2 div,
+  .column-3 div {
+    @apply mx-auto text-base sm:text-lg lg:text-xl xl:text-2xl font-semibold;
   }
 }

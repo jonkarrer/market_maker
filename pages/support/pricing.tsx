@@ -8,10 +8,11 @@ const Pricing = () => {
     <div>
       <Gradient title="Pricing" />
       <Wrapper display="flex">
-        <div className="flex flex-col space-y-8 lg:space-y-14 w-full">
-          <h1 className="text-center font-bold text-mobile-h py-8 sm:py-0 sm:text-4xl lg:text-5xl ">
+        <div className="flex flex-col space-y-10 lg:space-y-14 w-full">
+          <h1 className="text-center font-semibold text-mobile-h py-8 sm:py-0 sm:text-4xl lg:text-5xl ">
             Compare Plans
           </h1>
+          {/**Toggle Switch */}
           <div
             id="monthly-annual-toggle"
             onClick={() => setToggle(!toggle)}
@@ -33,22 +34,108 @@ const Pricing = () => {
               </p>
             </div>
           </div>
-          <div className="grid mr-10 w-11/12 grid-cols-2 place-content-end justify-items-end sm:text-4xl lg:text-5xl">
-            <div className="text-center grid lg:gap-6 font-bold">
+          {/**Free + Premium row */}
+          <div className="grid sm:mr-5 grid-cols-3 text-2xl sm:text-4xl lg:text-5xl">
+            <div>{/** Empty div to even out columns */}</div>
+            <div className="text-center grid gap-3 lg:gap-7 font-semibold">
               <h1>Free</h1>
-              <p className="lg:text-2xl font-bold text-gray-500">
-                <strong className="sm:text-4xl lg:text-5xl">$0</strong> per
-                month
+              <p className="text-lg lg:text-2xl text-gray-500">
+                <strong className="sm:text-4xl lg:text-5xl font-bold">
+                  $0
+                </strong>{" "}
+                per month
               </p>
+              <button className=" shadow-lg rounded text-sm lg:text-2xl text-blue-border border-blue-border border-1px border-solid w-4/5 m-auto py-2">
+                Try for Free
+              </button>
             </div>
-            <div className="text-center grid lg:gap-6 font-bold">
+            <div className="text-center grid gap-3 lg:gap-6 font-semibold">
               <h1>Premium</h1>
-              <p className="lg:text-2xl font-bold text-gray-500">
-                <strong className="sm:text-4xl lg:text-5xl font-extrabold">
+              <p className="text-lg lg:text-2xl font-bold text-gray-500">
+                <strong className="sm:text-4xl lg:text-5xl font-bold">
                   $40
                 </strong>{" "}
                 per month
               </p>
+              <button className="shadow-lg rounded text-sm text-white bg-blue-border px-2 sm:px-0 w-full sm:w-4/5 m-auto py-2 lg:text-2xl">
+                Subscribe Today
+              </button>
+            </div>
+          </div>
+          {/**Features Grid */}
+          <div className="grid grid-cols-3">
+            {/**Column-1 */}
+            <div className="column-1">
+              <div>
+                <img src="/infoIcon.svg" alt="info icon" />
+                <p>Financial literacy tools</p>
+              </div>
+              <div>
+                <img src="/infoIcon.svg" alt="info icon" />
+                <p>Open source models</p>
+              </div>
+              <div>
+                <img src="/infoIcon.svg" alt="info icon" />
+                <p>Portfolio Tracking</p>
+              </div>
+              <div>
+                <img src="/infoIcon.svg" alt="info icon" />
+                <p>Discord Community</p>
+              </div>
+              <div>
+                <img src="/infoIcon.svg" alt="info icon" />
+                <p>Real time alerts</p>
+              </div>
+              <div>
+                <img src="/infoIcon.svg" alt="info icon" />
+                <p>Real time stock charts</p>
+              </div>
+              <div>
+                <img src="/infoIcon.svg" alt="info icon" />
+                <p>Options Charts</p>
+              </div>
+              <div>
+                <img src="/infoIcon.svg" alt="info icon" />
+                <p>Options flow</p>
+              </div>
+              <div>
+                <img src="/infoIcon.svg" alt="info icon" />
+                <p>Options spread statistics</p>
+              </div>
+              <div>
+                <img src="/infoIcon.svg" alt="info icon" />
+                <p>Sentiment tracking</p>
+              </div>
+              <div>
+                <img src="/infoIcon.svg" alt="info icon" />
+                <p>Earn rewards & discounts</p>
+              </div>
+              <div>
+                <img src="/infoIcon.svg" alt="info icon" />
+                <p>Beta access to new tools</p>
+              </div>
+            </div>
+            {/**Column-2 */}
+            <div className="column-2">
+              <div>X</div>
+              <div>X</div>
+              <div>X</div>
+              <div>X</div>
+            </div>
+            {/**Column-3 */}
+            <div className="column-3">
+              <div>X</div>
+              <div>X</div>
+              <div>X</div>
+              <div>X</div>
+              <div>X</div>
+              <div>X</div>
+              <div>X</div>
+              <div>X</div>
+              <div>X</div>
+              <div>X</div>
+              <div>X</div>
+              <div>X</div>
             </div>
           </div>
         </div>
