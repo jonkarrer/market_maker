@@ -54,7 +54,39 @@ button {
 #home_nav-icons img:last-child {
   margin-right: 0;
 }
-
+/******* About Us ********/
+#our-mission {
+  text-align: center;
+  margin: 0 7vw;
+  background: -webkit-linear-gradient(0deg, #00ff47, #00d1ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#just-like-you {
+  text-align: center;
+  margin: 0 7vw;
+  background: -webkit-linear-gradient(0deg, #4200ff, #cc01ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#meet-the-team {
+  text-align: center;
+  margin: 0 7vw;
+  background: -webkit-linear-gradient(0deg, #cc01ff, #ffcc5e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 500px) {
+  #bottom-banner h1 {
+    text-align: center;
+    font-size: 6vw;
+    line-height: 1.2;
+    padding: 10px 0;
+  }
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
