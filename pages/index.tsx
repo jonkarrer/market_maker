@@ -11,11 +11,11 @@ export default function Home() {
       {/* Page One */}
       <section
         id="home_page-one-gradient"
-        className="relative h-screen overflow-hidden grid grid-row-2 sm:flex sm:items-center"
+        className="relative h-screen overflow-hidden grid grid-row-2 sm:min-h-500px sm:flex sm:items-center"
       >
         <div
           id="home-image"
-          className="mx-std flex items-center justify-center sm:mx-0 sm:mr-std sm:w-2/5 sm:order-2 z-10"
+          className="mx-std my-10 flex items-center justify-center sm:mx-0 sm:mr-std sm:w-2/5 sm:order-2 z-10"
         >
           <img
             className="w-2/3 sm:w-full xl:max-w-7xl"
@@ -24,7 +24,7 @@ export default function Home() {
           />
         </div>
         <article className="z-10 font-semibold text-white flex flex-col mx-std sm:mx-0 sm:ml-std sm:order-1 sm:justify-center sm:w-2/3">
-          <h1 className="text-mobile-h font-normal leading-none sm:text-desktop-h sm:mr-5 xl:mr-10">
+          <h1 className="text-mobile-h font-semibold leading-none sm:text-desktop-h sm:mr-5 xl:mr-10">
             The market data we deserve
           </h1>
           <div className="space-y-6 md:space-y-8 xl:space-y-12">

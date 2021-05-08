@@ -21,11 +21,11 @@ module.exports = {
         '44vh' : '44vh',
       },
       minHeight: {
-        'gradient' : '300px'
+        '500px' : '400px'
       },
       fontSize: {
-        'mobile-p' : 'calc(2vw + 1.6vh)',
-        'mobile-h' : ['10vw', '1.1'],
+        'mobile-p' : 'calc(2vw + 1.5vh)',
+        'mobile-h' : ['9vw', '1.1'],
         'desktop-h' : ['5vw', '1.2'],
         'desktop-p' : ['2vw', '1.4'],
         '1.3vw' : '1.3vw',
