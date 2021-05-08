@@ -3,7 +3,7 @@ import Wrapper from "@/components/support_pages/Wrapper";
 import List from "@/components/support_pages/List";
 
 const Sitemap = () => (
-  <div className="pb-8 sm:h-1000px">
+  <div className="pb-8 h-screen sm:min-h-800px">
     <Gradient title="Sitemap" />
     <Wrapper display="flex">
       <div className="grid gap-10 lg:gap-16 place-content-center w-full">

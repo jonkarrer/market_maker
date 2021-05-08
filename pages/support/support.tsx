@@ -2,7 +2,7 @@ import Square from "@/components/support_pages/Square";
 import Gradient from "@/components/support_pages/Gradient";
 export default function Support() {
   return (
-    <div className="h-auto sm:h-screen lg:h-auto">
+    <div className="h-auto md:h-screen lg:h-auto">
       <Gradient title="Support" />
       <div
         id="squares-container"

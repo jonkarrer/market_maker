@@ -21,7 +21,8 @@ module.exports = {
         '44vh' : '44vh',
       },
       minHeight: {
-        '500px' : '400px'
+        '500px' : '500px',
+        '800px' : '800px'
       },
       fontSize: {
         'mobile-p' : 'calc(2vw + 1.5vh)',

@@ -39,25 +39,25 @@ const Pricing = () => {
             <div>{/** Empty div to even out columns */}</div>
             <div className="text-center mr-5 grid gap-3  sm:mr-0 lg:gap-7 font-semibold">
               <h1>Free</h1>
-              <p className="text-lg lg:text-2xl text-gray-500">
+              <p className="text-base lg:text-2xl text-gray-500">
                 <strong className="font-bold sm:text-4xl lg:text-5xl">
                   $0
                 </strong>{" "}
                 per month
               </p>
-              <button className=" w-full sm:w-4/5 m-auto h-7 sm:h-auto sm:py-2 shadow-lg rounded text-sm lg:text-2xl text-blue-border border-blue-border border-1px border-solid ">
+              <button className="w-full m-auto h-7 shadow-lg rounded text-sm sm:w-4/5 sm:h-auto sm:py-2 lg:text-2xl text-blue-border border-blue-border border-1px border-solid ">
                 Try for Free
               </button>
             </div>
             <div className="text-center grid gap-3 lg:gap-6 font-semibold">
               <h1>Premium</h1>
-              <p className="text-lg lg:text-2xl font-bold text-gray-500">
+              <p className="text-base lg:text-2xl font-bold text-gray-500">
                 <strong className="sm:text-4xl lg:text-5xl font-bold">
                   $40
                 </strong>{" "}
                 per month
               </p>
-              <button className=" w-full m-auto h-7 sm:h-auto shadow-lg rounded text-sm text-white bg-blue-border sm:px-0 sm:py-2 sm:w-4/5 lg:text-2xl">
+              <button className="w-full m-auto h-7 shadow-lg rounded text-sm text-white bg-blue-border sm:h-auto sm:px-0 sm:py-2 sm:w-4/5 lg:text-2xl">
                 Subscribe Today
               </button>
             </div>
