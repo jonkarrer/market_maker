@@ -45,7 +45,7 @@ const Pricing = () => {
                 </strong>{" "}
                 per month
               </p>
-              <button className=" w-full sm:w-4/5 m-auto h-7 sm:py-2 shadow-lg rounded text-sm lg:text-2xl text-blue-border border-blue-border border-1px border-solid ">
+              <button className=" w-full sm:w-4/5 m-auto h-7 sm:h-auto sm:py-2 shadow-lg rounded text-sm lg:text-2xl text-blue-border border-blue-border border-1px border-solid ">
                 Try for Free
               </button>
             </div>
@@ -57,7 +57,7 @@ const Pricing = () => {
                 </strong>{" "}
                 per month
               </p>
-              <button className=" w-full m-auto h-7 shadow-lg rounded text-sm text-white bg-blue-border sm:px-0 sm:py-2 sm:w-4/5 lg:text-2xl">
+              <button className=" w-full m-auto h-7 sm:h-auto shadow-lg rounded text-sm text-white bg-blue-border sm:px-0 sm:py-2 sm:w-4/5 lg:text-2xl">
                 Subscribe Today
               </button>
             </div>
