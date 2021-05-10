@@ -18,10 +18,11 @@ module.exports = {
         '11vh' : '11vh',
         'square' : '23vh',
         '25vh' : '25vh',
+        '36vh' : '36vh',
         '44vh' : '44vh',
       },
       minHeight: {
-        '500px' : '500px',
+        '300px' : '300px',
         '800px' : '800px'
       },
       fontSize: {
@@ -42,6 +43,7 @@ module.exports = {
       margin: {
         'std' : "8vw",
         '20%' : "20%",
+        '15%' : '15%',
         '12%' : "12%",
         '10%' : '10%',
         '8%' : '8%',

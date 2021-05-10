@@ -7,7 +7,7 @@ const About = () => (
       <div className="flex flex-col mb-20 sm:mb-36 w-full">
         <h1
           id="our-mission"
-          className="text-center font-semibold text-mobile-h py-16 sm:text-4xl lg:text-6xl "
+          className="text-center font-semibold text-mobile-h pb-12 sm:text-4xl lg:text-6xl "
         >
           Our Mission
         </h1>
@@ -46,7 +46,7 @@ const About = () => (
       <div className="flex flex-col m-auto max-w-screen-xl pb-20 sm:w-11/12 md:w-4/5">
         <h1
           id="just-like-you"
-          className="text-center font-semibold text-mobile-h py-16 sm:text-4xl lg:text-6xl"
+          className="text-center font-semibold text-mobile-h py-16 lg:px-28 sm:text-4xl lg:text-6xl"
         >
           We're just like you
         </h1>
@@ -91,7 +91,7 @@ const About = () => (
       <div className="flex flex-col m-auto max-w-screen-xl sm:w-11/12 md:w-4/5">
         <h1
           id="meet-the-team"
-          className="text-center h-full font-semibold text-mobile-h py-16 sm:text-4xl lg:text-6xl "
+          className="text-center h-full font-semibold text-mobile-h py-16 lg:py-28 sm:text-4xl lg:text-6xl "
         >
           Meet the team
         </h1>

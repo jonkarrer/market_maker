@@ -9,7 +9,7 @@ const Pricing = () => {
       <Gradient title="Pricing" />
       <Wrapper display="flex">
         <div className="flex flex-col space-y-10 lg:space-y-14 w-full">
-          <h1 className="text-center font-semibold text-mobile-h pt-8 sm:pt-6 sm:text-4xl lg:text-6xl ">
+          <h1 className="text-center font-semibold text-mobile-h pt-8 sm:pt-0 sm:text-4xl lg:text-6xl ">
             Compare Plans
           </h1>
           {/**Toggle Switch */}

@@ -41,13 +41,13 @@ export default function Nav() {
               className="text-mobile-h space-y-8 list-none font-secondary font-semibold"
             >
               <Link href="/products">
-                <li>Products</li>
+                <li onClick={() => setOpen(false)}>Products</li>
               </Link>
               <Link href="/learn">
-                <li>Learn</li>
+                <li onClick={() => setOpen(false)}>Learn</li>
               </Link>
               <Link href="/support/support">
-                <li>Support</li>
+                <li onClick={() => setOpen(false)}>Support</li>
               </Link>
             </ul>
             <div className="absolute bottom-28 font-semibold w-full h-1/12 flex justify-around ite ">
