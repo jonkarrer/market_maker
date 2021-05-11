@@ -40,7 +40,7 @@ const SignIn = () => {
           <Link href="/forgot">
             <a className="text-blue-border font-bold">Forgot your password?</a>
           </Link>
-          <div className="flex flex-col space-y-8 lg:space-y-0 lg:flex-row justify-between items-center">
+          <div className="flex flex-col space-y-5 lg:space-y-0 lg:flex-row justify-between items-center">
             <button
               type="submit"
               className="text-white bg-blue-border font-bold w-52 h-12 lg:h-14"
