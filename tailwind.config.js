@@ -70,6 +70,8 @@ module.exports = {
         'btn-hover' : 'rgba(0, 0, 0, 0.2)',
         'aqua' : '#00ffff',
         'blue-border' : '#4356ff',
+        'lt-grey' : '#E9E9E9',
+        'dk-grey' : '#848484'
       },
       borderWidth: {
         '1px' : '1px',
