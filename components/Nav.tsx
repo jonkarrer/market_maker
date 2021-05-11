@@ -83,10 +83,12 @@ export default function Nav() {
           id="sign-up"
           className="flex items-center justify-end w-1/2 md:text-xl"
         >
-          <a className="mr-10">Sign In</a>
+          <Link href="/register/sign_in">
+            <a className="mr-10">Sign In</a>
+          </Link>
           <a>
             <button className="btn md:text-xl sm:px-4 sm:py-2 hover:bg-btn-hover">
-              Sign Up
+              <Link href="/register/sign_up">Sign Up</Link>
             </button>
           </a>
         </nav>

@@ -25,7 +25,7 @@ module.exports = {
         '44vh' : '44vh',
       },
       minHeight: {
-        '300px' : '300px',
+        '400px' : '400px',
         '800px' : '800px'
       },
       fontSize: {

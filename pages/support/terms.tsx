@@ -36,7 +36,7 @@ const Terms = () => {
       <Gradient title="Terms & Privacy" />
       <Wrapper display="flex">
         <div className="shadow-term-panel pr-2 hidden sm:block">
-          <ul className=" sm:w-36 ml-8 sm:mt-5 sm:text-sm md:w-40 md:text-base lg:w-44 lg:text-lg space-y-5">
+          <ul className="space-y-5 ml-8 sm:w-36 sm:mt-5 sm:text-sm md:w-40 md:text-base lg:w-44 lg:text-lg">
             <li>
               <a
                 href="#terms"
@@ -82,7 +82,7 @@ const Terms = () => {
         <div
           ref={container}
           onScroll={handleScroll}
-          className="ml-6% h-auto mt-8 sm:h-screen sm:mt-5 overflow-y-auto pb-32 lg:pb-72"
+          className="ml-6% h-auto mt-8 overflow-y-auto pb-32 sm:h-screen sm:mt-5 lg:pb-72"
         >
           <h2 id="finance" className="text-3xl font-bold mb-5 sm:text-4xl">
             Not Financial Advice

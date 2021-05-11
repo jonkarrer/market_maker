@@ -6,11 +6,11 @@ const Sitemap = () => (
   <div className="pb-8 h-screen sm:min-h-800px">
     <Gradient title="Sitemap" />
     <Wrapper display="flex">
-      <div className="grid gap-10 lg:gap-16 place-content-center w-full">
+      <div className="grid gap-10 place-content-center w-full lg:gap-16">
         <h1 className="text-center font-bold text-mobile-h py-8 sm:py-0 sm:text-4xl lg:text-5xl ">
           Explore Market Maker Lite
         </h1>
-        <div className="space-y-16 sm:space-y-0 sm:flex sm:justify-between items-start">
+        <div className="space-y-16 items-start sm:space-y-0 sm:flex sm:justify-between">
           <List title="Home">
             <li>About Us</li>
             <li>Learn</li>

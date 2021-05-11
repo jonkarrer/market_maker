@@ -24,9 +24,8 @@ const Pricing = () => {
               </p>
             </div>
             <div
-              className={`bg-blue-border absolute w-1/2 h-full rounded-full left-0 transition-all transform ${
-                toggle ? "translate-x-full" : "translate-x-0"
-              }`}
+              className={`bg-blue-border absolute w-1/2 h-full rounded-full left-0 transition-all transform
+               ${toggle ? "translate-x-full" : "translate-x-0"}`}
             ></div>
             <div className="z-10 w-1/2 h-full rounded-full flex justify-center items-center">
               <p className={`${toggle ? "text-white" : "text-black"}`}>
@@ -35,11 +34,11 @@ const Pricing = () => {
             </div>
           </div>
           {/**Free + Premium row */}
-          <div className="grid grid-cols-3 text-2xl sm:mr-5  sm:text-4xl lg:text-5xl">
+          <div className="grid grid-cols-3 text-2xl sm:mr-5 sm:text-4xl lg:text-5xl">
             <div>{/** Empty div to even out columns */}</div>
-            <div className="text-center mr-5 grid gap-3  sm:mr-0 lg:gap-7 font-semibold">
+            <div className="text-center mr-5 grid gap-3 font-semibold sm:mr-0 lg:gap-7">
               <h1>Free</h1>
-              <p className="text-base lg:text-2xl text-gray-500">
+              <p className="text-gray-500 text-base lg:text-2xl">
                 <strong className="font-bold sm:text-4xl lg:text-5xl">
                   $0
                 </strong>{" "}
@@ -49,9 +48,9 @@ const Pricing = () => {
                 Try for Free
               </button>
             </div>
-            <div className="text-center grid gap-3 lg:gap-6 font-semibold">
+            <div className="text-center font-semibold grid gap-3 lg:gap-6">
               <h1>Premium</h1>
-              <p className="text-base lg:text-2xl font-bold text-gray-500">
+              <p className="text-base font-bold text-gray-500 lg:text-2xl">
                 <strong className="sm:text-4xl lg:text-5xl font-bold">
                   $40
                 </strong>{" "}
@@ -62,7 +61,7 @@ const Pricing = () => {
               </button>
             </div>
           </div>
-          {/**Features Grid */}
+          {/** Features Grid. Styles in global.css */}
           <div className="grid grid-cols-3">
             {/**Column-1 */}
             <div className="column-1">

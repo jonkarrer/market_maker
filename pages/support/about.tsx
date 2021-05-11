@@ -1,8 +1,10 @@
 import Gradient from "@/components/support_pages/Gradient";
 import Wrapper from "@/components/support_pages/Wrapper";
+import Member from "@/components/support_pages/Member";
 const About = () => (
   <div>
     <Gradient title="About Us" />
+    {/** Our Mission */}
     <Wrapper display="grid">
       <div className="flex flex-col mb-20 sm:mb-36 w-full">
         <h1
@@ -42,6 +44,7 @@ const About = () => (
         </p>
       </div>
     </Wrapper>
+    {/** We're just like you */}
     <div className="bg-black w-full sm:pb-36">
       <div className="flex flex-col m-auto max-w-screen-xl pb-20 sm:w-11/12 md:w-4/5">
         <h1
@@ -87,6 +90,7 @@ const About = () => (
         </p>
       </div>
     </div>
+    {/** Meet the Team */}
     <div className=" w-full sm:pb-36">
       <div className="flex flex-col m-auto max-w-screen-xl sm:w-11/12 md:w-4/5">
         <h1
@@ -96,44 +100,24 @@ const About = () => (
           Meet the team
         </h1>
         <div className="flex flex-col sm:flex-row justify-between space-y-16 sm:space-y-0 sm:space-x-8 w-full">
-          <div className="grid place-content-center justify-items-center space-y-5">
-            <div className="w-1/2 h-60 sm:w-full sm:h-64 lg:w-60 lg:h-72 bg-gray-500"></div>
-            <div className="space-y-3">
-              <h2 className="text-xl lg:text-2xl text-center mt-5">BakerX</h2>
-              <p className="mx-std sm:m-0 lg:mx-10% xl:mx-12% sm:text-sm lg:text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                vulputate augue viverra nisi pretium, sed maximus lacus
-                pulvinar. Curabitur vitae laoreet ligula, et porttitor velit.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
-              </p>
-            </div>
-          </div>
-          <div className="grid place-content-center justify-items-center space-y-5">
-            <div className="w-1/2 h-60 sm:w-full sm:h-64 lg:w-60 lg:h-72 bg-gray-500"></div>
-            <div className="space-y-3">
-              <h2 className="text-xl lg:text-2xl text-center mt-5">Kanopy</h2>
-              <p className="mx-std sm:m-0 lg:mx-10% xl:mx-12% sm:text-sm lg:text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                vulputate augue viverra nisi pretium, sed maximus lacus
-                pulvinar. Curabitur vitae laoreet ligula, et porttitor velit.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
-              </p>
-            </div>
-          </div>
-          <div className="grid place-content-center justify-items-center space-y-5">
-            <div className="w-1/2 h-60 sm:w-full sm:h-64 lg:w-60 lg:h-72 bg-gray-500"></div>
-            <div className="space-y-3">
-              <h2 className="text-xl lg:text-2xl text-center mt-5">
-                Prossecing
-              </h2>
-              <p className="mx-std sm:m-0 lg:mx-10% xl:mx-12% sm:text-sm lg:text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                vulputate augue viverra nisi pretium, sed maximus lacus
-                pulvinar. Curabitur vitae laoreet ligula, et porttitor velit.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
-              </p>
-            </div>
-          </div>
+          <Member name="BakerX">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            vulputate augue viverra nisi pretium, sed maximus lacus pulvinar.
+            Curabitur vitae laoreet ligula, et porttitor velit. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit.{" "}
+          </Member>
+          <Member name="Kanopy">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            vulputate augue viverra nisi pretium, sed maximus lacus pulvinar.
+            Curabitur vitae laoreet ligula, et porttitor velit. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit.{" "}
+          </Member>
+          <Member name="Prossecing">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            vulputate augue viverra nisi pretium, sed maximus lacus pulvinar.
+            Curabitur vitae laoreet ligula, et porttitor velit. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit.{" "}
+          </Member>
         </div>
       </div>
     </div>
