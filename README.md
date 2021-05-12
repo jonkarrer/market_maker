@@ -74,6 +74,24 @@ Some unique code snippets:
   >
 ```
 
+- Remove header if user is in the register pages.
+
+```jsx
+function MyApp({ Component, pageProps, router }) {
+  let signUp = router.pathname.startsWith("/register/sign_up");
+  let signIn = router.pathname.startsWith("/register/sign_in");
+  //Remove Navbar
+  if (signUp || signIn) {
+    return <Component {...pageProps} />;
+  }
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
+}
+```
+
 - Add absolute imports and module aliases
 
 ```javascript
