@@ -1,14 +1,14 @@
 const Footer = () => (
   <div>
-    <footer className="my-10% mx-std sm:m-auto sm:my-8 sm:w-11/12 sm:max-w-screen-2xl lg:w-3/4 lg:text-xl xl:w-3/5 lg:mt-8%">
+    <footer className="my-10% mx-std sm:m-auto sm:my-8 sm:w-11/12 lg:w-3/4 lg:mt-8% lg:text-xl xl:w-3/5 2xl:w-4/5 2xl:my-20">
       <nav
         id="links"
-        className="grid grid-cols-2 gap-3 w-11/12 sm:w-full pb-3 mx-auto sm:flex sm:justify-around sm:text-sm md:text-base lg:text-lg"
+        className="grid grid-cols-2 gap-3 w-11/12 sm:w-full pb-3 mx-auto sm:flex sm:justify-around sm:text-sm md:text-base lg:text-lg 2xl:text-1.3vw"
       >
         <a>MML C 2021</a>
         <a href="">About Us</a>
         <a href="">Support</a>
-        <a href="">Privacy {"&"} Legal</a>
+        <a href="">Legal</a>
         <a href="">Disclosures</a>
         <a href="">Sitemap</a>
         <a href="">Pricing</a>
@@ -17,7 +17,7 @@ const Footer = () => (
       </nav>
       <nav
         id="home_nav-icons"
-        className="flex justify-around my-5 sm:justify-evenly sm:w-2/3 mx-auto"
+        className="flex justify-around my-5 sm:justify-evenly sm:w-2/3 mx-auto 2xl:my-20"
       >
         <a href="">
           <img src="/assets/Social/reddit-dk.svg" alt="reddit icon" />

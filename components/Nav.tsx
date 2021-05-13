@@ -59,12 +59,15 @@ export default function Nav() {
       </div>
       <header
         id="desktop-header"
-        className="hidden sm:flex w-5/6 max-w-screen-2xl absolute font-semibold items-center justify-between top-3 mx-std z-10 text-white"
+        className="hidden sm:flex w-5/6 absolute font-semibold items-center justify-between top-3 mx-std z-10 text-white"
       >
-        <nav id="links" className="flex items-center justify-start md:text-xl">
+        <nav
+          id="links"
+          className="flex items-center justify-start md:text-xl 2xl:text-3xl"
+        >
           <Link href="/">
-            <a className="w-10 mr-9" href="#">
-              <img className="h-full" src="/logo.svg" alt="" />
+            <a className="w-10 mr-9 2xl:w-20" href="#">
+              <img className="h-full 2xl:w-20" src="/logo.svg" alt="" />
             </a>
           </Link>
           <Link href="/products">
@@ -81,13 +84,13 @@ export default function Nav() {
         </nav>
         <nav
           id="sign-up"
-          className="flex items-center justify-end w-1/2 md:text-xl"
+          className="flex items-center justify-end w-1/2 md:text-xl 2xl:text-2xl"
         >
           <Link href="/register/sign_in">
             <a className="mr-10">Sign In</a>
           </Link>
           <a>
-            <button className="btn md:text-xl sm:px-4 sm:py-2 hover:bg-btn-hover">
+            <button className="btn md:text-xl 2xl:text-2xl sm:px-4 sm:py-2 hover:bg-btn-hover">
               <Link href="/register/sign_up">Sign Up</Link>
             </button>
           </a>

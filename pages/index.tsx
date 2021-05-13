@@ -24,16 +24,16 @@ export default function Home() {
           />
         </div>
         <article className="z-10 font-semibold text-white flex flex-col mx-std sm:mx-0 sm:ml-std sm:order-1 sm:justify-center sm:w-2/3">
-          <h1 className="text-mobile-h font-semibold leading-none sm:text-desktop-h sm:mr-5 xl:mr-10">
+          <h1 className="text-mobile-h font-semibold leading-none sm:text-desktop-h sm:mr-5 xl:mr-10 2xl:mr-16">
             The market data we deserve
           </h1>
-          <div className="space-y-6 md:space-y-8 xl:space-y-12">
-            <p className="text-mobile-p mt-10% sm:text-desktop-p sm:mr-20% sm:mt-12%">
+          <div className="space-y-6 md:space-y-8 xl:space-y-12 2xl:space-y-16">
+            <p className="text-mobile-p mt-10% sm:text-desktop-p sm:font-normal sm:mr-20% sm:mt-12%">
               Trade like never before - visualized data, insights, and
               statistics to make sense of complicated financial markets
             </p>
             <div className="w-full flex justify-center sm:block">
-              <button className="btn text-mobile-p px-8 py-3 sm:px-4 sm:py-2 sm:text-1.5vw xl:text-1.3vw hover:bg-btn-hover">
+              <button className="btn text-mobile-p px-8 py-3 sm:px-4 sm:py-2 sm:text-1.5vw xl:text-1.3vw 2xl:px-6 2xl:py-4 hover:bg-btn-hover">
                 Get Early Access
               </button>
             </div>
@@ -43,7 +43,7 @@ export default function Home() {
       {/* Page Two */}
       <div
         id="banner-butt-container"
-        className="w-11/12 sm:w-5/6 mx-auto my-10% sm:my-10 flex justify-center"
+        className="w-11/12 sm:w-5/6 mx-auto my-10% sm:my-10 flex justify-center 2xl:my-20"
       >
         <button
           id="banner-button"
@@ -53,16 +53,16 @@ export default function Home() {
           they subscribe.* Learn More {">"}
         </button>
       </div>
-      <section className="h-auto sm:mx-std sm:my-16">
+      <section className="h-auto sm:mx-std sm:my-16 2xl:my-20">
         <h1 className="text-center text-mobile-h sm:text-desktop-h">
           Make Sense of Complicated Markets
         </h1>
-        <p className="text-mobile-p sm:text-desktop-p mx-std my-10% sm:mx-6% sm:my-14">
+        <p className="text-mobile-p sm:text-desktop-p mx-std my-10% sm:mx-6% sm:my-14 2xl:my-20">
           Trading is difficult. That's why we created a financial information
           platform built for everyone. Get the coverage you need, delivered
           through an elegant interface.
         </p>
-        {/* Three Info Blocks */}
+        {/* Three Info Blocks // Styles in global.css */}
         <div
           id="blocks-container"
           className="my-20% sm:my-10% grid gap-12 text-center sm:flex sm:justify-start sm:items-start"
@@ -96,7 +96,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        {/* Two Price Cards*/}
+        {/* Two Price Cards // Styles in global.css*/}
         <div
           id="price-cards"
           className="grid gap-10 justify-items-center w-11/12 sm:w-auto mx-auto sm:flex sm:justify-between"
@@ -177,7 +177,7 @@ export default function Home() {
           />
           <article className="space-y-5">
             <h2 className="text-8vw sm:text-4vw md:text-3vw">Options</h2>
-            <p className="sm:mr-5 sm:text-sm xl:text-xl">
+            <p className="sm:mr-5 sm:text-sm xl:text-xl 2xl:text-1.3vw">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Exercitationem, mollitia eaque. Neque animi perferendis, ducimus
               veritatis harum mollitia iste, magni nam unde ut error. Enim culpa
@@ -195,7 +195,7 @@ export default function Home() {
         >
           <article className="space-y-5 order-2 sm:order-1">
             <h2 className="text-8vw sm:text-4vw md:text-3vw">Stocks</h2>
-            <p className="sm:mr-5 sm:text-sm xl:text-lg">
+            <p className="sm:mr-5 sm:text-sm xl:text-lg 2xl:text-1.3vw">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Exercitationem, mollitia eaque. Neque animi perferendis, ducimus
               veritatis harum mollitia iste, magni nam unde ut error. Enim culpa
@@ -219,7 +219,7 @@ export default function Home() {
         className="py-3 sm:py-8 bg-gradient-to-tr from-lt-blue to-lt-teal"
       >
         <h1># made by friends with a passion for markets</h1>
-        <p className="text-center text-white text-base mx-std pt-3 sm:text-1.5vw sm:mx-std sm:mt-8 sm:leading-8">
+        <p className="text-center text-white text-base mx-std pt-3 sm:text-1.5vw sm:mx-std sm:mt-8">
           Our team has a diverse background of academic and industry experiences
           including finance, engineering, and media. We aren't paid by in large
           by the banks, we don't sell your information, we stay commited to the

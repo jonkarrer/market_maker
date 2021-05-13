@@ -48,7 +48,7 @@ button {
 #home_nav-icons img {
   width: 3vw;
   min-width: 45px;
-  max-width: 50px;
+  max-width: 100px;
   margin-right: 25px;
 }
 #home_nav-icons img:last-child {
@@ -107,7 +107,7 @@ button {
   /**** Home Page ****/
   /*3 blocks, icon has 4 circles*/
   .info-block {
-    @apply flex flex-col items-center justify-start text-center mx-std sm:mx-5 space-y-5 xl:space-y-8;
+    @apply flex flex-col items-center justify-start text-center mx-std sm:mx-5 space-y-5 xl:space-y-8 2xl:space-y-20;
   }
   .info-block img {
     @apply w-1/4 sm:w-8vw;
@@ -116,11 +116,11 @@ button {
     @apply text-6vw font-semibold sm:text-1.5vw md:text-xl lg:text-2vw;
   }
   .info-block p {
-    @apply text-mobile-p leading-8 sm:text-1.5vw sm:leading-4 md:text-1.5vw md:leading-6 lg:mx-8% lg:text-xl xl:leading-8 xl:text-2xl;
+    @apply text-mobile-p leading-8 sm:text-1.5vw sm:leading-4 md:leading-6 lg:mx-8% lg:text-xl xl:leading-8 xl:text-2xl 2xl:text-4xl;
   }
   /*2 blue cards explaining price options*/
   .price-card {
-    @apply h-auto grid grid-rows-price-cards gap-5  text-center w-11/12 py-3 sm:w-40vw sm:hover:shadow-2xl cursor-pointer bg-gradient-to-br from-lt-blue to-lt-teal rounded-md;
+    @apply h-auto grid grid-rows-price-cards 2xl:grid-rows-large-cards gap-5 text-center w-11/12 py-3 sm:w-40vw sm:hover:shadow-2xl cursor-pointer bg-gradient-to-br from-lt-blue to-lt-teal rounded-md;
   }
   .price-card h2 {
     @apply text-mobile-h sm:text-4vw;
@@ -129,18 +129,18 @@ button {
     @apply text-mobile-p sm:text-desktop-p lg:text-1.5vw;
   }
   .price-card ul {
-    @apply list-none space-y-3 my-5 mx-std sm:mx-6;
+    @apply list-none space-y-3 my-5 mx-std sm:mx-6 2xl:space-y-14 2xl:mt-16;
   }
   .price-card li {
-    @apply flex items-center h-auto text-left lg:ml-8 sm:text-sm md:text-base lg:text-lg xl:text-xl;
+    @apply flex items-center h-auto text-left lg:ml-8 sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-1.3vw;
   }
   .price-card li img {
     @apply w-1/12 mr-6 sm:w-4 md:w-5 xl:w-6;
   }
   .price-card button {
-    @apply w-11/12 bg-dk-black py-3 m-auto;
+    @apply w-11/12 bg-dk-black py-3 m-auto 2xl:h-32 2xl:text-1.3vw;
   }
-  /**** Price Plans Page ****/
+  /**** Price Plans Page /pricing ****/
   .column-1 {
     @apply grid gap-8 lg:gap-10;
   }

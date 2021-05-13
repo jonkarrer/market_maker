@@ -33,8 +33,8 @@ module.exports = {
         'mobile-h' : ['9vw', '1.1'],
         'desktop-h' : ['5vw', '1.2'],
         'desktop-p' : ['2vw', '1.4'],
-        '1.3vw' : '1.3vw',
-        '1.5vw' : '1.5vw',
+        '1.3vw' : ['1.3vw', '1.4'],
+        '1.5vw' : ['1.5vw', '1.4'],
         '2vw' : '2vw',
         '3vw' : '3vw',
         '4vw' : '4vw',
@@ -82,7 +82,8 @@ module.exports = {
         'term-panel' : '10px 0px 5px -10px rgba(0, 0, 0, 0.2)'
       },
       gridTemplateRows: {
-        'price-cards' : 'auto auto auto auto 100px'
+        'price-cards' : 'auto auto auto auto 100px',
+        'large-cards' : 'auto auto auto auto 200px'
       },
     },
   },
