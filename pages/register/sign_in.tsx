@@ -1,13 +1,16 @@
 import Link from "next/link";
-
 const SignIn = () => {
   return (
     <div className="h-screen grid sm:grid-cols-2 place-content-center">
+      {/** Left Panel */}
       <div id="home_page-one-gradient" className="h-screen hidden sm:block">
-        <img src="/logo.svg" alt="logo" className="m-5 w-16" />
+        <Link href="/">
+          <img src="/logo.svg" alt="logo" className="m-5 w-16 cursor-pointer" />
+        </Link>
       </div>
+      {/** Right Panel */}
       <div className="grid place-content-center">
-        <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl py-8 text-center sm:mx-15% xl:mx-0">
+        <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl py-8 text-center sm:mx-15% xl:mx-0">
           Welcome to Market Maker Lite
         </h1>
         <form

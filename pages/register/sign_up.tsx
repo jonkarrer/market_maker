@@ -2,9 +2,13 @@ import Link from "next/link";
 const SignUp = () => {
   return (
     <div className="h-screen grid sm:grid-cols-2 place-content-center">
+      {/** Left Panel */}
       <div id="home_page-one-gradient" className="h-screen hidden sm:block">
-        <img src="/logo.svg" alt="logo" className="m-5 w-16" />
+        <Link href="/">
+          <img src="/logo.svg" alt="logo" className="m-5 w-16 cursor-pointer" />
+        </Link>
       </div>
+      {/** Right Panel */}
       <div className="grid place-content-center">
         <h1 className="text-2xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl py-8 text-center sm:mx-10% md:mx-16% lg:mx-8% xl:mx-0">
           Join Market Maker Lite Today
