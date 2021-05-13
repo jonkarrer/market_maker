@@ -83,7 +83,7 @@ module.exports = {
       },
       gridTemplateRows: {
         'price-cards' : 'auto auto auto auto 100px',
-        'large-cards' : 'auto auto auto auto 200px'
+        'large-cards' : 'auto auto auto auto 150px'
       },
     },
   },
