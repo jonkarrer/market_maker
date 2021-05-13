@@ -33,7 +33,7 @@ export default function Home() {
               statistics to make sense of complicated financial markets
             </p>
             <div className="w-full flex justify-center sm:block">
-              <button className="btn text-mobile-p px-8 py-3 sm:px-4 sm:py-2 sm:text-1.5vw xl:text-1.3vw 2xl:px-6 2xl:py-4 hover:bg-btn-hover">
+              <button className="btn text-mobile-p sm:text-1.5vw xl:text-1.3vw hover:bg-btn-hover">
                 Get Early Access
               </button>
             </div>

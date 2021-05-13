@@ -66,8 +66,8 @@ export default function Nav() {
           className="flex items-center justify-start md:text-xl 2xl:text-3xl"
         >
           <Link href="/">
-            <a className="w-10 mr-9 2xl:w-20" href="#">
-              <img className="h-full 2xl:w-20" src="/logo.svg" alt="" />
+            <a className="w-10 mr-9 2xl:w-16" href="#">
+              <img className="h-full 2xl:w-16" src="/logo.svg" alt="" />
             </a>
           </Link>
           <Link href="/products">
@@ -86,7 +86,7 @@ export default function Nav() {
           id="sign-up"
           className="flex items-center justify-end w-1/2 md:text-xl 2xl:text-2xl"
         >
-          <Link href="/register/sign_in">
+          <Link href="/api/auth/login">
             <a className="mr-10">Sign In</a>
           </Link>
           <a>

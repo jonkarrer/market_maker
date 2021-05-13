@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import Layout from "@/components/Layout";
+import { UserProvider } from "@auth0/nextjs-auth0";
 
 function MyApp({ Component, pageProps, router }) {
   let signUp = router.pathname.startsWith("/register/sign_up");
@@ -9,9 +10,11 @@ function MyApp({ Component, pageProps, router }) {
     return <Component {...pageProps} />;
   }
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <UserProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </UserProvider>
   );
 }
 
