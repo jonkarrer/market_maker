@@ -56,10 +56,6 @@ Users should be able to:
 
 Some unique code snippets:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
 - Dynamic Styles for TailwindCSS
 
 ```jsx
@@ -106,7 +102,7 @@ function MyApp({ Component, pageProps, router }) {
 
 ### Continued development
 
-Need to integrate testing with Cypress
+Need to integrate testing with Cypress.
 
 ### Useful resources
 
