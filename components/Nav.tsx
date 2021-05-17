@@ -91,13 +91,11 @@ export default function Nav() {
           {!isLoading && !user && (
             <>
               <Link href="/api/auth/login">
-                <a className="mr-10">Sign In</a>
+                <p className="mr-10">Sign In</p>
               </Link>
-              <a>
-                <button className="btn md:text-xl 2xl:text-2xl sm:px-4 sm:py-2 hover:bg-btn-hover">
-                  <Link href="/api/auth/login">Sign Up</Link>
-                </button>
-              </a>
+              <button className="btn md:text-xl 2xl:text-2xl sm:px-4 sm:py-2 hover:bg-btn-hover">
+                <Link href="/api/auth/login">Sign Up</Link>
+              </button>
             </>
           )}
           {!isLoading && user && (

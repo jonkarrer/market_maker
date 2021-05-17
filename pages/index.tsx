@@ -1,5 +1,6 @@
 import Head from "next/head";
-
+import PriceCards from "@/components/home/PriceCards";
+import InfoBlocks from "@/components/home/InfoBlocks";
 export default function Home() {
   return (
     <div>
@@ -62,107 +63,10 @@ export default function Home() {
           platform built for everyone. Get the coverage you need, delivered
           through an elegant interface.
         </p>
-        {/* Three Info Blocks // Styles in global.css */}
-        <div
-          id="blocks-container"
-          className="my-20% sm:my-10% grid gap-12 text-center sm:flex sm:justify-start sm:items-start"
-        >
-          <div className="info-block">
-            <img src="./assets/four-circles.svg" alt="4 square icon" />
-            <h3>Be a Market Maker</h3>
-            <p>
-              Easily sign up in the app, and keep your number and phone or
-              change both. No matter what, you'll get unlimited data, messages,
-              and minutes for one (really) low price.
-            </p>
-          </div>
-          <div className="info-block">
-            <img src="./assets/four-circles.svg" alt="4 square icon" />
-            <h3>Experience our Service</h3>
-            <p>
-              After activating your SIM in the app, you're ready to experience
-              the power of our network. We know getting Verizon service at a
-              fraction of the cost might seem to good to be true, but it is
-              true.
-            </p>
-          </div>
-          <div className="info-block">
-            <img src="./assets/four-circles.svg" alt="4 square icon" />
-            <h3>Bring some Friends</h3>
-            <p>
-              Since trading only gets better with friends, it makes sense to
-              give you several ways to save when you enjoy Visible with them.
-              Join a party and cut your bill to $25/mo, or something else.
-            </p>
-          </div>
-        </div>
-        {/* Two Price Cards // Styles in global.css*/}
-        <div
-          id="price-cards"
-          className="grid gap-10 justify-items-center w-11/12 sm:w-auto mx-auto sm:flex sm:justify-between"
-        >
-          <div className="price-card">
-            <h2>Free</h2>
-            <p>Try out the platform for free</p>
-            <h2>$0 / mo</h2>
-            <ul>
-              <li>
-                <img src="./assets/checkmark.svg" alt="checkmark icon" />
-                Twitter Alerts (15 min delay)
-              </li>
-              <li>
-                <img src="./assets/checkmark.svg" alt="checkmark icon" />
-                Portfolio Tracking
-              </li>
-              <li>
-                <img src="./assets/checkmark.svg" alt="checkmark icon" />
-                Fun Financial Literacy Guides
-              </li>
-              <li>
-                <img src="./assets/checkmark.svg" alt="checkmark icon" />
-                Public Discord
-              </li>
-            </ul>
 
-            <button className="btn">Get Started</button>
-          </div>
-          <div className="price-card">
-            <h2>Premium</h2>
-            <p>Ready to play in the big leauges?</p>
-            <h2>$40 / mo</h2>
-            <ul>
-              <li>
-                <img src="./assets/checkmark.svg" alt="checkmark icon" />
-                All Free Features
-              </li>
-              <li>
-                <img src="./assets/checkmark.svg" alt="checkmark icon" />
-                Instant Alerts
-              </li>
-              <li>
-                <img src="./assets/checkmark.svg" alt="checkmark icon" />
-                Options Flow and Dark Pool Tracking
-              </li>
-              <li>
-                <img src="./assets/checkmark.svg" alt="checkmark icon" />
-                Real-Time Charts with Proprietary Overlays
-              </li>
-              <li>
-                <img src="./assets/checkmark.svg" alt="checkmark icon" />
-                Social Media & Sentiment Tracking
-              </li>
-              <li>
-                <img src="./assets/checkmark.svg" alt="checkmark icon" />
-                Earn Rewards with Real Value
-              </li>
-              <li>
-                <img src="./assets/checkmark.svg" alt="checkmark icon" />
-                Early Access to New Features
-              </li>
-            </ul>
-            <button className="btn">Get Premium</button>
-          </div>
-        </div>
+        <InfoBlocks />
+
+        <PriceCards />
       </section>
       {/* Page Three */}
       <section className="items-center mx-std sm:flex sm:justify-between">

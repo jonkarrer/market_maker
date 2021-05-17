@@ -107,7 +107,7 @@ button {
   /**** Home Page ****/
   /*3 blocks, icon has 4 circles*/
   .info-block {
-    @apply flex flex-col items-center justify-start text-center mx-std sm:mx-5 space-y-5 xl:space-y-8 2xl:space-y-20;
+    @apply flex flex-col items-center justify-start text-center mx-std sm:mx-5 space-y-4 xl:space-y-8 2xl:space-y-12;
   }
   .info-block img {
     @apply w-1/4 sm:w-8vw;

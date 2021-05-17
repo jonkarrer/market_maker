@@ -111,7 +111,8 @@ Need to integrate testing with Cypress
 ### Useful resources
 
 - [@auth0/nextjs-auth0](https://github.com/auth0/nextjs-auth0) - This helped me set up the auth0-next.js integration.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Getting Stripe Set-up](https://vercel.com/guides/getting-started-with-nextjs-typescript-stripe) - This gives a direct example of how to bring stripe in with next.js.
+- [Stripe Git-hub](https://github.com/stripe/stripe-js) - The repo to get stripe started.
 
 ## Author
 
