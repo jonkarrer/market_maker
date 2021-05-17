@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { useState } from "react";
+import { useUser } from "@auth0/nextjs-auth0";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
+  const { user, isLoading } = useUser();
   return (
     <>
       <div id="mobile-header" className="sm:hidden font-primary">
@@ -86,14 +88,30 @@ export default function Nav() {
           id="sign-up"
           className="flex items-center justify-end w-1/2 md:text-xl 2xl:text-2xl"
         >
-          <Link href="/api/auth/login">
-            <a className="mr-10">Sign In</a>
-          </Link>
-          <a>
-            <button className="btn md:text-xl 2xl:text-2xl sm:px-4 sm:py-2 hover:bg-btn-hover">
-              <Link href="/register/sign_up">Sign Up</Link>
-            </button>
-          </a>
+          {!isLoading && !user && (
+            <>
+              <Link href="/api/auth/login">
+                <a className="mr-10">Sign In</a>
+              </Link>
+              <a>
+                <button className="btn md:text-xl 2xl:text-2xl sm:px-4 sm:py-2 hover:bg-btn-hover">
+                  <Link href="/api/auth/login">Sign Up</Link>
+                </button>
+              </a>
+            </>
+          )}
+          {!isLoading && user && (
+            <>
+              <Link href="/api/auth/logout">
+                <a className="mr-10">Sign Out</a>
+              </Link>
+              <a>
+                <button className="btn md:text-xl 2xl:text-2xl sm:px-4 sm:py-2 hover:bg-btn-hover">
+                  <Link href="">{user.name}</Link>
+                </button>
+              </a>
+            </>
+          )}
         </nav>
       </header>
     </>

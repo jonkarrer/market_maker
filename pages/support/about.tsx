@@ -6,7 +6,7 @@ const About = () => (
     <Gradient title="About Us" />
     {/** Our Mission */}
     <Wrapper display="grid">
-      <div className="flex flex-col mb-20 sm:mb-36 w-full">
+      <div className="flex flex-col mt-10 sm:mt-0 mb-20 sm:mb-36 w-full">
         <h1
           id="our-mission"
           className="text-center font-semibold text-mobile-h pb-12 sm:text-4xl lg:text-6xl "
