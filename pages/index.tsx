@@ -1,7 +1,15 @@
 import Head from "next/head";
 import PriceCards from "@/components/home/PriceCards";
 import InfoBlocks from "@/components/home/InfoBlocks";
+import { fetchGetJSON } from "../utils/api-helpers";
+import getStripe from "../utils/get-stripejs";
 export default function Home() {
+  const handleClick = async () => {
+    const response = await fetchGetJSON("api/v1/customers");
+    if (response.statusCode === 500) {
+      console.error(response.message);
+    }
+  };
   return (
     <div>
       <Head>
@@ -49,6 +57,7 @@ export default function Home() {
         <button
           id="banner-button"
           className="btn shadow-md bg-lt-blue w-max text-3vw sm:text-1.5vw py-3 px-8 sm:py-5 sm:px-14"
+          onClick={() => handleClick()}
         >
           Make a market today! Invite a friend and recieve $10 off each month
           they subscribe.* Learn More {">"}

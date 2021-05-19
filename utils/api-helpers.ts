@@ -9,10 +9,9 @@ export async function fetchGetJSON(url: string) {
 
 export async function fetchPostJSON(url: string, data?: {}) {
   try {
-    // Default options are marked with *
     const response = await fetch(url, {
-      method: "POST", // *GET, POST, PUT, DELETE, etc.
-      mode: "cors", // no-cors, *cors, same-origin
+      method: "POST",
+      mode: "cors",
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
       credentials: "same-origin", // include, *same-origin, omit
       headers: {

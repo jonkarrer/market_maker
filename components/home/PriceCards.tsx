@@ -56,7 +56,7 @@ const PriceCards = () => {
 
         <button
           className="btn"
-          onClick={() => handleClick("price_1IsAmCGCLPB3c1GbWIt767hl")}
+          onClick={() => handleClick("price_1IUR7lGCLPB3c1GbJYKlGBYe")}
         >
           Get Started
         </button>
@@ -97,7 +97,7 @@ const PriceCards = () => {
         </ul>
         <button
           className="btn"
-          onClick={() => handleClick("price_1IsAjMGCLPB3c1GbaMZQ8O8f")}
+          onClick={() => handleClick("price_1IUR7lGCLPB3c1GbUCn4e89f")}
         >
           Get Premium
         </button>
