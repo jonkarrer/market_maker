@@ -91,7 +91,7 @@ export default function Nav() {
           {!isLoading && !user && (
             <>
               <Link href="/api/auth/login">
-                <a className="mr-10">Sign In</a>
+                <p className="mr-10 cursor-pointer">Sign In</p>
               </Link>
               <button className="btn md:text-xl 2xl:text-2xl sm:px-4 sm:py-2 hover:bg-btn-hover">
                 <Link href="/api/auth/login">Sign Up</Link>
@@ -103,11 +103,9 @@ export default function Nav() {
               <Link href="/api/auth/logout">
                 <a className="mr-10">Sign Out</a>
               </Link>
-              <a>
-                <button className="btn md:text-xl 2xl:text-2xl sm:px-4 sm:py-2 hover:bg-btn-hover">
-                  <Link href="">{user.name}</Link>
-                </button>
-              </a>
+              <button className="btn md:text-xl 2xl:text-2xl sm:px-4 sm:py-2 hover:bg-btn-hover">
+                <Link href="/api/auth/me">{user.sub}</Link>
+              </button>
             </>
           )}
         </nav>

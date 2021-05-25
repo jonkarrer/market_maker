@@ -2,13 +2,11 @@ import Head from "next/head";
 import PriceCards from "@/components/home/PriceCards";
 import InfoBlocks from "@/components/home/InfoBlocks";
 import { fetchGetJSON } from "../utils/api-helpers";
-import getStripe from "../utils/get-stripejs";
+
 export default function Home() {
   const handleClick = async () => {
-    const response = await fetchGetJSON("api/v1/customers");
-    if (response.statusCode === 500) {
-      console.error(response.message);
-    }
+    let user = await fetchGetJSON("api/stripe/user");
+    return await console.log(user);
   };
   return (
     <div>

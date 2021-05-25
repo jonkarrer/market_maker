@@ -12,17 +12,36 @@ export async function fetchPostJSON(url: string, data?: {}) {
     const response = await fetch(url, {
       method: "POST",
       mode: "cors",
-      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: "same-origin", // include, *same-origin, omit
+      cache: "no-cache",
+      credentials: "same-origin",
       headers: {
         "Content-Type": "application/json",
-        // 'Content-Type': 'application/x-www-form-urlencoded',
       },
-      redirect: "follow", // manual, *follow, error
-      referrerPolicy: "no-referrer", // no-referrer, *client
-      body: JSON.stringify(data || {}), // body data type must match "Content-Type" header
+      redirect: "follow",
+      referrerPolicy: "no-referrer",
+      body: JSON.stringify(data || {}),
     });
-    return await response.json(); // parses JSON response into native JavaScript objects
+    return await response.json();
+  } catch (err) {
+    throw new Error(err.message);
+  }
+}
+
+export async function fetchPatchJSON(url: string, data: {}) {
+  try {
+    const response = await fetch(url, {
+      method: "PATCH",
+      mode: "cors",
+      cache: "no-cache",
+      credentials: "same-origin",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      redirect: "follow",
+      referrerPolicy: "no-referrer",
+      body: JSON.stringify(data || {}),
+    });
+    return await response.json();
   } catch (err) {
     throw new Error(err.message);
   }
