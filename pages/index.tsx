@@ -2,11 +2,15 @@ import Head from "next/head";
 import PriceCards from "@/components/home/PriceCards";
 import InfoBlocks from "@/components/home/InfoBlocks";
 import { fetchGetJSON } from "../utils/api-helpers";
-
+import useAccessKey from "../utils/hooks/useAccessKey";
+import { useUser } from "@auth0/nextjs-auth0";
 export default function Home() {
+  //this code block calls the current auth0 user for the useAccessKey
+  const { user } = useUser();
+  let authUser = user?.sub?.replace("|", "%7C");
   const handleClick = async () => {
-    let user = await fetchGetJSON("api/stripe/user");
-    return await console.log(user);
+    let permission = await useAccessKey(authUser);
+    return await console.log(permission);
   };
   return (
     <div>

@@ -24,10 +24,11 @@ export default async function handler(
   res: NextApiResponse
 ) {
   let token = await getAccessToken();
+  const { pid } = req.query;
   if (req.method === "GET") {
     try {
       const response = await fetch(
-        "https://market-maker-lite.us.auth0.com/api/v2/users/google-oauth2%7C115715399187561626324",
+        `https://market-maker-lite.us.auth0.com/api/v2/users/${pid}`,
         {
           method: "GET",
           headers: {
@@ -44,7 +45,7 @@ export default async function handler(
     const { app_metadata, id } = req.body;
     try {
       const response = await fetch(
-        "https://market-maker-lite.us.auth0.com/api/v2/users/google-oauth2%7C115715399187561626324",
+        `https://market-maker-lite.us.auth0.com/api/v2/users/${pid}`,
         {
           method: "PATCH",
           body: JSON.stringify({

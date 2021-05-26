@@ -10,10 +10,10 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  const { pid } = req.query;
   if (req.method === "GET") {
     try {
-      const customer = await stripe.customers.retrieve("cus_JVwGtWwnXnbuod");
-      console.log(customer);
+      const customer = await stripe.customers.retrieve(`${pid}`);
       res.status(200).json(customer);
     } catch (err) {
       res.status(500).json({ statusCode: 500, message: err.message });
