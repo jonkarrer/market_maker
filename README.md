@@ -111,6 +111,7 @@ Need to integrate testing with Cypress.
 - [Getting Stripe Set-up](https://vercel.com/guides/getting-started-with-nextjs-typescript-stripe) - This gives a direct example of how to bring stripe in with next.js.
 - [Stripe Git-hub](https://github.com/stripe/stripe-js) - The repo to get stripe started.
 - [Stripe Nextjs Vid](https://dev.to/stripe/type-safe-payments-with-next-js-typescript-and-stripe-4jo7) - A video walkthrough
+- [Testing](https://seanconnolly.dev/unit-testing-nextjs-api-routes) - This is for api testing examples with jest
 
 ## Documentation
 
