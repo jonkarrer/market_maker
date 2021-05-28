@@ -42,7 +42,7 @@ export default async function handler(
       throw new Error(err.message);
     }
   } else if (req.method === "PATCH") {
-    const { app_metadata, id } = req.body;
+    const { app_metadata } = req.body;
     try {
       const response = await fetch(
         `https://market-maker-lite.us.auth0.com/api/v2/users/${pid}`,

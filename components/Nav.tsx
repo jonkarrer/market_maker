@@ -107,7 +107,7 @@ export default function Nav() {
               </Link>
               <Link href="/api/auth/me">
                 <button className="btn md:text-xl 2xl:text-2xl sm:px-4 sm:py-2 hover:bg-btn-hover">
-                  {user.sub}
+                  {user.name}
                 </button>
               </Link>
             </>

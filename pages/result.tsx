@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 import { useUser } from "@auth0/nextjs-auth0";
 import useCapture from "../utils/hooks/useCapture";
-
+import { useEffect } from "react";
 const ResultPage: NextPage = () => {
   const router = useRouter();
   const { user } = useUser();
@@ -16,11 +16,13 @@ const ResultPage: NextPage = () => {
 
   if (error) {
     return <div>failed to load</div>;
-  } else {
-    //passes the data to the auth0 user account. user.sub will be used
-    const { customer, subscription } = data.session;
-    useCapture(customer, subscription);
   }
+  useEffect(() => {
+    if (data) {
+      const { customer, subscription } = data.session;
+      useCapture(customer, subscription, user?.sub);
+    }
+  }, [data]);
 
   return (
     <>

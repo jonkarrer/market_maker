@@ -6,12 +6,14 @@ import { fetchGetJSON } from "../api-helpers";
 
 export default async function useAccessKey(authUser?: string): Promise<string> {
   const authUserInfo = await fetchGetJSON(`api/auth/user/${authUser}`);
-  const stripeCusNumber = await authUserInfo.app_metadata.cus_number;
+  const stripeCusNumber = await authUserInfo.app_metadata?.cus_number;
   const stripeUserInfo = await fetchGetJSON(`api/stripe/${stripeCusNumber}`);
   let delinquentStatus = stripeUserInfo.delinquent;
   if (delinquentStatus === true) {
     return "Access Denied";
-  } else {
+  } else if (delinquentStatus === false) {
     return "Access Granted";
+  } else {
+    return "Not a Customer";
   }
 }
