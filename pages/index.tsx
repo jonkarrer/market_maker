@@ -1,7 +1,17 @@
 import Head from "next/head";
 import PriceCards from "@/components/home/PriceCards";
 import InfoBlocks from "@/components/home/InfoBlocks";
+import { fetchGetJSON } from "../utils/api-helpers";
+import useAccessKey from "../utils/hooks/useAccessKey";
+import { useUser } from "@auth0/nextjs-auth0";
 export default function Home() {
+  //this code block calls the current auth0 user for the useAccessKey
+  const { user } = useUser();
+  let authUser = user?.sub?.replace("|", "%7C");
+  const handleClick = async () => {
+    let permission = await useAccessKey(authUser);
+    return await console.log(permission);
+  };
   return (
     <div>
       <Head>
@@ -49,6 +59,7 @@ export default function Home() {
         <button
           id="banner-button"
           className="btn shadow-md bg-lt-blue w-max text-3vw sm:text-1.5vw py-3 px-8 sm:py-5 sm:px-14"
+          onClick={() => handleClick()}
         >
           Make a market today! Invite a friend and recieve $10 off each month
           they subscribe.* Learn More {">"}

@@ -1,8 +1,14 @@
 import getStripe from "../../utils/get-stripejs";
 import { fetchPostJSON } from "../../utils/api-helpers";
+import { useUser } from "@auth0/nextjs-auth0";
 
 const PriceCards = () => {
+  const { user } = useUser();
+
   const handleClick: React.EventHandler<any> = async (priceId) => {
+    if (!user) {
+      return alert("Must Sign up / Sign in");
+    }
     // Create a Checkout Session.
     const response = await fetchPostJSON("/api/checkout_sessions", {
       priceId: priceId,
@@ -56,7 +62,7 @@ const PriceCards = () => {
 
         <button
           className="btn"
-          onClick={() => handleClick("price_1IsAmCGCLPB3c1GbWIt767hl")}
+          onClick={() => handleClick("price_1Iv4fKGCLPB3c1Gb3oeACKSt")}
         >
           Get Started
         </button>
@@ -97,7 +103,7 @@ const PriceCards = () => {
         </ul>
         <button
           className="btn"
-          onClick={() => handleClick("price_1IsAjMGCLPB3c1GbaMZQ8O8f")}
+          onClick={() => handleClick("price_1Iv4eIGCLPB3c1Gbupd88qoS")}
         >
           Get Premium
         </button>

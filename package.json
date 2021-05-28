@@ -5,22 +5,29 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "dependencies": {
     "@auth0/nextjs-auth0": "^1.3.1",
     "@stripe/react-stripe-js": "1.1.2",
     "@stripe/stripe-js": "^1.14.0",
-    "next": "^10.2.0",
+    "next": "^10.2.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "stripe": "^8.56.0"
+    "stripe": "^8.56.0",
+    "swr": "^0.1.16"
   },
   "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "@types/node": "^14.14.41",
     "@types/react": "^17.0.3",
     "autoprefixer": "^10.2.5",
+    "cypress": "^7.4.0",
     "postcss": "^8.2.13",
     "tailwindcss": "^2.1.2",
+    "ts-jest": "^27.0.1",
     "typescript": "^4.2.4"
   }
 }
