@@ -9,6 +9,10 @@ export default async function useAccessKey(authUser?: string): Promise<string> {
   const stripeCusNumber = await authUserInfo.app_metadata?.cus_number;
   const stripeUserInfo = await fetchGetJSON(`api/stripe/${stripeCusNumber}`);
   let delinquentStatus = stripeUserInfo.delinquent;
+  await console.log(authUserInfo);
+  await console.log(stripeCusNumber);
+  await console.log(stripeUserInfo);
+  await console.log(delinquentStatus);
   if (delinquentStatus === true) {
     return "Access Denied";
   } else if (delinquentStatus === false) {
