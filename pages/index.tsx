@@ -1,7 +1,6 @@
 import Head from "next/head";
 import PriceCards from "@/components/home/PriceCards";
 import InfoBlocks from "@/components/home/InfoBlocks";
-import { fetchGetJSON } from "../utils/api-helpers";
 import useAccessKey from "../utils/hooks/useAccessKey";
 import { useUser } from "@auth0/nextjs-auth0";
 export default function Home() {

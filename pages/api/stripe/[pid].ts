@@ -1,3 +1,10 @@
+/**
+ * This page handles stripe user calls. [pid] is extracted from the request and used to call
+    stripe user api. We can get the user and update the user info.
+ * In the app I use api/stripe/${userId} to connect to the proper user. This usually comes from
+    auth0 user app_metadata
+ */
+
 import { NextApiRequest, NextApiResponse } from "next";
 
 import Stripe from "stripe";

@@ -22,7 +22,10 @@ const Products = () => {
   }, [isLoading]);
 
   return (
-    <div className="h-screen grid place-content-center bg-black text-xl text-white">
+    <div
+      id="home_page-one-gradient"
+      className="h-screen grid place-content-center text-xl text-white"
+    >
       {loading ? <div>...loading</div> : <div>{access}</div>}
     </div>
   );

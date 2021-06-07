@@ -7,6 +7,8 @@ import { useEffect } from "react";
 const ResultPage: NextPage = () => {
   const router = useRouter();
   const { user } = useUser();
+
+  // Extract the data from the session
   const { data, error } = useSWR(
     router.query.session_id
       ? `/api/checkout_sessions/${router.query.session_id}`
@@ -19,6 +21,7 @@ const ResultPage: NextPage = () => {
   }
   useEffect(() => {
     if (data) {
+      // Use the data that is extracted from the useSWR
       const { customer, subscription } = data.session;
       useCapture(customer, subscription, user?.sub);
     }

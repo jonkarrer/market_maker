@@ -72,9 +72,9 @@ export default function Nav() {
               <img className="h-full 2xl:w-16" src="/logo.svg" alt="" />
             </a>
           </Link>
-          <Link href="/products">
+          <Link href="/features">
             <a className="mr-9" href="">
-              Products
+              Features
             </a>
           </Link>
           <Link href="/learn">
@@ -102,12 +102,15 @@ export default function Nav() {
           )}
           {!isLoading && user && (
             <>
-              <Link href="/api/auth/logout">
-                <a className="mr-10">Sign Out</a>
+              <Link href="/account">
+                <img
+                  className="rounded-full w-12 mr-10 cursor-pointer"
+                  src={`${user.picture}`}
+                />
               </Link>
-              <Link href="/api/auth/me">
+              <Link href="/dashboard">
                 <button className="btn md:text-xl 2xl:text-2xl sm:px-4 sm:py-2 hover:bg-btn-hover">
-                  {user.name}
+                  <a className="">Dashboard</a>
                 </button>
               </Link>
             </>

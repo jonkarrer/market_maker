@@ -9,7 +9,7 @@ const PriceCards = () => {
     if (!user) {
       return alert("Must Sign up / Sign in");
     }
-    // Create a Checkout Session.
+    // Create a Checkout Session. Pass the items price
     const response = await fetchPostJSON("/api/checkout_sessions", {
       priceId: priceId,
     });

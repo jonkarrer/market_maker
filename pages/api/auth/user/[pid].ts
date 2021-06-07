@@ -1,3 +1,9 @@
+/**
+ * This page handles auth0 user calls. [pid] is extracted from the request and used to call
+    auth0 user api. We can get the user and update the user info.
+ * In the app I use api/auth/user/${userId} to connect to the proper user.
+ */
+
 import { NextApiRequest, NextApiResponse } from "next";
 
 const id = process.env.AUTH0_TEST_CLIENT_ID!;
