@@ -13,7 +13,7 @@ const Products = () => {
       const permission = await useAccessKey(authUser);
       await setLoading(false);
       if (permission === "Access Granted") {
-        setAccess("Access Granted to Dashboard");
+        setAccess("Access Granted to  Dashboard");
       } else {
         return;
       }

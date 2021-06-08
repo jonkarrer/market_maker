@@ -23,9 +23,11 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "pages/features.jsx",
+    "pages/features.tsx",
     "utils/hooks/useAccessKey.js",
-    "pages/dashboard.jsx"
+    "pages/dashboard.jsx",
+    "components/StripeEl.jsx",
+    "pages/api/charge.js"
   ],
   "exclude": ["node_modules"]
 }
