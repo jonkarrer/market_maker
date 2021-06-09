@@ -1,10 +1,10 @@
 import Footer from "./Footer";
 import Nav from "./Nav";
 
-interface ILayout {
+export interface IChildren {
   children: React.ReactNode;
 }
-function Layout({ children }: ILayout) {
+function Layout({ children }: IChildren) {
   return (
     <>
       <Nav />

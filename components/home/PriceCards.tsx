@@ -6,32 +6,14 @@ import { useRouter } from "next/router";
 const PriceCards = () => {
   const { user } = useUser();
   const router = useRouter();
-  const handleClick: React.EventHandler<any> = async (priceId) => {
+  const handleClick: React.EventHandler<any> = (priceId: string) => {
     if (!user) {
       router.push("api/auth/login");
       return;
+    } else {
+      router.push("/subscriptions");
+      return;
     }
-    // Create a Checkout Session. Pass the items price
-    const response = await fetchPostJSON("/api/checkout_sessions", {
-      priceId: priceId,
-    });
-
-    if (response.statusCode === 500) {
-      console.error(response.message);
-    }
-
-    // Redirect to Checkout.
-    const stripe = await getStripe();
-    const { error } = await stripe!.redirectToCheckout({
-      // Make the id field from the Checkout Session creation API response
-      // available to this file, so you can provide it as parameter here
-      // instead of the {{CHECKOUT_SESSION_ID}} placeholder.
-      sessionId: response.id,
-    });
-    // If `redirectToCheckout` fails due to a browser or network
-    // error, display the localized error message to your customer
-    // using `error.message`.
-    console.warn(error.message);
   };
   return (
     /* Two Price Cards // Styles in global.css*/
