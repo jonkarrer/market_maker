@@ -1,3 +1,5 @@
+//This page may be deleted. This was the redirect to a solo stripe checkout
+
 import { NextApiRequest, NextApiResponse } from "next";
 
 import Stripe from "stripe";

@@ -27,7 +27,7 @@
     "utils/hooks/useAccessKey.js",
     "pages/dashboard.jsx",
     "components/StripeEl.jsx",
-    "pages/api/charge.js"
+    "pages/api/charge.ts"
   ],
   "exclude": ["node_modules"]
 }

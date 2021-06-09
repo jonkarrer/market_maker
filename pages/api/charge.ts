@@ -1,11 +1,19 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import Stripe from "stripe";
-
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
+import useCapture from "../../utils/hooks/useCapture";
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2020-08-27",
 });
-export default async function handler(req, res) {
-  const { email, productId, id } = req.body;
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
+  /**
+   * Email = auth0 email
+   * ProductId = desired product
+   * id = payment info from stripe elements
+   */
+  const { email, productId, id, authId } = req.body;
 
   try {
     //Create customer
@@ -26,6 +34,8 @@ export default async function handler(req, res) {
       ],
       default_payment_method: id,
     });
+    //Pass credentials to auth0 user database
+    useCapture(customer.id, subscription.id, authId);
 
     res.status(200).json({
       customer,

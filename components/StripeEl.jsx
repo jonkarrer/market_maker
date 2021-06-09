@@ -14,6 +14,7 @@ const CheckoutForm = () => {
   const elements = useElements();
   const { user, isLoading } = useUser();
   const email = user?.email;
+  const authId = user?.sub;
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -29,6 +30,7 @@ const CheckoutForm = () => {
           email,
           productId: "price_1Iv4eIGCLPB3c1Gbupd88qoS",
           id,
+          authId,
         });
         console.log(response);
       } catch (error) {
