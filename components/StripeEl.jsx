@@ -5,14 +5,14 @@ import {
   useElements,
 } from "@stripe/react-stripe-js";
 import { fetchPostJSON } from "utils/api-helpers";
-import getStripe from "../utils/get-stripejs";
+import getStripe from "utils/get-stripejs";
 import { useUser } from "@auth0/nextjs-auth0";
 
 const stripePromise = getStripe();
 const CheckoutForm = () => {
   const stripe = useStripe();
   const elements = useElements();
-  const { user, isLoading } = useUser();
+  const { user } = useUser();
   const email = user?.email;
   const authId = user?.sub;
   const handleSubmit = async (e) => {

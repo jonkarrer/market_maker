@@ -16,20 +16,20 @@ const Footer = () => {
           <a href="">Disclosures</a>
           <a href="">Sitemap</a>
           <a href="">Pricing</a>
-          <a>
+          <div>
             {!user ? (
-              <Link href="api/auth/login">Sign In</Link>
+              <Link href="/api/auth/login">Sign In</Link>
             ) : (
               <Link href="/account">Account</Link>
             )}
-          </a>
-          <a>
+          </div>
+          <div>
             {!user ? (
-              <Link href="api/auth/login">Sign Up</Link>
+              <Link href="/api/auth/login">Sign Up</Link>
             ) : (
               <Link href="/dashboard">Dashboard</Link>
             )}
-          </a>
+          </div>
         </nav>
         <nav
           id="home_nav-icons"

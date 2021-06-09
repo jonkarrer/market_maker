@@ -1,13 +1,15 @@
 import getStripe from "../../utils/get-stripejs";
 import { fetchPostJSON } from "../../utils/api-helpers";
 import { useUser } from "@auth0/nextjs-auth0";
+import { useRouter } from "next/router";
 
 const PriceCards = () => {
   const { user } = useUser();
-
+  const router = useRouter();
   const handleClick: React.EventHandler<any> = async (priceId) => {
     if (!user) {
-      return alert("Must Sign up / Sign in");
+      router.push("api/auth/login");
+      return;
     }
     // Create a Checkout Session. Pass the items price
     const response = await fetchPostJSON("/api/checkout_sessions", {

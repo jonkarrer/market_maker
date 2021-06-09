@@ -1,6 +1,6 @@
 # Market Maker Lite - Front-End
 
-This is a project for the Market Maker Lite company. I am using Next.js + Typescript for the front end. The front-end goals are to pull API from a python database and display proprietary market information for each user. Chart.js will be used to elegantly display this data in their dashboard.
+This is a project for the Market Maker Lite company. I am using Next.js + Typescript for the front end. The front-end goals are to pull API from a python database and display proprietary market information for each user. Stripe will be used for the payments, auth0 for the login, and AWS for the database. Hosted on vercel.
 
 ## Table of contents
 
@@ -28,7 +28,7 @@ Users should be able to:
 - Sign-In
 - Create Account with info
 - Access Custom Dashboard
-- Pay for premium services
+- Pay for premium subscription
 
 ### Screenshot
 
@@ -36,10 +36,10 @@ Users should be able to:
 
 ## My process
 
-- One section at a time.
-- Optimized before moving to next section
-- Responsive design testing
-- Document all unique code and 'gotchas'
+1. Created the front-end UI from the designer.
+2. Set up auth0 for registration.
+3. Connected Stripe to the backend.
+4. Protected certain routes. Need auth or need subscription to access.
 
 ### Built with
 
@@ -117,7 +117,7 @@ Need to integrate testing with Cypress.
 
 ### @auth0/nextjs-auth0
 
-- In the api folder I set up the routes to handle the sign in, api/auth/[...auth0].js. The package comes with a pre determined way to do this. This sets up routes to call. "/api/auth/login", "/api/auth/logout", "/api/auth/me"
+- In the api folder I set up the routes to handle the sign in, api/auth/[...auth0].js. The package comes with a pre determined way to do this. This sets up routes to call. "/api/auth/login", "/api/auth/logout", "/api/auth/me", "/api/auth/callback"
 
 ```jsx
 import { handleAuth } from "@auth0/nextjs-auth0";
@@ -183,7 +183,7 @@ const { user, isLoading } = useUser();
 
 ### Stripe
 
-- First I set up a ulils folder with a stripe starter code. This creates a stripe session.
+- First I set up a utils folder with a stripe starter code. This creates a stripe session.
 
 ```typescript
 import { Stripe, loadStripe } from "@stripe/stripe-js";
@@ -198,78 +198,6 @@ const getStripe = () => {
 
 export default getStripe;
 ```
-
-- When a user selects a package option, I pass the price_id of the package to stripe and start a checkout.
-
-```jsx
-import getStripe from "../../utils/get-stripejs";
-
-const handleClick: React.EventHandler<any> = async (priceId) => {
-    // Create a Checkout Session.
-    const response = await fetchPostJSON("/api/checkout_sessions", {
-      priceId: priceId,
-    });
-
-    if (response.statusCode === 500) {
-      console.error(response.message);
-    }
-
-    // Redirect to Checkout.
-    const stripe = await getStripe();
-    const { error } = await stripe!.redirectToCheckout({
-      // Make the id field from the Checkout Session creation API response
-      // available to this file, so you can provide it as parameter here
-      // instead of the {{CHECKOUT_SESSION_ID}} placeholder.
-      sessionId: response.id,
-    });
-    console.warn(error.message);
-};
-
-<button
-  className="btn"
-  onClick={() => handleClick("price_1Iv4eIGCLPB3c1Gbupd88qoS")}
->
-  Get Premium
-</button>
-```
-
-- My api route, "/api/checkout_sessions", created a post request to send to stripe. This info is uses in the checkout session.
-
-```typescript
-import Stripe from "stripe";
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2020-08-27",
-});
-
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
-  if (req.method === "POST") {
-    const { priceId } = req.body;
-    try {
-      // Create Checkout Sessions from body params.
-      const params: Stripe.Checkout.SessionCreateParams = {
-        mode: "subscription",
-        payment_method_types: ["card"],
-        line_items: [
-          {
-            price: priceId,
-            quantity: 1,
-          },
-        ],
-        success_url: `${req.headers.origin}/result?session_id={CHECKOUT_SESSION_ID}`,
-        cancel_url: `${req.headers.origin}/`,
-      };
-      const checkoutSession: Stripe.Checkout.Session =
-        await stripe.checkout.sessions.create(params);
-
-      res.status(200).json(checkoutSession);
-    }
-  }
-```
-
-- After the customer completes or cancels their payment, they are redirected to the results page. This is where I capture the stripe customer data a pass it to the auth0 user data. I use a custom hook called useCapture().
 
 ## Author
 
