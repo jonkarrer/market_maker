@@ -36,7 +36,7 @@ export default async function handler(
     });
     //Pass credentials to auth0 user database
     useCapture(customer.id, subscription.id, authId);
-
+    await console.log(subscription);
     res.status(200).json({
       customer,
       subscriptionId: subscription.id,
