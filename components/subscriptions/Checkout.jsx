@@ -60,6 +60,7 @@ const CheckoutForm = () => {
                   "::placeholder": {
                     color: "#aab7c4",
                   },
+                  width: "500px",
                 },
                 invalid: {
                   color: "#9e2146",
@@ -92,7 +93,7 @@ const CheckoutForm = () => {
               Subscribe Monthly
             </button>
           </Card>
-          <Card name="Annual" price="400" length="annualy">
+          <Card name="Annual" price="400" length="year">
             <button
               type="submit"
               value="price_1Iv4eIGCLPB3c1Gbupd88qoS"
