@@ -9,6 +9,7 @@ import getStripe from "utils/get-stripejs";
 import { useUser } from "@auth0/nextjs-auth0";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import Card from "./Card";
 
 const stripePromise = getStripe();
 
@@ -71,55 +72,37 @@ const CheckoutForm = () => {
           Powered by <strong>stripe</strong>
         </div>
         <div className="flex items-center justify-center">
-          <div className="w-72 h-72 border rounded-sm text-black bg-white text-center grid place-content-center space-y-6 shadow-xl">
-            <h1 className="font-semibold text-4xl">Free</h1>
-            <div className="flex flex-col items-center space-y-16">
-              <p className="text-gray-500 text-base">
-                <strong className="font-bold text-2xl">$0</strong> per month
-              </p>
-              <button
-                type="submit"
-                disabled={true}
-                className={`bg-gray-600 text-base font-semibold text-white py-3 w-48 rounded`}
-              >
-                Current Plan
-              </button>
-            </div>
-          </div>
-          <div className="w-72 h-72 border rounded-sm text-black bg-white text-center grid place-content-center space-y-6 shadow-xl">
-            <h1 className="font-semibold text-4xl">Monthly</h1>
-            <div className="flex flex-col items-center space-y-16">
-              <p className="text-gray-500 text-base">
-                <strong className="font-bold text-2xl">$40</strong> per month
-              </p>
-              <button
-                onClick={() => setChoice(2)}
-                type="submit"
-                value="price_1Iv4eIGCLPB3c1Gbupd88qoS"
-                disabled={disableButton || !stripe}
-                className={`bg-blue-border text-base font-semibold text-white py-3 w-48 rounded`}
-              >
-                Subscribe Monthly
-              </button>
-            </div>
-          </div>
-          <div className="w-72 h-72 border rounded-sm text-black bg-white text-center grid place-content-center space-y-6 shadow-xl">
-            <h1 className="font-semibold text-4xl">Annual</h1>
-            <div className="flex flex-col items-center space-y-16">
-              <p className="text-gray-500 text-base">
-                <strong className="font-bold text-2xl">$400</strong> per yearly
-              </p>
-              <button
-                type="submit"
-                value="price_1Iv4eIGCLPB3c1Gbupd88qoS"
-                onClick={() => setChoice(3)}
-                disabled={disableButton || !stripe}
-                className={`bg-blue-border text-base font-semibold text-white py-3 w-48 rounded`}
-              >
-                Subscribe Annually
-              </button>
-            </div>
-          </div>
+          <Card name="Free" price="0" length="month">
+            <button
+              type="submit"
+              disabled={true}
+              className={`bg-gray-600 text-base font-semibold text-white py-3 w-48 rounded`}
+            >
+              Current Plan
+            </button>
+          </Card>
+          <Card name="Monthly" price="40" length="month">
+            <button
+              onClick={() => setChoice(2)}
+              type="submit"
+              value="price_1Iv4eIGCLPB3c1Gbupd88qoS"
+              disabled={disableButton || !stripe}
+              className={`bg-blue-border text-base font-semibold text-white py-3 w-48 rounded`}
+            >
+              Subscribe Monthly
+            </button>
+          </Card>
+          <Card name="Annual" price="400" length="annualy">
+            <button
+              type="submit"
+              value="price_1Iv4eIGCLPB3c1Gbupd88qoS"
+              onClick={() => setChoice(3)}
+              disabled={disableButton || !stripe}
+              className={`bg-blue-border text-base font-semibold text-white py-3 w-48 rounded`}
+            >
+              Subscribe Annually
+            </button>
+          </Card>
         </div>
       </form>
     </div>

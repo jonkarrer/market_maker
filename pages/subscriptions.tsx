@@ -1,5 +1,5 @@
 import Checkout from "@/components/subscriptions/Checkout";
-import SubCards from "@/components/subscriptions/SubCards";
+import SubCards from "@/components/subscriptions/Card";
 export default function Subscriptions() {
   return (
     <div
