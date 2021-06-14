@@ -11,6 +11,7 @@ module.exports = {
         '8vw' : '8vw', 
         'square' : '23vh',
         '40vw' : '40vw',
+        
       },
       height: {
         '1150px' : '1150px',

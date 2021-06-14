@@ -33,7 +33,7 @@ export default function Home() {
             alt="stock image"
           />
         </div>
-        <article className="z-10 font-semibold text-white flex flex-col mx-std sm:mx-0 sm:ml-std sm:order-1 sm:justify-center sm:w-2/3">
+        <article className="z-10 font-semibold text-black flex flex-col mx-std sm:mx-0 sm:ml-std sm:order-1 sm:justify-center sm:w-2/3">
           <h1 className="text-mobile-h font-semibold leading-none sm:text-desktop-h sm:mr-5 xl:mr-10 2xl:mr-16">
             The market data we deserve
           </h1>
@@ -43,7 +43,7 @@ export default function Home() {
               statistics to make sense of complicated financial markets
             </p>
             <div className="w-full flex justify-center sm:block">
-              <button className="btn text-mobile-p sm:text-1.5vw xl:text-1.3vw hover:bg-btn-hover">
+              <button className="btn text-black text-mobile-p sm:text-1.5vw xl:text-1.3vw hover:bg-btn-hover">
                 Get Early Access
               </button>
             </div>

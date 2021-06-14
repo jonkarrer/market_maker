@@ -61,24 +61,24 @@ export default function Nav() {
       </div>
       <header
         id="desktop-header"
-        className="hidden sm:flex w-5/6 absolute font-semibold items-center justify-between top-3 mx-std z-10 text-white"
+        className="hidden sm:flex w-5/6 absolute font-semibold items-center justify-between top-3 mx-std z-10 text-black"
       >
         <nav
           id="links"
           className="flex items-center justify-start md:text-xl 2xl:text-3xl"
         >
           <Link href="/">
-            <a className="w-10 mr-9 2xl:w-16" href="#">
-              <img className="h-full 2xl:w-16" src="/logo.svg" alt="" />
+            <a className="w-10 mr-20 2xl:w-16" href="#">
+              Logo
             </a>
           </Link>
           <Link href="/features">
-            <a className="mr-9" href="">
+            <a className="mr-20" href="">
               Features
             </a>
           </Link>
           <Link href="/learn">
-            <a className="mr-9" href="">
+            <a className="mr-20" href="">
               Learn
             </a>
           </Link>
@@ -86,7 +86,7 @@ export default function Nav() {
         </nav>
         <nav
           id="sign-up"
-          className="flex items-center justify-end w-1/2 md:text-xl 2xl:text-2xl"
+          className="flex items-center justify-end w-1/2 md:text-xl 2xl:text-3xl"
         >
           {!isLoading && !user && (
             <>
@@ -94,7 +94,7 @@ export default function Nav() {
                 <p className="mr-10 cursor-pointer">Sign In</p>
               </Link>
               <Link href="/api/auth/login">
-                <button className="btn md:text-xl 2xl:text-2xl sm:px-4 sm:py-2 hover:bg-btn-hover">
+                <button className="btn text-black md:text-xl 2xl:text-3xl sm:px-4 sm:py-2 hover:bg-btn-hover">
                   Sign Up
                 </button>
               </Link>

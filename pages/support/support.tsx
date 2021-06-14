@@ -6,7 +6,7 @@ export default function Support() {
       <Gradient title="Support" />
       <div
         id="squares-container"
-        className="mx-std py-8 grid justify-items-center place-content-around gap-10 grid-cols-2 sm:gap-16 sm:-mt-36 sm:grid-cols-3 md:-mt-40 xl:-mt-44 2xl:gap-24 2xl:mx-auto max-w-screen-2xl"
+        className="mx-std py-8 grid justify-items-center place-content-around gap-10 grid-cols-2 sm:gap-16 sm:-mt-36 sm:grid-cols-3 md:-mt-40 xl:-mt-44 2xl:mx-auto max-w-screen-2xl"
       >
         <Square title="Sitemap" link="/support/sitemap" />
         <Square title="Pricing" link="/support/pricing" />
