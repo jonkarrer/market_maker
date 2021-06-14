@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     extend: {
       width: {
+        '864px' : '864px',
         '685px' : '685px',
         '500px' : '500px',
         '2000px' : '2000px',

@@ -22,6 +22,7 @@ const CheckoutForm = () => {
   const { user } = useUser();
   const email = user?.email;
   const authId = user?.sub;
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const productId = e.target[choice].value;
@@ -72,40 +73,40 @@ const CheckoutForm = () => {
         <div className="text-black bg-white outline-none rounded text-base border m-auto py-1 px-2">
           Powered by <strong>stripe</strong>
         </div>
-        <div className="flex items-center justify-center">
-          <Card name="Free" price="0" length="month">
-            <button
-              type="submit"
-              disabled={true}
-              className={`bg-gray-600 text-base font-semibold text-white py-3 w-48 rounded`}
-            >
-              Current Plan
-            </button>
-          </Card>
-          <Card name="Monthly" price="40" length="month">
-            <button
-              onClick={() => setChoice(2)}
-              type="submit"
-              value="price_1Iv4eIGCLPB3c1Gbupd88qoS"
-              disabled={disableButton || !stripe}
-              className={`bg-blue-border text-base font-semibold text-white py-3 w-48 rounded`}
-            >
-              Subscribe Monthly
-            </button>
-          </Card>
-          <Card name="Annual" price="400" length="year">
-            <button
-              type="submit"
-              value="price_1Iv4eIGCLPB3c1Gbupd88qoS"
-              onClick={() => setChoice(3)}
-              disabled={disableButton || !stripe}
-              className={`bg-blue-border text-base font-semibold text-white py-3 w-48 rounded`}
-            >
-              Subscribe Annually
-            </button>
-          </Card>
-        </div>
       </form>
+      <div className="flex items-center justify-center">
+        <Card name="Free" price="0" length="month">
+          <button
+            type="submit"
+            disabled={true}
+            className={`bg-gray-600 text-base font-semibold text-white py-3 w-48 rounded`}
+          >
+            Current Plan
+          </button>
+        </Card>
+        <Card name="Monthly" price="40" length="month">
+          <button
+            onClick={() => setChoice(2)}
+            type="submit"
+            value="price_1Iv4eIGCLPB3c1Gbupd88qoS"
+            disabled={disableButton || !stripe}
+            className={`bg-blue-border text-base font-semibold text-white py-3 w-48 rounded`}
+          >
+            Subscribe Monthly
+          </button>
+        </Card>
+        <Card name="Annual" price="400" length="year">
+          <button
+            type="submit"
+            value="price_1Iv4eIGCLPB3c1Gbupd88qoS"
+            onClick={() => setChoice(3)}
+            disabled={disableButton || !stripe}
+            className={`bg-blue-border text-base font-semibold text-white py-3 w-48 rounded`}
+          >
+            Subscribe Annually
+          </button>
+        </Card>
+      </div>
     </div>
   );
 };
