@@ -7,18 +7,16 @@ export default function Nav() {
   const { user, isLoading } = useUser();
   return (
     <div>
-      <div id="mobile-header" className="sm:hidden font-primary">
+      <header id="mobile-header" className="sm:hidden font-primary">
         <a
           id="logo-container"
           className="w-8 absolute top-5 left-5 z-10"
           href="#"
-        >
-          <img src="/logo.svg" alt="logo" />
-        </a>
+        ></a>
         <div
           id="circle-dot-dropdown"
           onClickCapture={() => setOpen(true)}
-          className={`absolute transition-all z-20 bg-white
+          className={`absolute transition-all z-20 bg-black
        ${
          open
            ? `top-0 right-0 w-screen h-screen`
@@ -58,27 +56,27 @@ export default function Nav() {
             </div>
           </div>
         </div>
-      </div>
+      </header>
       <header
         id="desktop-header"
         className="hidden sm:flex w-5/6 absolute font-semibold items-center justify-between top-3 mx-std z-10 text-black"
       >
         <nav
           id="links"
-          className="flex items-center justify-start md:text-xl 2xl:text-3xl"
+          className="flex items-center justify-start md:text-xl 2xl:text-2xl"
         >
           <Link href="/">
-            <a className="w-10 mr-20 2xl:w-16" href="#">
+            <a className="w-10 sm:mr-9 lg:mr-20 2xl:w-16" href="#">
               Logo
             </a>
           </Link>
           <Link href="/features">
-            <a className="mr-20" href="">
+            <a className="sm:mr-9 lg:mr-20" href="">
               Features
             </a>
           </Link>
           <Link href="/learn">
-            <a className="mr-20" href="">
+            <a className="sm:mr-9 lg:mr-20" href="">
               Learn
             </a>
           </Link>

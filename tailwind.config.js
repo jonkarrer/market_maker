@@ -5,6 +5,8 @@ module.exports = {
   theme: {
     extend: {
       width: {
+        '528px' : '528px',
+        '480px' : '480px',
         '864px' : '864px',
         '685px' : '685px',
         '500px' : '500px',
@@ -74,7 +76,8 @@ module.exports = {
         'aqua' : '#00ffff',
         'blue-border' : '#4356ff',
         'lt-grey' : '#E9E9E9',
-        'dk-grey' : '#848484'
+        'dk-grey' : '#848484',
+        'foot' : '#F5F5F7',
       },
       borderWidth: {
         '1px' : '1px',
