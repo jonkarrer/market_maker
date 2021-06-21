@@ -4,13 +4,11 @@ import {
   useStripe,
   useElements,
 } from "@stripe/react-stripe-js";
-import { fetchPostJSON } from "utils/api-helpers";
 import getStripe from "utils/get-stripejs";
-import { useRouter } from "next/router";
-
+import { fetchPostJSON } from "utils/api-helpers";
 import { useUser, withPageAuthRequired } from "@auth0/nextjs-auth0";
-import Link from "next/link";
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
+import { useRouter } from "next/router";
 
 const stripePromise = getStripe();
 
@@ -34,7 +32,7 @@ const Gradient = ({ email }: IGradient) => (
 const Menu = () => (
   <div
     id="menu"
-    className="rounded absolute shadow-term-panel transform -translate-x-full pr-2 sm:pr-10 sm:mr-5 text-xs sm:text-sm lg:text-base text-gray-600 pt-6 sm:w-28 lg:w-56"
+    className="rounded h-screen absolute shadow-term-panel transform -translate-x-full sm:transform-none sm:relative pr-2 sm:pr-10 sm:mr-5 text-xs sm:text-sm lg:text-base text-gray-600 pt-6 sm:w-28 lg:w-56"
   >
     <ul className="list-none space-y-10 sm:space-y-3">
       <li className="font-bold text-black">Account</li>
@@ -116,10 +114,56 @@ const Card = ({
   );
 };
 
-const CheckoutForm = () => {
+interface ICheckoutForm {
+  selectedPlan: number;
+}
+const CheckoutForm = ({ selectedPlan }: ICheckoutForm) => {
+  const [disableButton, setDisableButton] = useState(false);
+  const router = useRouter();
+  const stripe = useStripe();
+  const elements = useElements();
+  const { user } = useUser();
+  const email = user?.email;
+  const authId = user?.sub;
+  async function handleSubmit(e: any) {
+    e.preventDefault();
+    if (selectedPlan === 0) {
+      alert("Select a plan above");
+      return;
+    }
+    if (selectedPlan === 1) {
+      var productId = "price_1Iv4eIGCLPB3c1Gbupd88qoS";
+      return productId;
+    } else {
+      var productId = "price_1Iv4eIGCLPB3c1Gbupd88qoS";
+    }
+    console.log(productId);
+    // @ts-ignore
+    const { error, paymentMethod } = await stripe?.createPaymentMethod({
+      type: "card",
+      // @ts-ignore
+      card: elements?.getElement(CardElement),
+    });
+    if (!error) {
+      const { id } = paymentMethod;
+      setDisableButton(true);
+      try {
+        const response = await fetchPostJSON("api/stripe/charge", {
+          email,
+          productId: productId,
+          id,
+          authId,
+        });
+        console.log(response);
+        return router.push("/dashboard");
+      } catch (error) {
+        console.log(error);
+      }
+    }
+  }
   return (
     <div>
-      <form className="space-y-3 flex flex-col">
+      <form onSubmit={handleSubmit} className="space-y-3 flex flex-col">
         <div className="border-solid border-1px p-2 bg-white w-72 sm:w-96 lg:w-500px m-auto">
           <CardElement
             options={{
@@ -138,7 +182,10 @@ const CheckoutForm = () => {
             }}
           />
         </div>
-        <button className="mx-auto bg-blue-border text-white font-semibold py-2 w-72 sm:w-96 lg:w-500px">
+        <button
+          disabled={disableButton}
+          className="mx-auto bg-blue-border text-white font-semibold py-2 w-72 sm:w-96 lg:w-500px"
+        >
           Subscribe
         </button>
       </form>
@@ -270,7 +317,7 @@ const Settings = () => {
             placeholder="Name on card"
           />
           <Elements stripe={stripePromise}>
-            <CheckoutForm />
+            <CheckoutForm selectedPlan={selectedPlan} />
           </Elements>
         </section>
       </section>
