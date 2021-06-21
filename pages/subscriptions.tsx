@@ -1,5 +1,5 @@
-import Checkout from "@/components/subscriptions/Checkout";
-import SubCards from "@/components/subscriptions/Card";
+import Checkout from "@/components/stripe/Checkout";
+import SubCards from "@/components/stripe/Card";
 export default function Subscriptions() {
   return (
     <div
