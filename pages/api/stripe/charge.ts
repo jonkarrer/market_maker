@@ -12,6 +12,7 @@ export default async function handler(
    * Email = auth0 email
    * ProductId = desired product
    * id = payment info from stripe elements
+   * authId = the user that is paying
    */
   const { email, productId, id, authId } = req.body;
 
@@ -45,7 +46,7 @@ export default async function handler(
     return res.status(400).send({ error: { message: error.message } });
   }
 }
-
+//Payment intent example, not sure how it works but may be necessary
 // const paymentInfo = await stripe.paymentIntents.create({
 //   amount: 4000,
 //   customer: customer.id,

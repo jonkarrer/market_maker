@@ -6,7 +6,9 @@ import getStripe from "utils/get-stripejs";
 const stripePromise = getStripe();
 
 const Settings = () => {
+  //The user selects a plan
   const [selectedPlan, setPlan] = useState(0);
+
   return (
     <main className="sm:mt-5 space-y-12 grid text-center w-full">
       <div className="sm:hidden fixed overflow-auto left-0 m-auto bottom-0 top-0 transform -translate-x-1/2 w-10 h-10 bg-black rounded-full cursor-pointer">
@@ -23,7 +25,9 @@ const Settings = () => {
           subscription="Free"
           price="0"
           selected={selectedPlan === 1 ? true : false}
+          //Send state down to the plans button
           setPlan={setPlan}
+          //Greys out the current plan, need to set to a function later
           current={true}
         >
           <div className="text-gray-500 sm:text-xs lg:text-base">
@@ -126,6 +130,7 @@ const Settings = () => {
             type="text"
             placeholder="Name on card"
           />
+          {/** Init the stripe card capture, passes the selected plan to the check out function */}
           <Elements stripe={stripePromise}>
             <Checkout selectedPlan={selectedPlan} />
           </Elements>

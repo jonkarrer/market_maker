@@ -4,14 +4,19 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      screens: {
+        '3xl' : '2200px'
+      },
+      minWidth: {
+        '2xl' : '1500px'
+      },
       width: {
-        '1000px' : '1000px',
+        '200' : '700px',
         '528px' : '528px',
-        '480px' : '480px',
         '864px' : '864px',
-        '685px' : '685px',
+        '180' : '600px',
         '500px' : '500px',
-        '2000px' : '2000px',
+        '2000' : '2000px',
         '8vw' : '8vw', 
         'square' : '23vh',
         '40vw' : '40vw',
@@ -28,24 +33,12 @@ module.exports = {
         '36vh' : '36vh',
         '44vh' : '44vh',
       },
+      maxHeight: {
+        '3xl' : '1400px'
+      },
       minHeight: {
         '400px' : '400px',
         '800px' : '800px'
-      },
-      fontSize: {
-        'mobile-p' : 'calc(2vw + 1.5vh)',
-        'mobile-h' : ['9vw', '1.1'],
-        'desktop-h' : ['5vw', '1.2'],
-        'desktop-p' : ['2vw', '1.4'],
-        '1.3vw' : ['1.3vw', '1.4'],
-        '1.5vw' : ['1.5vw', '1.4'],
-        '2vw' : '2vw',
-        '3vw' : '3vw',
-        '4vw' : '4vw',
-        '5vw' : '5.2vw',
-        '6vw' : '6vw',
-        '8vw' : '8vw',
-        '9vw' : '9vw',
       },
       margin: {
         'std' : "8vw",
@@ -60,24 +53,8 @@ module.exports = {
         '20vw' : '20vw',
       },
       colors: {
-        'hot-pink': '#d9a3d9',
-        'dk-pink' : '#D57EEB',
-        'lt-teal' : '#ddf5ff',
-        'lt-pink' : '#d4b4fc',
-        'lt-blue' : '#7580fc',
-        'dk-blue' : '#071544',
-        'dk-black' : '#121212',
-        'lt-clear' : 'rgba(0, 0, 0, 0.1)',
-        'salmon' : 'hsla(22, 100%, 77%, 1)',
-        'circle-2' : '#c880f8',
-        'circle-3' : '#ff6c98',
-        'circle-4' : '#2889f7',
-        'btn-hover' : 'rgba(0, 0, 0, 0.2)',
-        'aqua' : '#00ffff',
-        'blue-border' : '#4356ff',
-        'lt-grey' : '#E9E9E9',
-        'dk-grey' : '#848484',
-        'foot' : '#F5F5F7',
+        'gradAqua': "#00beb3",
+        "gradBlue" : "#5653ff"
       },
       borderWidth: {
         '1px' : '1px',

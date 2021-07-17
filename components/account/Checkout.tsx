@@ -22,12 +22,14 @@ const Checkout = ({ selectedPlan }: ICheckout) => {
       return;
     }
     if (selectedPlan === 1) {
+      //I send this to the backend depending on the selected plan that comes from Settings.tsx.
+      //This is the test price for the Monthly
       var productId = "price_1Iv4eIGCLPB3c1Gbupd88qoS";
       return productId;
     } else {
+      //This is the test price for the Monthly, but needs to be the annual
       var productId = "price_1Iv4eIGCLPB3c1Gbupd88qoS";
     }
-    console.log(productId);
     // @ts-ignore
     const { error, paymentMethod } = await stripe?.createPaymentMethod({
       type: "card",
@@ -37,6 +39,7 @@ const Checkout = ({ selectedPlan }: ICheckout) => {
     if (!error) {
       const { id } = paymentMethod;
       setDisableButton(true);
+      //Commit the payment to my backend
       try {
         const response = await fetchPostJSON("api/stripe/charge", {
           email,

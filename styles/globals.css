@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
 h1,
 h2,
 h3,
@@ -9,80 +15,12 @@ h5 {
 }
 p,
 a,
-button {
+button,
+span {
   font-family: "Source Sans Pro", "sans-serif";
 }
-/******* Home Page *********/
-#home_page-one-gradient {
-  background-image: #ffffff;
-  background-image: radial-gradient(
-      at 50% 99%,
-      hsla(242, 100%, 70%, 0.3) 0,
-      transparent 50%
-    ),
-    radial-gradient(at 59% 53%, hsla(0, 100%, 82%, 0.2) 0, transparent 50%),
-    radial-gradient(at 50% 39%, hsla(189, 100%, 56%, 0.3) 0, transparent 50%),
-    radial-gradient(at 38% 49%, hsla(343, 100%, 76%, 0.3) 0, transparent 50%);
-}
-#home_bottom-banner h1 {
-  text-align: center;
-  font-size: clamp(2em, 4vw, 11em);
-  line-height: 1.2;
-  margin: 0 7vw;
-  background: -webkit-linear-gradient(280deg, blue, #00ffff);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-@media (max-width: 500px) {
-  #bottom-banner h1 {
-    text-align: center;
-    font-size: 6vw;
-    line-height: 1.2;
-    padding: 10px 0;
-  }
-}
-#home_nav-icons img {
-  width: 3vw;
-  min-width: 45px;
-  max-width: 100px;
-  margin-right: 25px;
-}
-#home_nav-icons img:last-child {
-  margin-right: 0;
-}
-/******* About Us ********/
-#our-mission {
-  text-align: center;
-  margin: 0 7vw;
-  background: -webkit-linear-gradient(0deg, #00ff47, #00d1ff);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-#just-like-you {
-  text-align: center;
-  margin: 0 7vw;
-  background: -webkit-linear-gradient(0deg, #4200ff, #cc01ff);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-#meet-the-team {
-  text-align: center;
-  margin: 0 7vw;
-  background: -webkit-linear-gradient(0deg, #cc01ff, #ffcc5e);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-@media (max-width: 500px) {
-  #bottom-banner h1 {
-    text-align: center;
-    font-size: 6vw;
-    line-height: 1.2;
-    padding: 10px 0;
-  }
+.splash {
+  background: linear-gradient(110deg, #00beb3, #5653ff);
 }
 @tailwind base;
 @tailwind components;
@@ -92,67 +30,33 @@ button {
   html {
     @apply antialiased;
   }
+  section {
+    @apply max-w-screen-3xl max-h-3xl m-auto py-16;
+  }
+  header {
+    @apply max-w-screen-3xl left-0 right-0 m-auto;
+  }
+  h1 {
+    @apply text-4xl font-bold md:text-6xl 2xl:text-7xl;
+  }
+  h2 {
+    @apply text-3xl font-bold md:text-5xl 2xl:text-6xl;
+  }
+  h3 {
+    @apply text-xl font-bold md:text-4xl 2xl:text-5xl;
+  }
+  h4 {
+    @apply text-xl font-bold lg:text-2xl;
+  }
+  p {
+    @apply text-xl lg:text-2xl 3xl:text-3xl;
+  }
+  button {
+    @apply text-lg rounded border-2 border-white w-40 py-2 md:text-xl md:w-48 md:py-3 2xl:text-2xl 2xl:w-60 2xl:py-4;
+  }
 }
 @layer components {
-  /**** General ****/
-  .btn {
-    @apply py-2 px-4 lg:py-4 lg:px-6 font-semibold bg-lt-clear backdrop-filter backdrop-blur-3xl backdrop-saturate-150 text-white rounded;
-  }
-  .circle {
-    @apply absolute rounded-full border-black border-8 filter blur-2xl sm:blur-3xl;
-  }
-  /**** Home Page ****/
-  /*3 blocks, icon has 4 circles*/
-  .info-block {
-    @apply flex flex-col items-center justify-start text-center mx-std sm:mx-5 space-y-4 xl:space-y-8 2xl:space-y-12;
-  }
-  .info-block img {
-    @apply w-1/4 sm:w-8vw;
-  }
-  .info-block h3 {
-    @apply text-6vw font-semibold sm:text-1.5vw md:text-xl lg:text-2vw;
-  }
-  .info-block p {
-    @apply text-mobile-p leading-8 sm:text-1.5vw sm:leading-4 md:leading-6 lg:mx-8% lg:text-xl xl:leading-8 xl:text-2xl 2xl:text-3xl;
-  }
-  /*2 blue cards explaining price options*/
-  .price-card {
-    @apply h-auto grid grid-rows-price-cards 2xl:grid-rows-large-cards gap-5 text-center w-11/12 py-3 sm:w-40vw sm:hover:shadow-2xl cursor-pointer bg-gradient-to-br from-lt-blue to-lt-teal rounded-md;
-  }
-  .price-card h2 {
-    @apply text-mobile-h sm:text-4vw;
-  }
-  .price-card p {
-    @apply text-mobile-p sm:text-desktop-p lg:text-1.5vw;
-  }
-  .price-card ul {
-    @apply list-none space-y-3 my-5 mx-std sm:mx-6 2xl:space-y-8 2xl:mt-16;
-  }
-  .price-card li {
-    @apply flex items-center h-auto text-left lg:ml-8 sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-1.3vw;
-  }
-  .price-card li img {
-    @apply w-1/12 mr-6 sm:w-4 md:w-5 xl:w-6;
-  }
-  .price-card button {
-    @apply w-11/12 bg-dk-black py-3 m-auto 2xl:h-24 2xl:text-1.3vw;
-  }
-  /**** Price Plans Page /pricing ****/
-  .column-1 {
-    @apply grid gap-8 lg:gap-10;
-  }
-  .column-1 div {
-    @apply flex items-center space-x-2 text-sm ml-3 sm:ml-0 sm:text-base lg:text-xl xl:text-2xl font-semibold;
-  }
-  .column-1 div img {
-    @apply w-4 sm:w-4 lg:w-5 cursor-pointer;
-  }
-  .column-2,
-  .column-3 {
-    @apply flex flex-col space-y-14 sm:space-y-8 lg:space-y-10;
-  }
-  .column-2 div,
-  .column-3 div {
-    @apply mx-auto text-sm sm:text-lg lg:text-xl xl:text-2xl font-semibold;
+  .wrapper {
+    @apply w-10/12 lg:w-9/12 m-auto max-w-screen-3xl;
   }
 }

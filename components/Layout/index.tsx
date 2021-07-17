@@ -1,5 +1,5 @@
 import Footer from "./Footer";
-import Nav from "./Nav";
+import Nav from "./Header";
 
 export interface IChildren {
   children: React.ReactNode;
