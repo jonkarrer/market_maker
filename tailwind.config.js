@@ -7,10 +7,14 @@ module.exports = {
       screens: {
         '3xl' : '2200px'
       },
+      backgroundImage: {
+        'splash' : 'linear-gradient(110deg, #00beb3, #5653ff)'
+      },
       minWidth: {
         '2xl' : '1500px'
       },
       width: {
+        '220' : '900px',
         '200' : '700px',
         '528px' : '528px',
         '864px' : '864px',

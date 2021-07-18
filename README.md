@@ -8,7 +8,7 @@ This is a project for the Market Maker Lite company. I am using Next.js + Typesc
   - [The Goal](#the-goal)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
+- [Build](#build)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
@@ -34,7 +34,7 @@ Users should be able to:
 
 ![](./public/assets/readme.png)
 
-## My process
+## Build
 
 1. Created the front-end UI from the designer.
 2. Set up auth0 for registration.
@@ -43,10 +43,6 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
 - [TailwindCSS](https://tailwindcss.com/) - For styles
