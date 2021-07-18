@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+
+/* Components */
+@import url("./components/gradient-box.css");
+
 * {
   box-sizing: border-box;
 }
@@ -19,6 +23,7 @@ button,
 span {
   font-family: "Source Sans Pro", "sans-serif";
 }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -28,7 +33,7 @@ span {
     @apply antialiased;
   }
   section {
-    @apply max-w-screen-3xl max-h-3xl m-auto py-16 md:py-20;
+    @apply md:max-w-screen-3xl md:max-h-3xl m-auto py-16 md:py-20;
   }
   header {
     @apply max-w-screen-3xl left-0 right-0 m-auto;
@@ -40,13 +45,16 @@ span {
     @apply text-3xl font-bold md:text-5xl 2xl:text-6xl 3xl:text-7xl;
   }
   h3 {
-    @apply text-xl font-bold md:text-4xl 2xl:text-5xl;
+    @apply text-2xl font-bold md:text-4xl 2xl:text-5xl;
   }
   h4 {
     @apply text-xl font-bold lg:text-2xl 2xl:text-3xl 3xl:text-4xl;
   }
+  h5 {
+    @apply text-lg lg:text-xl 2xl:text-2xl;
+  }
   p {
-    @apply text-xl lg:text-2xl 2xl:text-3xl 3xl:text-4xl;
+    @apply text-xl lg:text-2xl 3xl:text-3xl;
   }
   button {
     @apply text-lg rounded border-2 border-white w-40 py-2 md:text-xl md:w-48 md:py-3 2xl:text-2xl 2xl:w-60 2xl:py-4 3xl:text-3xl 3xl:w-72;
