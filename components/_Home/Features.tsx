@@ -2,9 +2,9 @@ import React from "react";
 
 const Features = () => (
   <React.Fragment>
-    <section className="grid gap-16 md:gap-32 3xl:gap-44" id="features">
+    <section className="grid gap-16 md:gap-32 3xl:gap-44">
       <h2 className="text-center">Simplify your market research</h2>
-      <div className="wrapper grid gap-16 md:flex md:gap-0 md:justify-between">
+      <div className="grid w-10/12 md:w-auto lg:w-9/12 m-auto gap-16 md:flex md:gap-0 md:justify-between">
         <div className="md:border-r-1px">
           <Item
             img="/Home/features/flag.svg"
@@ -42,7 +42,7 @@ interface Item {
 const Item = ({ img, feature, info }: Item) => (
   <article className="grid place-items-center gap-6 md:mx-10 md:gap-7 2xl:mx-12 2xl:gap-9">
     <img className="h-24 2xl:h-28 m-auto" src={img} alt="icon" />
-    <h4 className="md:w-44 2xl:w-48 3xl:w-64 text-center">{feature}</h4>
+    <h4 className="lg:w-44 2xl:w-48 3xl:w-64 text-center">{feature}</h4>
     <p className="w-72 md:w-auto md:h-32 2xl:h-40 lg:text-center">{info}</p>
   </article>
 );

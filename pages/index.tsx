@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Splash, Features } from "@/components/_Home";
+import { Splash, Features, Plans } from "@/components/_Home";
 export default function Home() {
   return (
     <div>
@@ -11,6 +11,7 @@ export default function Home() {
       <main>
         <Splash />
         <Features />
+        <Plans />
       </main>
     </div>
   );
