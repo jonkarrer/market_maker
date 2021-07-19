@@ -2,10 +2,7 @@ import React from "react";
 
 const Splash = (): JSX.Element => (
   <React.Fragment>
-    <div
-      id="splash"
-      className="md:max-w-screen-3xl m-auto h-screen bg-splash relative overflow-hidden"
-    >
+    <div className="md:max-w-screen-3xl m-auto h-screen bg-splash relative overflow-hidden">
       <div className="wrapper h-full flex items-center">
         <article className="text-white grid gap-7 md:gap-10 2xl:gap-11">
           <h1 className="sm:w-96 md:w-120 lg:w-140 2xl:w-160 lg:leading-tight 3xl:w-200">
