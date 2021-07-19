@@ -4,13 +4,13 @@ const Screenshots = () => (
   <section>
     <div className="wrapper grid gap-20 md:gap-40 2xl:gap-60">
       <Container>
-        <div className="grid gap-3 md:gap-4 place-content-start">
+        <article className="grid gap-3 md:gap-4 place-content-start">
           <h2 className="mb-6 md:mb-10 lg:mb-14">Stocks</h2>
           <BlueFeature text="Curated news feeds" />
           <BlueFeature text="Social media sentiment tracking" />
           <BlueFeature text="Charts and modeling tools" />
           <BlueFeature text="Alternative data" />
-        </div>
+        </article>
         <img
           className="md:w-100 lg:w-130 2xl:w-140 3xl:w-180"
           src="/Home/screenshots/placeholder.svg"
@@ -19,13 +19,13 @@ const Screenshots = () => (
       </Container>
 
       <Container>
-        <div className="grid gap-3 place-items-end md:place-content-start md:gap-4 md:order-2">
+        <article className="grid gap-3 place-items-end md:place-content-start md:gap-4 md:order-2">
           <h2 className="mb-6 md:mb-10 lg:mb-14">Options</h2>
           <AquaFeature text="Unusual order flow tracking" />
           <AquaFeature text="Statistically probable spreads" />
           <AquaFeature text="Macro indicators" />
           <AquaFeature text="Volatility analysis" />
-        </div>
+        </article>
         <img
           className="md:w-100 lg:w-130 2xl:w-140 3xl:w-180"
           src="/Home/screenshots/placeholder.svg"
