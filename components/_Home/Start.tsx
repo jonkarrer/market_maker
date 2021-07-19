@@ -9,7 +9,7 @@ const Start = () => (
           Take ownership of your financial future. No matter how much experience
           you have, we've got you covered.
         </p>
-        <div className="gradient-box w-60 md:w-72">
+        <div className="gradient-box w-44 md:w-72">
           <Subscribe>
             <a href="">Subscribe Now</a>
           </Subscribe>

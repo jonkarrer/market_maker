@@ -4,10 +4,12 @@ const Footer = () => {
   const { user } = useUser();
   return (
     <div>
-      <footer className="h-72 sm:h-64 flex flex-col items-center justify-center bg-foot">
-        <div className="wrapper flex items-center justify-between h-32 sm:h-32 border-b-4">
-          <h2 className="text-xl lg:text-2xl">Market Maker Lite</h2>
-          <nav className="flex space-x-8 items-center">
+      <footer className="flex flex-col items-center justify-center mt-10">
+        <div className="wrapper grid place-content-center gap-5 py-4 md:py-10 md:gap-0 md:grid-flow-col md:place-content-between border-b-4">
+          <h4 className="text-xl md:text-2xl font-medium 2xl:text-3xl 3xl:text-4xl">
+            Market Maker Lite
+          </h4>
+          <nav className="flex space-x-8 items-center m-auto">
             <a href="">
               <img src="/assets/Social/reddit-dk.svg" alt="reddit icon" />
             </a>
@@ -25,7 +27,7 @@ const Footer = () => {
 
         <nav
           id="links"
-          className=" w-10/12 lg:w-9/12 m-auto max-w-screen-3xl py-10 sm:py-0 mx-auto grid grid-cols-2 justify-items-center gap-4 sm:h-32 sm:flex sm:items-center sm:justify-between sm:w-5/6 sm:text-sm md:text-base lg:text-lg 2xl:text-1.3vw"
+          className="wrapper py-4 md:py-10 mx-auto grid grid-cols-2 justify-items-center gap-4 sm:flex sm:items-center sm:justify-between sm:text-sm md:text-base lg:text-lg 2xl:text-1.3vw"
         >
           <a>MML C 2021</a>
           <a href="">About</a>

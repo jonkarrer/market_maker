@@ -2,9 +2,9 @@ import React from "react";
 
 const Splash = (): JSX.Element => (
   <React.Fragment>
-    <section
+    <div
       id="splash"
-      className="py-0 h-screen bg-splash relative overflow-hidden"
+      className="md:max-w-screen-3xl m-auto h-screen bg-splash relative overflow-hidden"
     >
       <div className="wrapper h-full flex items-center">
         <article className="text-white grid gap-7 md:gap-10 2xl:gap-11">
@@ -25,7 +25,7 @@ const Splash = (): JSX.Element => (
           alt="downward arrow"
         />
       </a>
-    </section>
+    </div>
   </React.Fragment>
 );
 
