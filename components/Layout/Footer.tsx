@@ -6,7 +6,7 @@ const Footer = () => {
     <div>
       <footer className="flex flex-col items-center justify-center mt-10">
         <div className="wrapper grid place-content-center gap-5 py-4 md:py-10 md:gap-0 md:grid-flow-col md:place-content-between border-b-4">
-          <h4 className="text-xl md:text-2xl font-medium 2xl:text-3xl 3xl:text-4xl">
+          <h4 className="text-xl md:text-2xl font-medium 2xl:text-3xl 3xl:text-4xl text-center md:text-left">
             Market Maker Lite
           </h4>
           <nav className="flex space-x-8 items-center m-auto">
