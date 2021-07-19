@@ -2,9 +2,9 @@ import React from "react";
 
 const Features = () => (
   <React.Fragment>
-    <section className="grid gap-16 md:gap-32 3xl:gap-44">
+    <section id="features" className="grid gap-16 md:gap-32 3xl:gap-44">
       <h2 className="text-center">Simplify your market research</h2>
-      <div className="grid w-10/12 md:w-auto lg:w-9/12 m-auto gap-16 md:flex md:gap-0 md:justify-between">
+      <div className="wrapper grid gap-16 md:flex md:gap-0 md:justify-between">
         <div className="md:border-r-1px">
           <Item
             img="/Home/features/flag.svg"

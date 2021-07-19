@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Splash, Features, Plans } from "@/components/_Home";
+import { Splash, Features, Plans, Rectangle } from "@/components/_Home";
 export default function Home() {
   return (
     <div>
@@ -10,8 +10,17 @@ export default function Home() {
       </Head>
       <main>
         <Splash />
+
         <Features />
+
         <Plans />
+
+        <Rectangle
+          title="Investing is better together"
+          info="That’s why we give every subscriber a unique referral code. Bring some friends and get 10% off for every referral, every month they subscribe."
+          button="Learn more >"
+          image="/Home/rectangle/two_people.svg"
+        />
       </main>
     </div>
   );

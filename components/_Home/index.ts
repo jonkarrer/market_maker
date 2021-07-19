@@ -1,4 +1,5 @@
 import Splash from "./Splash";
 import Features from "./Features";
 import Plans from "./Plans";
-export { Splash, Features, Plans };
+import Rectangle from "./Rectangle";
+export { Splash, Features, Plans, Rectangle };

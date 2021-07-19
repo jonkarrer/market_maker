@@ -45,7 +45,7 @@ span {
     @apply text-3xl font-bold md:text-5xl 2xl:text-6xl 3xl:text-7xl;
   }
   h3 {
-    @apply text-2xl font-bold md:text-4xl 2xl:text-5xl;
+    @apply text-3xl font-bold md:text-4xl 2xl:text-5xl;
   }
   h4 {
     @apply text-xl font-bold lg:text-2xl 2xl:text-3xl 3xl:text-4xl;
@@ -62,6 +62,6 @@ span {
 }
 @layer components {
   .wrapper {
-    @apply w-10/12 lg:w-9/12 m-auto max-w-screen-3xl;
+    @apply m-auto w-10/12 md:w-11/12 lg:w-10/12 max-w-screen-3xl;
   }
 }

@@ -4,11 +4,11 @@ const Splash = (): JSX.Element => (
   <React.Fragment>
     <section
       id="splash"
-      className=" h-screen bg-splash relative overflow-hidden"
+      className="py-0 h-screen bg-splash relative overflow-hidden"
     >
       <div className="wrapper h-full flex items-center">
         <article className="text-white grid gap-6 md:gap-10 2xl:gap-11">
-          <h1 className="sm:w-96 md:w-180 2xl:w-200 md:leading-tight 3xl:w-220">
+          <h1 className="sm:w-96 md:w-140 2xl:w-160 md:leading-tight 3xl:w-200">
             Make the market you deserve
           </h1>
           <span className="text-xl md:text-3xl 3xl:text-4xl lg:w-3/5 2xl:w-1/2">
