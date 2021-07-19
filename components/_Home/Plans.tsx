@@ -11,7 +11,7 @@ export default function Plans(): JSX.Element {
         <div className="wrapper lg:px-0 grid gap-16 md:grid-cols-3 md:gap-0">
           <Plan>
             <h3>Free</h3>
-            <span className="h-12">
+            <span className="h-8 md:h-12">
               <h5>
                 <strong>$0</strong> per month
               </h5>
@@ -32,7 +32,7 @@ export default function Plans(): JSX.Element {
               Most Popular
             </span>
             <h3>Premium</h3>
-            <span className="h-12">
+            <span className="h-8 md:h-12">
               <h5>
                 <strong>$39</strong> per month
               </h5>
@@ -59,7 +59,7 @@ export default function Plans(): JSX.Element {
 
           <Plan>
             <h3>Annual</h3>
-            <span className="h-12">
+            <span className="h-10 md:h-12">
               <h5>
                 <strong>$399</strong> per year
               </h5>
@@ -94,13 +94,13 @@ interface IChild {
   border?: string;
 }
 const Plan = ({ children }: IChild) => (
-  <div className="grid text-center relative py-10 gap-10 border shadow-xl 3xl:py-16">
+  <div className="grid text-center relative py-10 gap-12 border shadow-xl 3xl:py-16">
     {children}
   </div>
 );
 
 const Benefits = ({ children }: IChild) => (
-  <div className="flex flex-col space-y-3 h-72 md:h-80 3xl:h-96 3xl:space-y-5">
+  <div className="flex flex-col space-y-2 h-60 md:h-72 md:space-y-3 3xl:h-96 3xl:space-y-5">
     {children}
   </div>
 );

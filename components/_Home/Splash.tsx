@@ -7,7 +7,7 @@ const Splash = (): JSX.Element => (
       className="py-0 h-screen bg-splash relative overflow-hidden"
     >
       <div className="wrapper h-full flex items-center">
-        <article className="text-white grid gap-6 md:gap-10 2xl:gap-11">
+        <article className="text-white grid gap-7 md:gap-10 2xl:gap-11">
           <h1 className="sm:w-96 md:w-140 2xl:w-160 md:leading-tight 3xl:w-200">
             Make the market you deserve
           </h1>

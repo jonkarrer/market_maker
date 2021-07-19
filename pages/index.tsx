@@ -1,5 +1,11 @@
 import Head from "next/head";
-import { Splash, Features, Plans, Rectangle } from "@/components/_Home";
+import {
+  Splash,
+  Features,
+  Plans,
+  Rectangle,
+  Screenshots,
+} from "@/components/_Home";
 export default function Home() {
   return (
     <div>
@@ -21,6 +27,8 @@ export default function Home() {
           button="Learn more >"
           image="/Home/rectangle/two_people.svg"
         />
+
+        <Screenshots />
       </main>
     </div>
   );
