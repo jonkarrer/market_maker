@@ -54,7 +54,7 @@ span {
     @apply text-lg lg:text-xl 2xl:text-2xl;
   }
   p {
-    @apply text-xl lg:text-2xl 3xl:text-3xl;
+    @apply text-xl 2xl:text-2xl 3xl:text-3xl;
   }
   button {
     @apply text-lg rounded border-2 border-white w-40 py-2 md:text-xl md:w-48 md:py-3 2xl:text-2xl 2xl:w-60 2xl:py-4 3xl:text-3xl 3xl:w-72;
