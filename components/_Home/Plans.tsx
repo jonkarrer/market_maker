@@ -63,9 +63,9 @@ export default function Plans(): JSX.Element {
               <h5>
                 <strong>$399</strong> per year
               </h5>
-              <div>
-                <i>15% savings</i>
-              </div>
+              <p>
+                <i className="">15% savings</i>
+              </p>
             </span>
             <Benefits>
               <strong>
@@ -94,20 +94,20 @@ interface IChild {
   border?: string;
 }
 const Plan = ({ children }: IChild) => (
-  <div className="grid text-center relative py-10 gap-12 border shadow-xl 3xl:py-16">
+  <div className="grid text-center relative py-10 gap-12 border shadow-xl lg:gap-14 3xl:py-20 3xl:gap-20">
     {children}
   </div>
 );
 
 const Benefits = ({ children }: IChild) => (
-  <div className="flex flex-col space-y-2 h-60 md:h-72 md:space-y-3 3xl:h-96 3xl:space-y-5">
+  <div className="flex flex-col space-y-2 h-60 md:h-72 md:space-y-3 3xl:h-100 3xl:space-y-5">
     {children}
   </div>
 );
 
 const Subscribe = ({ children, border }: IChild) => (
   <div
-    className={`w-44 py-2 m-auto md:text-xl lg:text-2xl lg:w-56 3xl:text-3xl 3xl:w-72 3xl:py-3 cursor-pointer ${border} rounded`}
+    className={`w-44 py-2 m-auto md:text-xl lg:w-56 3xl:text-3xl 3xl:w-72 3xl:py-3 cursor-pointer ${border} rounded`}
   >
     {children}
   </div>
