@@ -8,10 +8,10 @@ export default function Plans(): JSX.Element {
           Try free or sign up for premium features
         </h2>
 
-        <div className="wrapper lg:px-0 grid gap-16 md:grid-cols-3 md:gap-0">
+        <div className="m-auto w-5/6 md:w-full lg:w-86% 2xl:w-10/12 max-w-screen-3xl lg:px-0 grid gap-16 md:grid-cols-3 md:gap-0">
           <Plan>
             <h3>Free</h3>
-            <span className="h-8 md:h-12">
+            <span className="h-8 md:h-10 2xl:h-12">
               <h5>
                 <strong>$0</strong> per month
               </h5>
@@ -32,7 +32,7 @@ export default function Plans(): JSX.Element {
               Most Popular
             </span>
             <h3>Premium</h3>
-            <span className="h-8 md:h-12">
+            <span className="h-8 md:h-10 2xl:h-12">
               <h5>
                 <strong>$39</strong> per month
               </h5>
@@ -59,7 +59,7 @@ export default function Plans(): JSX.Element {
 
           <Plan>
             <h3>Annual</h3>
-            <span className="h-10 md:h-12">
+            <span className="h-10 md:h-10 2xl:h-12">
               <h5>
                 <strong>$399</strong> per year
               </h5>
@@ -100,7 +100,7 @@ const Plan = ({ children }: IChild) => (
 );
 
 const Benefits = ({ children }: IChild) => (
-  <div className="flex flex-col space-y-2 h-60 md:h-72 md:space-y-3 3xl:h-100 3xl:space-y-5">
+  <div className="flex flex-col space-y-2 h-60 md:h-64 2xl:h-72 md:space-y-3 3xl:h-100 3xl:space-y-5">
     {children}
   </div>
 );
