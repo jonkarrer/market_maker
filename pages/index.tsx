@@ -32,7 +32,7 @@ export default function Home() {
         <Screenshots />
 
         <Rectangle
-          title="Investing is better together"
+          title="Created by retail for retail"
           info="Our team leverages a diverse set of experience to bring institution level analysis to retail investors. We’re committed to helping everyone navigate the complex world of finance, and we’re completely self funded."
           button="Learn more >"
           image="/Home/rectangle/three_people.svg"
