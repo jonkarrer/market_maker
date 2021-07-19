@@ -15,7 +15,7 @@ const Rectangle = ({ title, info, button, image }: IRectangle) => (
       </article>
 
       <img
-        className="3xl:h-100 3xl:w-200"
+        className="2xl:h-100 2xl:w-200"
         src={image}
         alt="rectangle infographic"
       />

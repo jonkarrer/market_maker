@@ -7,7 +7,7 @@
   background: white;
   position: relative;
 
-  border: 5px;
+  border: 4px;
   background-clip: padding-box; /* !important */
   border: solid 5px transparent; /* !important */
   border-radius: 0.5em;
@@ -20,7 +20,7 @@
   bottom: 0;
   left: 0;
   z-index: -1;
-  margin: -5px; /* !important */
+  margin: -4px; /* !important */
   border-radius: inherit; /* !important */
   background: linear-gradient(110deg, #00beb3, #5653ff);
 }

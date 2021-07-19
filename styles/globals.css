@@ -33,7 +33,7 @@ span {
     @apply antialiased;
   }
   section {
-    @apply md:max-w-screen-3xl md:max-h-3xl m-auto py-16 md:py-20 2xl:py-28;
+    @apply md:max-w-screen-3xl m-auto py-16 md:py-20 2xl:py-28;
   }
   header {
     @apply max-w-screen-3xl left-0 right-0 m-auto;

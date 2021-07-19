@@ -73,7 +73,7 @@ export default function Plans(): JSX.Element {
                   <i>All premium features, plus...</i>
                 </p>
               </strong>
-              <p>Exclusive savigns</p>
+              <p>Exclusive savings</p>
               <p>Priotiry feature requests</p>
               <p>Support our development</p>
             </Benefits>
