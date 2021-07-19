@@ -100,7 +100,7 @@ const Plan = ({ children }: IChild) => (
 );
 
 const Benefits = ({ children }: IChild) => (
-  <div className="flex flex-col space-y-2 h-60 md:h-64 2xl:h-72 md:space-y-3 3xl:h-100 3xl:space-y-5">
+  <div className="flex flex-col space-y-1 h-56 md:h-64 2xl:h-72 md:space-y-3 3xl:h-100 3xl:space-y-5">
     {children}
   </div>
 );
