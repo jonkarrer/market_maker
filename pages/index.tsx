@@ -29,6 +29,13 @@ export default function Home() {
         />
 
         <Screenshots />
+
+        <Rectangle
+          title="Investing is better together"
+          info="That’s why we give every subscriber a unique referral code. Bring some friends and get 10% off for every referral, every month they subscribe."
+          button="Learn more >"
+          image="/Home/rectangle/three_people.svg"
+        />
       </main>
     </div>
   );
