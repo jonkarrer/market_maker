@@ -6,13 +6,24 @@
   background-image: url("../../public/Home/stripes_base.svg");
   right: 0;
 }
+/*md*/
+@media (min-width: 1024px) {
+  .stripes {
+    height: 100vh;
+    width: 870px;
+    position: absolute;
+    top: 0;
+    background-image: url("../../public/Home/stripes_base.svg");
+    right: 0;
+  }
+}
 /*lg*/
 @media (min-width: 1024px) {
   .stripes {
     height: 100vh;
     min-height: 700px;
     width: 100vw;
-    right: -32%;
+    right: -30%;
     background-image: url("../../public/Home/stripes_3xl.svg");
     background-repeat: no-repeat;
   }
@@ -23,7 +34,6 @@
     height: 100vh;
     min-height: 1000px;
     width: 100vw;
-
     right: -32%;
     background-image: url("../../public/Home/stripes_3xl.svg");
     background-repeat: no-repeat;
