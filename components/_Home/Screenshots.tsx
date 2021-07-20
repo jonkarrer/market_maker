@@ -12,7 +12,7 @@ const Screenshots = () => (
           <BlueFeature text="Alternative data" />
         </article>
         <img
-          className="md:w-100 lg:w-130 2xl:w-140 3xl:w-200"
+          className="md:w-100 lg:w-115 2xl:w-140 3xl:w-200"
           src="/Home/screenshots/placeholder.svg"
           alt=""
         />
@@ -27,7 +27,7 @@ const Screenshots = () => (
           <AquaFeature text="Volatility analysis" />
         </article>
         <img
-          className="md:w-100 lg:w-130 2xl:w-140 3xl:w-200"
+          className="md:w-100 lg:w-115 2xl:w-140 3xl:w-200"
           src="/Home/screenshots/placeholder.svg"
           alt=""
         />

@@ -8,7 +8,7 @@ module.exports = {
         '3xl' : '2200px'
       },
       backgroundImage: {
-        'splash' : 'linear-gradient(110deg, #00beb3, #5653ff)'
+        'splash' : 'linear-gradient(110deg, #00beb3, #5653ff)',
       },
       minWidth: {
         '2xl' : '1500px'
@@ -16,6 +16,7 @@ module.exports = {
       width: {
         '100' : '400px',
         '110' : '450px',
+        '115' : '475px',
         '120' : '500px',
         '130' : '550px',
         '140' : '600px',
@@ -38,8 +39,10 @@ module.exports = {
         '40vw' : '40vw',
       },
       height: {
+        '85' : '376px',
         '100' : '400px',
         '110' : '450px',
+        '115' : '475px',
         '120' : '500px',
         '130' : '550px',
         '140' : '600px',
@@ -63,9 +66,10 @@ module.exports = {
         '44vh' : '44vh',
       },
       maxHeight: {
-        '3xl' : '1400px'
+        '3xl' : '1200px'
       },
       minHeight: {
+        'lg' : '600px',
         '400px' : '400px',
         '800px' : '800px'
       },

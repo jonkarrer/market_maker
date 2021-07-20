@@ -4,11 +4,11 @@ export default function Plans(): JSX.Element {
   return (
     <React.Fragment>
       <section className="grid gap-16 md:gap-32 3xl:gap-44">
-        <h2 className="text-center">
+        <h2 className="text-center leading-normal md:w-2/3 m-auto lg:w-auto">
           Try free or sign up for premium features
         </h2>
 
-        <div className="m-auto w-5/6 md:w-full lg:w-86% 2xl:w-10/12 max-w-screen-3xl lg:px-0 grid gap-16 md:grid-cols-3 md:gap-0">
+        <div className="m-auto w-5/6 md:w-full lg:w-86% 2xl:w-9/12 max-w-screen-3xl lg:px-0 grid gap-16 md:grid-cols-3 md:gap-0">
           <Plan>
             <h3>Free</h3>
             <span className="h-8 md:h-10 2xl:h-12">
@@ -63,7 +63,7 @@ export default function Plans(): JSX.Element {
               <h5>
                 <strong>$399</strong> per year
               </h5>
-              <p>
+              <p className="font-light">
                 <i className="">15% savings</i>
               </p>
             </span>
@@ -94,20 +94,20 @@ interface IChild {
   border?: string;
 }
 const Plan = ({ children }: IChild) => (
-  <div className="grid text-center relative py-10 gap-12 border shadow-xl lg:gap-14 3xl:py-20 3xl:gap-20">
+  <div className="grid text-center relative py-10 gap-12 border shadow-xl lg:gap-14 3xl:py-20 3xl:gap-16">
     {children}
   </div>
 );
 
 const Benefits = ({ children }: IChild) => (
-  <div className="flex flex-col space-y-1 h-56 md:h-64 2xl:h-72 md:space-y-3 3xl:h-100 3xl:space-y-5">
+  <div className="flex flex-col font-light space-y-1 h-56 md:h-64 2xl:h-72 md:space-y-3 3xl:h-85 3xl:space-y-5">
     {children}
   </div>
 );
 
 const Subscribe = ({ children, border }: IChild) => (
   <div
-    className={`w-44 py-3 m-auto md:text-xl lg:py-4 lg:w-56 3xl:text-3xl 3xl:w-72 cursor-pointer ${border} rounded`}
+    className={`font-normal w-44 py-3 m-auto md:text-xl lg:py-4 lg:w-56 3xl:text-3xl 3xl:w-72 cursor-pointer ${border} rounded`}
   >
     {children}
   </div>
