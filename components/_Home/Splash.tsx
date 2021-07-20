@@ -17,7 +17,7 @@ const Splash = (): JSX.Element => (
       </div>
       <a href="#features">
         <img
-          className="absolute bottom-0 right-0 left-0 m-auto cursor-pointer z-10"
+          className="absolute bottom-0 right-0 left-0 m-auto cursor-pointer z-10 hidden sm:block"
           src="/Home/splash_arrow.svg"
           alt="downward arrow"
         />

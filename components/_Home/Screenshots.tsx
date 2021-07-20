@@ -5,7 +5,7 @@ const Screenshots = () => (
     <div className="wrapper grid gap-20 md:gap-40 2xl:gap-60">
       <Container>
         <article className="grid gap-3 md:gap-4 place-content-start 2xl:gap-6">
-          <h2 className="mb-6 md:mb-10 lg:mb-14">Stocks</h2>
+          <h2 className="text-4xl mb-6 md:mb-10 lg:mb-14">Stocks</h2>
           <BlueFeature text="Curated news feeds" />
           <BlueFeature text="Social media sentiment tracking" />
           <BlueFeature text="Charts and modeling tools" />
@@ -20,7 +20,7 @@ const Screenshots = () => (
 
       <Container alignment="place-content-end">
         <article className="grid gap-3 place-items-end md:place-content-start md:gap-4 md:order-2 2xl:gap-6">
-          <h2 className="mb-6 md:mb-10 lg:mb-14">Options</h2>
+          <h2 className="text-4xl mb-6 md:mb-10 lg:mb-14">Options</h2>
           <AquaFeature text="Unusual order flow tracking" />
           <AquaFeature text="Statistically probable spreads" />
           <AquaFeature text="Macro indicators" />
