@@ -107,7 +107,7 @@ const Benefits = ({ children }: IChild) => (
 
 const Subscribe = ({ children, border }: IChild) => (
   <div
-    className={`font-normal w-44 py-3 m-auto md:text-xl lg:py-4 lg:w-56 3xl:text-3xl 3xl:w-72 cursor-pointer ${border} rounded`}
+    className={`font-normal w-44 py-3 m-auto md:text-xl lg:py-4 lg:w-56 3xl:text-3xl 3xl:w-72 cursor-pointer ${border} rounded dark:bg-black`}
   >
     {children}
   </div>

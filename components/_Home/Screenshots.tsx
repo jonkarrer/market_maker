@@ -7,7 +7,7 @@ const Screenshots = () => (
         <article className="grid gap-3 md:gap-4 place-content-start 2xl:gap-6">
           <h2 className="text-4xl mb-6 md:mb-10 lg:mb-14">Stocks</h2>
           <BlueFeature text="Curated news feeds" />
-          <BlueFeature text="Social media sentiment tracking" />
+          <BlueFeature text="Media sentiment tracking" />
           <BlueFeature text="Charts and modeling tools" />
           <BlueFeature text="Alternative data" />
         </article>

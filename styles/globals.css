@@ -30,7 +30,7 @@ span {
 
 @layer base {
   html {
-    @apply antialiased;
+    @apply antialiased dark:bg-black;
   }
   section {
     @apply md:max-w-screen-3xl m-auto py-16 md:py-20 2xl:py-28;
@@ -39,25 +39,28 @@ span {
     @apply max-w-screen-3xl left-0 right-0 m-auto;
   }
   h1 {
-    @apply text-4xl font-bold md:text-5xl lg:text-6xl 2xl:text-7xl 3xl:text-8xl;
+    @apply text-4xl font-bold md:text-5xl lg:text-6xl 2xl:text-7xl 3xl:text-8xl dark:text-white;
   }
   h2 {
-    @apply text-3xl font-bold md:text-5xl 2xl:text-6xl 3xl:text-7xl;
+    @apply text-3xl font-bold md:text-5xl 2xl:text-6xl 3xl:text-7xl dark:text-white;
   }
   h3 {
-    @apply text-3xl font-bold lg:text-4xl 2xl:text-5xl 3xl:text-6xl;
+    @apply text-3xl font-bold lg:text-4xl 2xl:text-5xl 3xl:text-6xl dark:text-white;
   }
   h4 {
-    @apply text-xl font-bold 2xl:text-3xl 3xl:text-4xl;
+    @apply text-xl font-bold 2xl:text-3xl 3xl:text-4xl dark:text-white;
   }
   h5 {
-    @apply text-xl lg:text-2xl 3xl:text-3xl;
+    @apply text-xl lg:text-2xl 3xl:text-3xl dark:text-white;
   }
   p {
-    @apply text-lg md:text-xl 2xl:text-2xl 3xl:text-3xl;
+    @apply text-lg md:text-xl 2xl:text-2xl 3xl:text-3xl dark:text-white;
   }
   button {
-    @apply text-lg rounded border-2 border-white w-40 py-2 md:text-xl md:w-48 md:py-3 2xl:text-2xl 2xl:w-60 2xl:py-4 3xl:text-3xl 3xl:w-72;
+    @apply text-lg rounded border-2 border-white w-40 py-2 md:text-xl md:w-48 md:py-3 2xl:text-2xl 2xl:w-60 2xl:py-4 3xl:text-3xl 3xl:w-72 dark:text-white;
+  }
+  a {
+    @apply dark:text-white;
   }
 }
 @layer components {
