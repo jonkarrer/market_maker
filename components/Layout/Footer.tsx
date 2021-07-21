@@ -1,7 +1,9 @@
 import { useUser } from "@auth0/nextjs-auth0";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 const Footer = () => {
   const { user } = useUser();
+
   return (
     <div>
       <footer className="flex flex-col items-center justify-center mt-10">
@@ -10,18 +12,26 @@ const Footer = () => {
             Market Maker Lite
           </h4>
           <nav className="flex space-x-8 items-center m-auto">
-            <a href="">
-              <img src="/assets/Social/reddit-dk.svg" alt="reddit icon" />
-            </a>
-            <a href="">
-              <img src="/assets/Social/twitter-dk.svg" alt="twitter icon" />
-            </a>
-            <a href="">
-              <img src="/assets/Social/Discord-dk.svg" alt="discord icon" />
-            </a>
-            <a href="">
-              <img src="/assets/Social/email-dk.svg" alt="email icon" />
-            </a>
+            <Icon
+              ltImg="/assets/Social/reddit_lt.svg"
+              dkImg="/assets/Social/reddit_dk.svg"
+              link=""
+            />
+            <Icon
+              ltImg="/assets/Social/twitter_lt.svg"
+              dkImg="/assets/Social/twitter_dk.svg"
+              link=""
+            />
+            <Icon
+              ltImg="/assets/Social/discord_lt.svg"
+              dkImg="/assets/Social/discord_dk.svg"
+              link=""
+            />
+            <Icon
+              ltImg="/assets/Social/email_lt.svg"
+              dkImg="/assets/Social/email_dk.svg"
+              link=""
+            />
           </nav>
         </div>
 
@@ -56,3 +66,28 @@ const Footer = () => {
 };
 
 export default Footer;
+
+interface Icon {
+  ltImg: string;
+  dkImg: string;
+  link: string;
+}
+
+const Icon = ({ ltImg, dkImg, link }: Icon) => {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    let windowState = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    setDarkMode(windowState);
+  });
+
+  return (
+    <a href={link}>
+      <img
+        className="w-6 h-6 md:w-7 md:h-7 2xl:w-9 2xl:h-9"
+        src={darkMode ? ltImg : dkImg}
+        alt="discord icon"
+      />
+    </a>
+  );
+};

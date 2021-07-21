@@ -9,7 +9,6 @@ module.exports = {
       },
       backgroundImage: {
         'splash' : 'linear-gradient(110deg, #00beb3, #5653ff)',
-        'reddit' : "url('/asset/')"
       },
       minWidth: {
         '2xl' : '1500px'
