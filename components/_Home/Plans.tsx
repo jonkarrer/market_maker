@@ -64,7 +64,7 @@ export default function Plans(): JSX.Element {
                 <strong>$399</strong> per year
               </h5>
               <p className="font-light">
-                <i className="">15% savings</i>
+                <i className="text-lg 2xl:text-xl 3xl:text-3xl">15% savings</i>
               </p>
             </span>
             <Benefits>
@@ -94,7 +94,7 @@ interface IChild {
   border?: string;
 }
 const Plan = ({ children }: IChild) => (
-  <div className="grid text-center relative py-10 gap-12 border shadow-xl lg:gap-14 3xl:py-20 3xl:gap-16">
+  <div className="grid text-center relative py-10 gap-12 border shadow-xl lg:gap-12 2xl:gap-14 3xl:py-20 3xl:gap-16">
     {children}
   </div>
 );
