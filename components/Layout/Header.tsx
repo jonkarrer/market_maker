@@ -40,9 +40,7 @@ export default function Nav() {
                   />
                 </Link>
                 <Link href="/dashboard">
-                  <button>
-                    <a className="">Dashboard</a>
-                  </button>
+                  <button>Dashboard</button>
                 </Link>
               </>
             )}

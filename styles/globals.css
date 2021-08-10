@@ -57,7 +57,7 @@ span {
     @apply text-lg md:text-xl 2xl:text-2xl 3xl:text-3xl dark:text-white;
   }
   button {
-    @apply text-lg rounded border-2 border-white w-40 py-2 md:text-xl md:w-48 md:py-3 2xl:text-2xl 2xl:w-60 2xl:py-4 3xl:text-3xl 3xl:w-72 dark:text-white;
+    @apply text-lg rounded border-2 border-white min-w-min py-2 px-4 md:text-xl lg:px-6 2xl:text-2xl 2xl:py-3 3xl:text-3xl dark:text-white;
   }
   a {
     @apply dark:text-white;

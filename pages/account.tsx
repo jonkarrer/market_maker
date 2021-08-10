@@ -1,4 +1,4 @@
-import { Gradient, Menu, Settings } from "@/components/account";
+import { Gradient, Menu, Settings } from "@/components/_Account";
 import { useUser, withPageAuthRequired } from "@auth0/nextjs-auth0";
 
 export default function Account() {
