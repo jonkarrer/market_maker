@@ -43,7 +43,7 @@ const Plan = ({
       </div>
       <div className="sm:h-9 lg:h-16 sm:text-xs lg:text-base absolute bottom-4 sm:bottom-0 left-0 right-0">
         {current ? (
-          <button className="h-8 w-32 lg:h-10 lg:w-44 mx-auto bg-gray-400 text-white">
+          <button className="mx-auto bg-gray-400 text-white">
             Current Plan
           </button>
         ) : (
@@ -53,7 +53,7 @@ const Plan = ({
               selected
                 ? "bg-blue-border text-white"
                 : "border border-blue-border text-blue-border"
-            } h-8 w-32 lg:h-10 lg:w-44 mx-auto`}
+            } mx-auto`}
           >
             {selected ? "Selected" : `Select ${subscription}`}
           </button>

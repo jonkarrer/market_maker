@@ -27,7 +27,8 @@
     "utils/hooks/useAccessKey.js",
     "pages/dashboard.jsx",
     "components/stripe/Checkout.jsx",
-    "pages/api/charge.ts"
+    "pages/api/charge.ts",
+    "components/_Account/MenuContext.jsx"
   ],
   "exclude": ["node_modules"]
 }

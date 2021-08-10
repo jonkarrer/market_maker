@@ -53,6 +53,9 @@ span {
   h5 {
     @apply text-xl lg:text-2xl 3xl:text-3xl dark:text-white;
   }
+  h6 {
+    @apply text-lg lg:text-xl 3xl:text-2xl dark:text-white;
+  }
   p {
     @apply text-lg md:text-xl 2xl:text-2xl 3xl:text-3xl dark:text-white;
   }

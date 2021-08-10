@@ -15,10 +15,7 @@ export default function Nav() {
             <Link href="/learn">Learn</Link>
             <Link href="/support/support">Support</Link>
           </nav>
-          <div
-            id="sign-up"
-            className="flex items-center md:space-x-8 lg:space-x-16 "
-          >
+          <div className="flex items-center">
             {!isLoading && !user && (
               <>
                 <Link href="/api/auth/login">
@@ -40,7 +37,9 @@ export default function Nav() {
                   />
                 </Link>
                 <Link href="/dashboard">
-                  <button>Dashboard</button>
+                  <button className="md:text-lg backdrop-filter backdrop-blur-3xl backdrop-contrast-75 border-none">
+                    Dashboard
+                  </button>
                 </Link>
               </>
             )}

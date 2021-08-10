@@ -10,17 +10,9 @@ const Settings = () => {
   const [selectedPlan, setPlan] = useState(0);
 
   return (
-    <main className="sm:mt-5 space-y-12 grid text-center w-full">
-      <div className="sm:hidden fixed overflow-auto left-0 m-auto bottom-0 top-0 transform -translate-x-1/2 w-10 h-10 bg-black rounded-full cursor-pointer">
-        ///
-      </div>
-      <h1 className="text-2xl sm:text-4xl font-semibold">
-        Choose a subscription
-      </h1>
-      <section
-        id="select-plan-container"
-        className="grid space-y-10 sm:space-y-0 sm:flex m-auto"
-      >
+    <section className="grid text-center">
+      <h3>Choose a subscription</h3>
+      <section className="grid gap-8 lg:flex lg:gap-0 m-auto">
         <Plan
           subscription="Free"
           price="0"
@@ -136,7 +128,7 @@ const Settings = () => {
           </Elements>
         </section>
       </section>
-    </main>
+    </section>
   );
 };
 

@@ -1,17 +1,22 @@
-import { Gradient, Menu, Settings } from "@/components/_Account";
+import { Gradient, Menu, MenuProvider } from "@/components/_Account";
 import { useUser, withPageAuthRequired } from "@auth0/nextjs-auth0";
+import { useState } from "react";
 
 export default function Account() {
   const { user } = useUser();
+  const [userSelection, setSelection] = useState(0);
   return (
-    <div>
-      <Gradient email={user?.email} />
-
-      <div className="sm:mx-std flex">
-        <Menu />
-        <Settings />
+    <MenuProvider>
+      <div>
+        <Gradient email={user?.email} />
+        <div className="wrapper">
+          <Menu selection={setSelection} />
+          {userSelection === 1 ? <h1>One</h1> : undefined}
+          {userSelection === 2 ? <h1>Two</h1> : undefined}
+        </div>
       </div>
-    </div>
+    </MenuProvider>
   );
 }
+
 export const getServerSideProps = withPageAuthRequired();
