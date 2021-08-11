@@ -1,7 +1,7 @@
-import Checkout from "./Checkout";
-import Plan from "./Plan";
-import Settings from "./Settings";
+import Checkout from "./subscriptions/Checkout";
+import Plan from "./subscriptions/Plans";
+import Subscriptions from "./subscriptions/Subscriptions";
 import Menu from "./Menu";
 import Gradient from "./Gradient";
-import { MenuProvider } from "./MenuContext";
-export { Checkout, Plan, Settings, Menu, Gradient, MenuProvider };
+
+export { Checkout, Plan, Subscriptions, Menu, Gradient };

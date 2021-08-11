@@ -1,58 +1,20 @@
-import { useState } from "react";
-import { Plan, Checkout } from "./index";
+import React, { useState } from "react";
+import { Checkout } from "../index";
 import { Elements } from "@stripe/react-stripe-js";
 import getStripe from "utils/get-stripejs";
+import Plans from "./Plans";
 
 const stripePromise = getStripe();
 
-const Settings = () => {
+const Subscriptions = () => {
   //The user selects a plan
   const [selectedPlan, setPlan] = useState(0);
 
   return (
-    <section className="grid text-center">
-      <h3>Choose a subscription</h3>
-      <section className="grid gap-8 lg:flex lg:gap-0 m-auto">
-        <Plan
-          subscription="Free"
-          price="0"
-          selected={selectedPlan === 1 ? true : false}
-          //Send state down to the plans button
-          setPlan={setPlan}
-          //Greys out the current plan, need to set to a function later
-          current={true}
-        >
-          <div className="text-gray-500 sm:text-xs lg:text-base">
-            <p>Delayed Data</p>
-            <p>Single dashboard</p>
-          </div>
-        </Plan>
-        <Plan
-          subscription="Monthly"
-          price="39.99"
-          selected={selectedPlan === 2 ? true : false}
-          setPlan={setPlan}
-          current={false}
-        >
-          <div className="text-gray-500 sm:text-xs lg:text-base">
-            <p>Billed monthly</p>
-            <p>Premium features</p>
-          </div>
-        </Plan>
-        <Plan
-          subscription="Annual"
-          price="399.99"
-          selected={selectedPlan === 3 ? true : false}
-          setPlan={setPlan}
-          current={false}
-        >
-          <div className="text-gray-500 sm:text-xs lg:text-base">
-            <p>Billed annually</p>
-            <p>Premium features</p>
-            <p>Priority requests</p>
-          </div>
-        </Plan>
-      </section>
+    <section className="py-0 grid lg:gap-20 flex-1 lg:px-20">
+      <h2 className="text-center">Choose a subscription</h2>
+      <Plans />
+
       <h1 className="font-semibold sm:text-lg lg:text-xl">
         Enter your payment information below.
       </h1>
@@ -132,4 +94,4 @@ const Settings = () => {
   );
 };
 
-export default Settings;
+export default Subscriptions;
