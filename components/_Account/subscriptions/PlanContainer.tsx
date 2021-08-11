@@ -32,7 +32,7 @@ interface IPlan {
 }
 const Plan = ({ subscription, price, children, current }: IPlan) => {
   return (
-    <div className="border shadow-xl grid place-content-center text-center gap-5 w-60 py-3 lg:gap-5 lg:py-4 lg:w-60">
+    <div className="border shadow-xl grid place-content-center text-center gap-5 w-60 py-3 lg:gap-5 lg:py-4 lg:w-70">
       <h3 className="font-bold h-9">{subscription}</h3>
 
       <h5 className="h-5">
@@ -41,7 +41,7 @@ const Plan = ({ subscription, price, children, current }: IPlan) => {
       {children}
       <div className="h-16 sm:text-xs lg:text-base rounded">
         {current ? (
-          <button className="mx-auto bg-gray-400 text-white rounded">
+          <button className="mx-auto bg-gray-400 text-white rounded lg:mt-1">
             Current Plan
           </button>
         ) : (

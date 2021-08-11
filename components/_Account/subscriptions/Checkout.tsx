@@ -57,7 +57,7 @@ const Checkout = ({ selectedPlan }: ICheckout) => {
   return (
     <div>
       <form onSubmit={handleSubmit} className="space-y-3 flex flex-col">
-        <div className="border-solid border-1px p-2 bg-white w-72 sm:w-96 lg:w-500px m-auto">
+        <div className="border-solid border-1px p-3 bg-white w-72 sm:w-96 lg:w-500px lg:h-12 m-auto">
           <CardElement
             options={{
               style: {
@@ -77,7 +77,7 @@ const Checkout = ({ selectedPlan }: ICheckout) => {
         </div>
         <button
           disabled={disableButton}
-          className="mx-auto bg-splash text-white font-semibold py-2 w-72 sm:w-96 lg:w-500px"
+          className="mx-auto bg-splash text-white font-semibold py-2 w-72 sm:w-96 lg:w-500px lg:py-0 lg:h-12"
         >
           Subscribe
         </button>
