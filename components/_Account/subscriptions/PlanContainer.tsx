@@ -1,6 +1,6 @@
 export default function PlanContainer() {
   return (
-    <div className="grid gap-8 m-auto lg:flex lg:gap-0">
+    <div className="grid gap-8 place-content-center m-auto lg:flex lg:gap-0">
       <Plan subscription="Free" price="0" current={true}>
         <Benefits>
           <p>Delayed Data</p>
@@ -32,7 +32,7 @@ interface IPlan {
 }
 const Plan = ({ subscription, price, children, current }: IPlan) => {
   return (
-    <div className="border shadow-xl grid place-content-center text-center gap-5 w-60 py-3 lg:gap-5 lg:py-4 lg:w-70">
+    <div className="border shadow-xl grid place-content-center text-center gap-5 w-60 md:w-80 md:py-8 py-3 lg:gap-5 lg:py-4 lg:w-70 2xl:w-85 2xl:py-9 2xl:gap-7">
       <h3 className="font-bold h-9">{subscription}</h3>
 
       <h5 className="h-5">

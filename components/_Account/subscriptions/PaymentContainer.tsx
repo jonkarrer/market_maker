@@ -6,9 +6,9 @@ const stripePromise = getStripe();
 
 export default function PaymentContainer() {
   return (
-    <section className="border shadow-2xl py-12 grid place-items-center gap-12 md:w-120 lg:w-full">
+    <section className="border shadow-2xl py-12 grid place-items-center gap-12 w-full md:w-120 lg:w-full 2xl:py-16">
       {/** Price breakdown */}
-      <div className="grid gap-3 md:m-auto md:w-96 lg:w-500px">
+      <div className="grid gap-3 md:m-auto md:w-96 lg:w-120 2xl:w-140">
         <span className="flex justify-between items-center">
           <p>Premium Subscription (monthly)</p> <p>$39.99</p>
         </span>
@@ -25,15 +25,15 @@ export default function PaymentContainer() {
       {/** Discount code */}
       <form
         action=""
-        className="flex justify-between items-center md:w-96 lg:w-500px"
+        className="flex justify-between items-center md:w-96 lg:w-120 2xl:w-140"
       >
         <input
           type="text"
           placeholder="Discount Code"
-          className="border w-full p-1 lg:h-12"
+          className="border w-full p-1 lg:h-12 2xl:h-14"
         />
         <button
-          className="bg-splash text-white font-semibold px-8 py-1 lg:h-12 lg:px-12 rounded-none"
+          className="bg-splash text-white font-semibold px-8 py-1 lg:h-12 lg:px-12 2xl:h-14 rounded-none"
           type="submit"
         >
           Apply
@@ -41,7 +41,7 @@ export default function PaymentContainer() {
       </form>
 
       {/** Terms and Conditions */}
-      <div className="flex justify-between items-center w-full md:w-96 lg:w-500px">
+      <div className="flex justify-between items-center w-full md:w-96 lg:w-120 2xl:w-140">
         <input
           type="checkbox"
           className="h-12 w-12 transform scale-150 lg:scale-100"
@@ -56,7 +56,7 @@ export default function PaymentContainer() {
         </p>
       </div>
 
-      <button className="bg-splash w-72 md:w-96 lg:w-500px lg:h-12 m-auto text-white">
+      <button className="bg-splash w-72 md:w-96 lg:w-120 2xl:w-140 lg:h-12 2xl:h-14 m-auto text-white">
         Pay Now{" "}
       </button>
 
@@ -65,7 +65,7 @@ export default function PaymentContainer() {
       {/** Payment Capture */}
       <div className="grid gap-3 place-content-center">
         <input
-          className="border-solid border-1px p-2 bg-white lg:h-12"
+          className="border-solid border-1px p-2 bg-white lg:h-12 2xl:h-14"
           type="text"
           placeholder="Name on card"
         />

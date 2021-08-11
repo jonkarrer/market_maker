@@ -4,9 +4,6 @@ module.exports = {
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
-      screens: {
-        '3xl' : '2200px'
-      },
       backgroundImage: {
         'splash' : 'linear-gradient(110deg, #00beb3, #5653ff)',
       },
@@ -15,6 +12,7 @@ module.exports = {
       },
       width: {
         '70'  : '260px',
+        '85'  : '340px',
         '100' : '400px',
         '110' : '450px',
         '115' : '475px',
