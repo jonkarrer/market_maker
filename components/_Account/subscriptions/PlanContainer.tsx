@@ -1,6 +1,6 @@
 export default function PlanContainer() {
   return (
-    <section className="grid gap-8 m-auto p-0 lg:flex lg:gap-0">
+    <div className="grid gap-8 m-auto lg:flex lg:gap-0">
       <Plan subscription="Free" price="0" current={true}>
         <Benefits>
           <p>Delayed Data</p>
@@ -20,7 +20,7 @@ export default function PlanContainer() {
           <p>Priority requests</p>
         </Benefits>
       </Plan>
-    </section>
+    </div>
   );
 }
 

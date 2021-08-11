@@ -12,7 +12,7 @@ const Splash = (): JSX.Element => (
             Market alerts, statistics and analytics. Delivered through an
             innovative interface. Made for retail investors.
           </span>
-          <button className="w-40 md:w-52 lg:text-2xl lg:py-3 2xl:w-60 3xl:w-72 3xl:py-4 3xl:text-4xl">
+          <button className="border-2 border-white w-40 md:w-52 lg:text-2xl lg:py-3 2xl:w-60 3xl:w-72 3xl:py-4 3xl:text-4xl">
             Get Started
           </button>
         </article>
