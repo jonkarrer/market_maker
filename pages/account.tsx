@@ -8,8 +8,8 @@ export default function Account() {
   return (
     <React.Fragment>
       <Gradient email={user?.email} />
-      <section>
-        <div className="wrapper grid gap-20 md:flex">
+      <section className="py-8 md:py-20 2xl:py-28">
+        <div className="wrapper grid gap-20 md:gap-0 md:flex bg-red-400">
           <Menu selection={setSelection} />
           {userSelection === 1 ? <h1>Profile</h1> : undefined}
           {userSelection === 2 ? <h1>Settings</h1> : undefined}

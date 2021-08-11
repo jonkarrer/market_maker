@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Checkout } from "../index";
+import Checkout from "./Checkout";
 import { Elements } from "@stripe/react-stripe-js";
 import getStripe from "utils/get-stripejs";
-import Plans from "./Plans";
+import PlanContainer from "./PlanContainer";
 
 const stripePromise = getStripe();
 
@@ -11,16 +11,13 @@ const Subscriptions = () => {
   const [selectedPlan, setPlan] = useState(0);
 
   return (
-    <section className="py-0 grid lg:gap-20 flex-1 lg:px-20">
+    <section className="py-0 grid place-items-center gap-10 lg:gap-20 bg-blue-400">
       <h2 className="text-center">Choose a subscription</h2>
-      <Plans />
-
-      <h1 className="font-semibold sm:text-lg lg:text-xl">
-        Enter your payment information below.
-      </h1>
-      <h1 className="font-semibold sm:text-lg lg:text-xl">
-        Your subscription will begin immediately
-      </h1>
+      <PlanContainer />
+      <span className="w-72 text-center grid gap-5">
+        <h4>Enter your payment information below.</h4>
+        <h4>Your subscription will begin immediately.</h4>
+      </span>
       <section
         id="payment-capture"
         className="border shadow-2xl w-full sm:w-480px md:w-528px lg:w-864px mx-auto space-y-12"
