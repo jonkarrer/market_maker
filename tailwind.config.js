@@ -62,7 +62,7 @@ module.exports = {
         'square' : '23vh',
         '25vh' : '25vh',
         '36vh' : '36vh',
-        '44vh' : '44vh',
+        '44vh' : '44vh'
       },
       maxHeight: {
         '3xl' : '1200px'
