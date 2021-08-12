@@ -109,6 +109,7 @@ Need to integrate testing with Cypress.
 - [Stripe Nextjs Vid](https://www.youtube.com/watch?v=WTUYem2IxLA&t=1105s) - A video walkthrough for stripe elements
 - [React Elements Repo](https://github.com/stripe/react-stripe-js)
 - [Testing](https://seanconnolly.dev/unit-testing-nextjs-api-routes) - This is for api testing examples with jest
+- [Context Api](https://scotch.io/courses/10-react-challenges-beginner/use-context-to-pass-data) - helped create my context api
 
 ## Documentation
 

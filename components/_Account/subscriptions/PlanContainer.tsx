@@ -1,21 +1,37 @@
 import { useSubscriptionContext } from "../Context";
 
 export default function PlanContainer() {
+  const context = useSubscriptionContext();
   return (
     <div className="grid gap-8 place-content-center m-auto lg:flex lg:gap-0">
-      <Plan subscription="Free" price="0" current={true}>
+      <Plan
+        subscription="Free"
+        price="0"
+        current={context?.currentSubscription === "Free" ? true : false}
+        selected={context?.userSelection === "Free" ? true : false}
+      >
         <Benefits>
           <p>Delayed Data</p>
           <p>Single dashboard</p>
         </Benefits>
       </Plan>
-      <Plan subscription="Monthly" price="39" current={false}>
+      <Plan
+        subscription="Monthly"
+        price="39"
+        current={context?.currentSubscription === "Monthly" ? true : false}
+        selected={context?.userSelection === "Monthly" ? true : false}
+      >
         <Benefits>
           <p>Billed monthly</p>
           <p>Premium features</p>
         </Benefits>
       </Plan>
-      <Plan subscription="Annual" price="399" current={false}>
+      <Plan
+        subscription="Annual"
+        price="399"
+        current={context?.currentSubscription === "Annual" ? true : false}
+        selected={context?.userSelection === "Annual" ? true : false}
+      >
         <Benefits>
           <p>Billed annually</p>
           <p>Premium features</p>
@@ -31,12 +47,13 @@ interface IPlan {
   price: string;
   children: React.ReactElement;
   current: boolean;
+  selected: boolean;
 }
-const Plan = ({ subscription, price, children, current }: IPlan) => {
+const Plan = ({ subscription, price, children, current, selected }: IPlan) => {
   const context = useSubscriptionContext();
 
   const selectPlan = (planName: string) => {
-    context?.updateSubscription(planName);
+    context?.setUserSelection(planName);
     console.log(context?.currentSubscription, planName);
   };
   return (
@@ -55,8 +72,13 @@ const Plan = ({ subscription, price, children, current }: IPlan) => {
         ) : (
           <div className="gradient-box max-w-max">
             <button
+              className={`${
+                selected ? "bg-splash text-white" : "bg-none text-black"
+              }`}
               onClick={() => selectPlan(subscription)}
-            >{`Select ${subscription}`}</button>
+            >
+              {selected ? "Selected" : `Select ${subscription}`}
+            </button>
           </div>
         )}
       </div>
