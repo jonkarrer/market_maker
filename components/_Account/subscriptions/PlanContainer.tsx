@@ -1,3 +1,5 @@
+import { useSubscriptionContext } from "../Context";
+
 export default function PlanContainer() {
   return (
     <div className="grid gap-8 place-content-center m-auto lg:flex lg:gap-0">
@@ -31,6 +33,12 @@ interface IPlan {
   current: boolean;
 }
 const Plan = ({ subscription, price, children, current }: IPlan) => {
+  const context = useSubscriptionContext();
+
+  const selectPlan = (planName: string) => {
+    context?.updateSubscription(planName);
+    console.log(context?.currentSubscription, planName);
+  };
   return (
     <div className="border shadow-xl grid place-content-center text-center gap-5 w-60 md:w-80 md:py-8 py-3 lg:gap-5 lg:py-4 lg:w-70 xl:w-72 2xl:w-85 2xl:py-9 2xl:gap-7">
       <h3 className="font-bold h-9">{subscription}</h3>
@@ -46,7 +54,9 @@ const Plan = ({ subscription, price, children, current }: IPlan) => {
           </button>
         ) : (
           <div className="gradient-box max-w-max">
-            <button>{`Select ${subscription}`}</button>
+            <button
+              onClick={() => selectPlan(subscription)}
+            >{`Select ${subscription}`}</button>
           </div>
         )}
       </div>
