@@ -12,7 +12,7 @@ const Screenshots = () => (
           <BlueFeature text="Alternative data" />
         </article>
         <img
-          className="md:w-100 lg:w-115 2xl:w-140 3xl:w-200"
+          className="md:w-100 lg:w-130 2xl:w-140"
           src="/Home/screenshots/placeholder.svg"
           alt=""
         />
@@ -27,7 +27,7 @@ const Screenshots = () => (
           <AquaFeature text="Volatility analysis" />
         </article>
         <img
-          className="md:w-100 lg:w-115 2xl:w-140 3xl:w-200"
+          className="md:w-100 lg:w-130 2xl:w-140"
           src="/Home/screenshots/placeholder.svg"
           alt=""
         />
@@ -46,20 +46,20 @@ const Container = ({
   alignment?: string;
 }) => (
   <div
-    className={`grid gap-10 ${alignment} md:flex md:justify-between md:h-96 lg:h-100 2xl:h-110 3xl:h-140`}
+    className={`grid gap-10 ${alignment} md:flex md:justify-between md:h-96 lg:h-100 2xl:h-110`}
   >
     {children}
   </div>
 );
 
 const BlueFeature = ({ text }: { text: string }) => (
-  <p className="border-blue-500 border-2 rounded w-max px-2 text-blue-500 py-1 3xl:text-4xl">
+  <p className="border-blue-500 border-2 rounded w-max px-2 text-blue-500 py-1 ">
     {text}
   </p>
 );
 
 const AquaFeature = ({ text }: { text: string }) => (
-  <p className="border-gradAqua border-2 rounded w-max px-2 text-gradAqua py-1 3xl:text-4xl">
+  <p className="border-gradAqua border-2 rounded w-max px-2 text-gradAqua py-1 ">
     {text}
   </p>
 );
