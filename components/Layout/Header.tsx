@@ -1,19 +1,32 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useUser } from "@auth0/nextjs-auth0";
 import { useState } from "react";
 
 export default function Nav() {
   const { user, isLoading } = useUser();
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const router = useRouter();
+  const homePageRoute = router.pathname;
   return (
     <div>
-      <header className="w-full absolute md:top-3 z-10 md:text-xl 2xl:text-2xl">
-        <div className="hidden md:flex wrapper text-white items-center justify-between">
+      <header
+        className={`${
+          homePageRoute === "/"
+            ? "md:absolute"
+            : "md:static md:py-4 bg-white dark:bg-black"
+        } w-full md:top-3 z-10 md:text-xl 2xl:text-2xl`}
+      >
+        <div
+          className={`hidden md:flex wrapper ${
+            homePageRoute === "/" ? "text-white" : "text-black dark:text-white"
+          }  items-center justify-between`}
+        >
           <nav className="grid grid-flow-col md:space-x-8 lg:space-x-16 ">
             <Link href="/">mml</Link>
             <Link href="/features">Features</Link>
             <Link href="/learn">Learn</Link>
-            <Link href="/support/support">Support</Link>
+            <Link href="/support">Support</Link>
           </nav>
           <div className="flex items-center">
             {!isLoading && !user && (
@@ -47,10 +60,7 @@ export default function Nav() {
         </div>
 
         {/** Mobile Menu */}
-        <div
-          id="mobile_menu"
-          className="md:hidden fixed w-screen bg-gray-500 bg-opacity-50"
-        >
+        <div className="md:hidden fixed top-0 w-screen bg-gray-500 bg-opacity-50">
           <h1
             onClick={() => setMenuOpen(!isMenuOpen)}
             className="text-center text-3xl font-extrabold text-white py-3"

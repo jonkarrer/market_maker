@@ -11,6 +11,7 @@ module.exports = {
         '2xl' : '1500px'
       },
       width: {
+        '34' : '135px',
         '70'  : '260px',
         '85'  : '340px',
         '100' : '400px',
@@ -35,9 +36,10 @@ module.exports = {
         '2000' : '2000px',
         '8vw' : '8vw', 
         'square' : '23vh',
-        '40vw' : '40vw'
+        '40vw' : '40vw',
       },
       height: {
+        '34' : '135px',
         '85' : '376px',
         '100' : '400px',
         '110' : '450px',
@@ -62,7 +64,7 @@ module.exports = {
         'square' : '23vh',
         '25vh' : '25vh',
         '36vh' : '36vh',
-        '44vh' : '44vh'
+        '44vh' : '44vh',
       },
       maxHeight: {
         '3xl' : '1200px'
@@ -92,8 +94,7 @@ module.exports = {
         '1px' : '1px',
       },
       boxShadow: {
-        'supp-boxes' : '0 5px 10px rgba(0, 0, 0, 0.3)',
-        'term-panel' : '10px 0px 5px -10px rgba(0, 0, 0, 0.2)'
+        'bottom' : '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)'
       },
       gridTemplateRows: {
         'price-cards' : 'auto auto auto auto 100px',
