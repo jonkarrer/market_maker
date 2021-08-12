@@ -1,4 +1,4 @@
-import Subscriptions from "./subscriptions/Subscriptions";
+import Subscriptions from "./subscriptions";
 import Menu from "./Menu";
 import Gradient from "./Gradient";
 

@@ -57,30 +57,36 @@ const Plan = ({ subscription, price, children, current, selected }: IPlan) => {
     console.log(context?.currentSubscription, planName);
   };
   return (
-    <div className="border shadow-xl grid place-content-center text-center gap-5 w-60 md:w-80 md:py-8 py-3 lg:gap-5 lg:py-4 lg:w-70 xl:w-72 2xl:w-85 2xl:py-9 2xl:gap-7">
-      <h3 className="font-bold h-9">{subscription}</h3>
+    <div
+      className={`${
+        selected ? "gradient-box z-10" : ""
+      } max-w-max border shadow-xl`}
+    >
+      <div className="grid place-content-center text-center bg-white gap-5 w-60 md:w-80 md:py-8 py-3 lg:gap-5 lg:py-4 lg:w-70 xl:w-72 2xl:w-85 2xl:py-9 2xl:gap-7">
+        <h3 className="font-bold h-9">{subscription}</h3>
 
-      <h5 className="h-5">
-        <strong className="text-lg lg:text-2xl">${price}</strong>
-      </h5>
-      {children}
-      <div className="h-16 sm:text-xs lg:text-base rounded">
-        {current ? (
-          <button className="mx-auto bg-gray-400 text-white rounded lg:mt-1">
-            Current Plan
-          </button>
-        ) : (
-          <div className="gradient-box max-w-max">
-            <button
-              className={`${
-                selected ? "bg-splash text-white" : "bg-none text-black"
-              }`}
-              onClick={() => selectPlan(subscription)}
-            >
-              {selected ? "Selected" : `Select ${subscription}`}
+        <h5 className="h-5">
+          <strong className="text-lg lg:text-2xl">${price}</strong>
+        </h5>
+        {children}
+        <div className="h-16 sm:text-xs lg:text-base rounded">
+          {current ? (
+            <button className="mx-auto bg-gray-400 text-white rounded lg:mt-1">
+              Current Plan
             </button>
-          </div>
-        )}
+          ) : (
+            <div className="gradient-box max-w-max z-10">
+              <button
+                className={`${
+                  selected ? "bg-splash text-white" : "bg-white text-black"
+                }`}
+                onClick={() => selectPlan(subscription)}
+              >
+                {selected ? "Selected" : `Select ${subscription}`}
+              </button>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

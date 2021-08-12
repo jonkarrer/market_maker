@@ -1,16 +1,28 @@
 import Checkout from "./Checkout";
 import { Elements } from "@stripe/react-stripe-js";
 import getStripe from "utils/get-stripejs";
+import { useSubscriptionContext } from "../Context";
+import { useEffect, useState } from "react";
 
 const stripePromise = getStripe();
 
 export default function PaymentContainer() {
+  const context = useSubscriptionContext();
+  const [price, setPrice] = useState(0);
+  const [discount, setDiscount] = useState(6.0);
+
+  useEffect(() => {
+    if (context?.userSelection === "Monthly") setPrice(39.0);
+    if (context?.userSelection === "Annual") setPrice(399.0);
+  }, [context?.userSelection]);
+
   return (
     <section className="border shadow-2xl py-12 grid place-items-center gap-12 w-full md:w-120 lg:w-full 2xl:py-16">
       {/** Price breakdown */}
       <div className="grid gap-3 md:m-auto md:w-96 lg:w-120 2xl:w-140">
         <span className="flex justify-between items-center">
-          <p>Premium Subscription (monthly)</p> <p>$39.99</p>
+          <p>Premium Subscription ({`${context?.userSelection}`})</p>{" "}
+          <p>${price}</p>
         </span>
         <span className="flex justify-between items-center">
           <p>Discount</p> <p>($6.00)</p>
@@ -18,7 +30,7 @@ export default function PaymentContainer() {
         <hr />
         <span className="flex justify-between items-center">
           <h4 className="font-semibold">Total:</h4>{" "}
-          <p className="font-semibold">$33.99</p>
+          <p className="font-semibold">${price - discount}</p>
         </span>
       </div>
 
