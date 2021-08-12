@@ -9,7 +9,7 @@ const stripePromise = getStripe();
 export default function PaymentContainer() {
   const context = useSubscriptionContext();
   const [price, setPrice] = useState(0);
-  const [discount, setDiscount] = useState(6.0);
+  const [discount, setDiscount] = useState(3);
 
   useEffect(() => {
     if (context?.userSelection === "Monthly") setPrice(39.0);
@@ -25,7 +25,7 @@ export default function PaymentContainer() {
           <p>${price}</p>
         </span>
         <span className="flex justify-between items-center">
-          <p>Discount</p> <p>($6.00)</p>
+          <p>Discount</p> <p>(${discount})</p>
         </span>
         <hr />
         <span className="flex justify-between items-center">
