@@ -15,7 +15,7 @@ export default function Nav() {
           homePageRoute === "/"
             ? "md:absolute"
             : "md:static md:py-4 bg-white dark:bg-black"
-        } w-full md:top-3 z-10 md:text-xl 2xl:text-2xl`}
+        } w-full md:top-3 z-50 md:text-xl 2xl:text-2xl`}
       >
         <div
           className={`hidden md:flex wrapper ${
@@ -60,7 +60,7 @@ export default function Nav() {
         </div>
 
         {/** Mobile Menu */}
-        <div className="md:hidden fixed top-0 w-screen bg-gray-500 bg-opacity-50">
+        <div className="md:hidden z-50 fixed top-0 w-screen bg-gray-500 bg-opacity-50">
           <h1
             onClick={() => setMenuOpen(!isMenuOpen)}
             className="text-center text-3xl font-extrabold text-white py-3"

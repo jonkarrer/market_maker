@@ -84,7 +84,7 @@ module.exports = {
         '10%' : '10%',
         '8%' : '8%',
         '6%' : '6%',
-        '20vw' : '20vw',
+        '20vw' : '20vw'
       },
       colors: {
         'gradAqua': "#00beb3",
