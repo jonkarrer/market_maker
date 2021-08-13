@@ -1,4 +1,4 @@
-import { useSubscriptionContext } from "../Context";
+import { useSubscriptionContext } from "../../SubscripContext";
 
 export default function PlanContainer() {
   const context = useSubscriptionContext();
@@ -54,7 +54,7 @@ const Plan = ({ subscription, price, children, current, selected }: IPlan) => {
 
   const selectPlan = (planName: string) => {
     context?.setUserSelection(planName);
-    console.log(context?.currentSubscription, planName);
+    console.log(context);
   };
   return (
     <div

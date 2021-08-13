@@ -1,7 +1,7 @@
 import { Gradient, Menu, Subscriptions } from "@/components/_Account";
 import { useUser, withPageAuthRequired } from "@auth0/nextjs-auth0";
 import React, { useState } from "react";
-import SubscriptionProvider from "../components/_Account/Context";
+import SubscriptionProvider from "../components/SubscripContext";
 export default function Account() {
   const { user } = useUser();
   const [userSelection, setSelection] = useState(0);

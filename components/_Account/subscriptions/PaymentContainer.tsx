@@ -1,7 +1,7 @@
 import Checkout from "./Checkout";
 import { Elements } from "@stripe/react-stripe-js";
 import getStripe from "utils/get-stripejs";
-import { useSubscriptionContext } from "../Context";
+import { useSubscriptionContext } from "../../SubscripContext";
 import { useEffect, useState } from "react";
 
 const stripePromise = getStripe();

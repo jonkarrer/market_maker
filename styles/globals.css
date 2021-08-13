@@ -24,6 +24,10 @@ span {
   font-family: "Source Sans Pro", "sans-serif";
 }
 
+button:focus {
+  background: red;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

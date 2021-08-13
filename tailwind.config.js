@@ -72,7 +72,7 @@ module.exports = {
       minHeight: {
         'lg' : '600px',
         '400px' : '400px',
-        '800px' : '800px'
+        '800px' : '800px',
       },
       margin: {
         'std' : "8vw",
