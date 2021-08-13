@@ -10,7 +10,7 @@ export default function Pricing() {
         <Gradient pageName="Pricing" />
 
         <section>
-          <div className="wrapper grid place-items-center gap-20 w-full">
+          <div className="wrapper grid place-items-center gap-20">
             <h2 className="font-normal">Compare plan features</h2>
             <PlanWrapper />
           </div>
@@ -98,7 +98,7 @@ const Plan = ({ children, name }: IPlan) => {
         context?.userSelection === name ? "gradient-box shadow-2xl z-10" : ""
       }`}
     >
-      <div className="bg-white w-full dark:bg-black relative py-12 text-center grid gap-8 md:gap-5">
+      <div className="bg-white w-full dark:bg-black relative py-12 2xl:py-16 text-center grid gap-8 md:gap-5">
         {children}
         <div className="gradient-box z-10 lg:w-64">
           <button

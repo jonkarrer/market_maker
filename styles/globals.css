@@ -36,6 +36,9 @@ button:focus {
   html {
     @apply antialiased dark:bg-black;
   }
+  main {
+    @apply md:max-w-screen-2xl m-auto;
+  }
   section {
     @apply md:max-w-screen-2xl m-auto py-16 md:py-20 2xl:py-28;
   }
