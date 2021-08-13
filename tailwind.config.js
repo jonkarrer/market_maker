@@ -72,7 +72,7 @@ module.exports = {
       minHeight: {
         'lg' : '600px',
         '400px' : '400px',
-        '800px' : '800px',
+        '800px' : '800px'
       },
       margin: {
         'std' : "8vw",
@@ -84,7 +84,7 @@ module.exports = {
         '10%' : '10%',
         '8%' : '8%',
         '6%' : '6%',
-        '20vw' : '20vw'
+        '20vw' : '20vw',
       },
       colors: {
         'gradAqua': "#00beb3",

@@ -9,7 +9,7 @@ export default function Account() {
     <React.Fragment>
       <Gradient email={user?.email} />
       <SubscriptionProvider>
-        <section className="py-8 md:py-20 2xl:py-28">
+        <section>
           <div className="wrapper w-full md:w-11/12 md:max-w-3xl lg:w-10/12 lg:max-w-screen-2xl grid gap-20 md:gap-0 md:flex">
             <Menu selection={setSelection} />
             {userSelection === 1 ? <h1>Profile</h1> : undefined}
