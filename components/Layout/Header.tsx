@@ -28,7 +28,7 @@ export default function Nav() {
             <Link href="/learn">Learn</Link>
             <Link href="/support">Support</Link>
           </nav>
-          <div className="flex items-center">
+          <div className="flex items-center md:space-x-8 ">
             {!isLoading && !user && (
               <>
                 <Link href="/api/auth/login">
@@ -45,11 +45,11 @@ export default function Nav() {
               <>
                 <Link href="/account">
                   <img
-                    className="rounded-full w-12 mr-10 cursor-pointer"
+                    className="rounded-full w-12 cursor-pointer"
                     src={`${user.picture}`}
                   />
                 </Link>
-                <Link href="/dashboard">
+                <Link href="/api/auth/logout">
                   <button className="md:text-lg backdrop-filter backdrop-blur-3xl backdrop-contrast-75 border-none">
                     Dashboard
                   </button>
