@@ -94,7 +94,7 @@ module.exports = {
         "gradBlue" : "#5653ff",
         "valueBlue" : "#2D86DB",
         "valuePurple" : "#5653FF",
-        "dark" : "hsla(100, 10%, 10%, .5)",
+        "dark" : "hsla(200, 10%, 15%, .5)",
         "offBlack" : "hsla(200, 10%, 15%, .9)"
       },
       borderWidth: {

@@ -11,7 +11,7 @@ export default function Pricing() {
 
         <section>
           <div className="wrapper grid place-items-center gap-20">
-            <h2 className="font-normal">Compare plan features</h2>
+            <h2 className="font-normal text-center">Compare plan features</h2>
             <PlanWrapper />
           </div>
         </section>
@@ -105,8 +105,8 @@ const Plan = ({ children, name }: IPlan) => {
             onClick={() => context?.setUserSelection(name)}
             className={`w-full ${
               context?.userSelection === name
-                ? "bg-splash text-white"
-                : "bg-white"
+                ? "bg-splash text-white dark:border-none"
+                : "bg-white dark:bg-black dark:border-none"
             }`}
           >
             {`${name === "Free" ? "Always Free" : `Select ${name}`}`}
