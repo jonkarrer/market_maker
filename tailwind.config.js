@@ -4,6 +4,9 @@ module.exports = {
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
+      screens: {
+        "3xl" : "2000px",
+      },
       backgroundImage: {
         'splash' : 'linear-gradient(110deg, #00beb3, #5653ff)',
       },
@@ -88,7 +91,11 @@ module.exports = {
       },
       colors: {
         'gradAqua': "#00beb3",
-        "gradBlue" : "#5653ff"
+        "gradBlue" : "#5653ff",
+        "valueBlue" : "#2D86DB",
+        "valuePurple" : "#5653FF",
+        "dark" : "hsla(100, 10%, 10%, .5)",
+        "offBlack" : "hsla(200, 10%, 15%, .9)"
       },
       borderWidth: {
         '1px' : '1px',

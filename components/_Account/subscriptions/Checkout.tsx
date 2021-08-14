@@ -77,7 +77,7 @@ const Checkout = ({ selectedPlan }: ICheckout) => {
         </div>
         <button
           disabled={disableButton}
-          className="mx-auto bg-splash text-white font-semibold py-2 w-72 sm:w-96 lg:w-120 2xl:w-140 lg:py-0 lg:h-12 2xl:h-14"
+          className="mx-auto bg-splash text-white font-semibold py-2 w-72 sm:w-96 lg:w-120 2xl:w-140 lg:py-0 lg:h-12 2xl:h-14 dark:border-none rounded-none"
         >
           Subscribe
         </button>

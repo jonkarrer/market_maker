@@ -45,7 +45,7 @@ export default function PaymentContainer() {
           className="border w-full p-1 lg:h-12 2xl:h-14"
         />
         <button
-          className="bg-splash text-white font-semibold px-8 py-1 lg:h-12 lg:px-12 2xl:h-14 rounded-none"
+          className="bg-splash text-white font-semibold px-8 py-1 lg:h-12 lg:px-12 2xl:h-14 rounded-none dark:border-none"
           type="submit"
         >
           Apply
@@ -68,7 +68,7 @@ export default function PaymentContainer() {
         </p>
       </div>
 
-      <button className="bg-splash w-72 md:w-96 lg:w-120 2xl:w-140 lg:h-12 2xl:h-14 m-auto text-white">
+      <button className="bg-splash w-72 md:w-96 lg:w-120 2xl:w-140 lg:h-12 2xl:h-14 m-auto text-white dark:border-none rounded-none">
         Pay Now{" "}
       </button>
 

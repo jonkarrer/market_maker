@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Gradient from "@/components/_Support/Gradient";
 
 const Terms = () => (
@@ -32,6 +31,20 @@ const Menu = () => (
         <a className="cursor-pointer">Disclosures</a>
       </ul>
     </div>
+  </div>
+);
+
+interface IItem {
+  children: React.ReactNode;
+  name: string;
+  id: string;
+}
+const Item = ({ children, name, id }: IItem) => (
+  <div className="grid gap-6">
+    <h3 id={id} className="font-semibold">
+      {name}
+    </h3>
+    {children}
   </div>
 );
 
@@ -245,20 +258,5 @@ const Conditions = () => (
         odio in vestibulum. Cras suscipit sodales maximus.
       </p>
     </Item>
-  </div>
-);
-
-interface IItem {
-  children: React.ReactNode;
-  name: string;
-  id: string;
-}
-
-const Item = ({ children, name, id }: IItem) => (
-  <div className="grid gap-6">
-    <h3 id={id} className="font-semibold">
-      {name}
-    </h3>
-    {children}
   </div>
 );

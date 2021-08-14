@@ -60,9 +60,9 @@ const Plan = ({ subscription, price, children, current, selected }: IPlan) => {
     <div
       className={`${
         selected ? "gradient-box z-10" : ""
-      } max-w-max border shadow-xl`}
+      } max-w-max border shadow-xl dark:border-none`}
     >
-      <div className="grid place-content-center text-center bg-white gap-5 w-60 md:w-80 md:py-8 py-3 lg:gap-5 lg:py-4 lg:w-70 xl:w-72 2xl:w-85 2xl:py-9 2xl:gap-7">
+      <div className="grid place-content-center text-center bg-white gap-5 w-60 md:w-80 md:py-8 py-3 lg:gap-5 lg:py-4 lg:w-70 xl:w-72 2xl:w-85 2xl:py-9 2xl:gap-7 dark:bg-offBlack dark:border-none">
         <h3 className="font-bold h-9">{subscription}</h3>
 
         <h5 className="h-5">
@@ -77,8 +77,10 @@ const Plan = ({ subscription, price, children, current, selected }: IPlan) => {
           ) : (
             <div className="gradient-box max-w-max z-10">
               <button
-                className={`${
-                  selected ? "bg-splash text-white" : "bg-white text-black"
+                className={`dark:border-none ${
+                  selected
+                    ? "bg-splash text-white"
+                    : "bg-white dark:bg-offBlack dark:text-white text-black"
                 }`}
                 onClick={() => selectPlan(subscription)}
               >

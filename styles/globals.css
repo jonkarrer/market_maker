@@ -4,6 +4,7 @@
 /* Components */
 @import url("./components/gradient-box.css");
 @import url("./components/stripes.css");
+@import url("./components/text_gradient.css");
 * {
   box-sizing: border-box;
 }
@@ -37,13 +38,13 @@ button:focus {
     @apply antialiased dark:bg-black;
   }
   main {
-    @apply md:max-w-screen-2xl m-auto;
+    @apply md:max-w-screen-3xl m-auto;
   }
   section {
-    @apply md:max-w-screen-2xl m-auto py-16 md:py-20 2xl:py-28;
+    @apply md:max-w-screen-3xl m-auto py-16 md:py-20 2xl:py-28;
   }
   header {
-    @apply max-w-screen-2xl left-0 right-0 m-auto;
+    @apply max-w-screen-3xl left-0 right-0 m-auto;
   }
   h1 {
     @apply text-4xl font-bold md:text-5xl lg:text-6xl 2xl:text-7xl dark:text-white;
