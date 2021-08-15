@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React from "react";
 
 export default function Profile() {
   return (
@@ -14,8 +14,8 @@ export default function Profile() {
 
 const Username = () => (
   <Container name="Username">
-    <div className="flex items-center bg-gray-300 h-12 justify-between pl-3">
-      <p className="bg-gray-300">Username</p>
+    <div className="flex items-center bg-gray-300 h-12 justify-between pl-3 md:w-80">
+      <p className="bg-gray-300 text-black">Username</p>
       <span className="bg-white dark:bg-dark h-full flex items-center px-3">
         <p>Edit</p>
       </span>
@@ -41,8 +41,8 @@ const Discord = () => (
 );
 const Code = () => (
   <Container name="Your Unique Code">
-    <div className="flex items-center bg-gray-300 h-12 justify-between pl-3">
-      <p className="bg-gray-300">xxxxxxxxxxxxxxxx</p>
+    <div className="flex items-center bg-gray-300 h-12 justify-between pl-3 md:w-80">
+      <p className="bg-gray-300 text-black">xxxxxxxxxxxxxxxx</p>
       <span className="bg-white dark:bg-dark h-full flex items-center px-3">
         <img src="/Account/copy.svg" alt="copy icon" />
       </span>
@@ -58,6 +58,6 @@ const Container = ({
   name: string;
 }) => (
   <div className="grid gap-6">
-    <h6>{name}:</h6> {children}
+    <h5>{name}:</h5> {children}
   </div>
 );
