@@ -39,7 +39,7 @@ module.exports = {
         '2000' : '2000px',
         '8vw' : '8vw', 
         'square' : '23vh',
-        '40vw' : '40vw',
+        '40vw' : '40vw'
       },
       height: {
         '34' : '135px',

@@ -17,7 +17,7 @@ export default function PaymentContainer() {
   }, [context?.userSelection]);
 
   return (
-    <section className="border shadow-2xl py-12 grid place-items-center gap-12 w-full md:w-120 lg:w-full 2xl:py-16">
+    <section className="border shadow-2xl py-12 grid place-items-center gap-12 w-full md:w-120 lg:w-full 2xl:py-16 dark:border-none dark:bg-dark">
       {/** Price breakdown */}
       <div className="grid gap-3 md:m-auto md:w-96 lg:w-120 2xl:w-140">
         <span className="flex justify-between items-center">

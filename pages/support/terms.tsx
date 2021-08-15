@@ -16,7 +16,7 @@ export default Terms;
 
 const Menu = () => (
   <div className="hidden md:block md:border-r">
-    <div className="text-gray-600 dark:text-white pl-8 flex sm:pl-0 md:max-w-max md:grid md:gap-12 lg:flex-1 md:pr-12">
+    <div className="text-gray-600 dark:text-white flex sm:pl-0 md:max-w-max md:grid md:gap-12 lg:flex-1 md:pr-12">
       <ul className="list-none grid md:space-y-4 relative text-lg md:text-xl 2xl:text-2xl dark:text-white">
         <a href="#advice" className="cursor-pointer">
           Not Financial Advice

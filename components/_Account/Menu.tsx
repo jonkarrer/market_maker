@@ -32,7 +32,7 @@ const Menu = ({ selection }: { selection: any }) => {
             <li
               className="cursor-pointer"
               onClick={() => {
-                selection(2);
+                selection(1);
                 setOpenAccount(!openAccount);
               }}
             >
@@ -41,7 +41,7 @@ const Menu = ({ selection }: { selection: any }) => {
             <li
               className="cursor-pointer"
               onClick={() => {
-                selection(3);
+                selection(1);
                 setOpenAccount(!openAccount);
               }}
             >
@@ -67,7 +67,7 @@ const Menu = ({ selection }: { selection: any }) => {
             <li
               className="cursor-pointer"
               onClick={() => {
-                selection(4);
+                selection(2);
                 setOpenBilling(!openBilling);
               }}
             >
