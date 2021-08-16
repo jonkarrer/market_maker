@@ -7,7 +7,7 @@ export default function Card() {
   const context = useSubscriptionContext();
   const sub = context?.currentSubscription;
   return (
-    <div className="bg-splash hidden xl:flex justify-between h-72 2xl:h-80 p-4 rounded shadow-2xl">
+    <div className="bg-splash hidden xl:flex justify-between h-72 2xl:h-80 p-4 rounded shadow-2xl text-white">
       <div className="flex flex-col justify-center pr-16 space-y-2">
         <h4 className="text-3xl 2xl:text-4xl pb-2">Username</h4>
         <Item label="Email" info={user?.email} />
