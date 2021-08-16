@@ -3,16 +3,16 @@ import { useState } from "react";
 export default function Settings() {
   const [toggle, setToggle] = useState(true);
   return (
-    <div className="space-y-7">
+    <div className="space-y-7 lg:space-y-10">
       <h2>Settings</h2>
       <div className="grid gap-6">
-        <p>Dark Mode Settings:</p>
+        <h6>Dark Mode Settings:</h6>
         <div
           onClick={() => setToggle(!toggle)}
           className="bg-gray-300 flex items-center justify-between px-3 py-1 relative cursor-pointer md:w-80"
         >
           <p className="text-black">System Preface (default)</p>
-          <h5 className="text-black cursor-pointer">▼</h5>
+          <h6 className="text-black cursor-pointer">▼</h6>
           <div
             className={`${
               toggle ? "hidden" : "block"
