@@ -7,6 +7,7 @@ interface IContext {
   updateSubscription: Dispatch<SetStateAction<string>>;
 }
 export const SubscriptionContext = React.createContext<IContext | null>(null);
+
 export const useSubscriptionContext = () => {
   return useContext(SubscriptionContext);
 };

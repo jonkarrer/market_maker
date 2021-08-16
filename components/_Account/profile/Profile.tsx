@@ -1,30 +1,36 @@
 import React from "react";
+import { useUser } from "@auth0/nextjs-auth0";
 
 export default function Profile() {
+  const { user } = useUser();
   return (
     <div className="grid gap-10 w-full lg:gap-20">
       <h2>Profile</h2>
-      <Username />
-      <Avatar />
+      <Username user={user?.nickname} />
+      <Avatar avatar={user?.picture} />
       <Discord />
       <Code />
     </div>
   );
 }
 
-const Username = () => (
+const Username = ({ user }: { user: string | null | undefined }) => (
   <Container name="Username">
     <div className="flex items-center bg-gray-300 h-12 justify-between pl-3 md:w-80 rounded 2xl:w-96">
-      <p className="bg-gray-300 text-black">Username</p>
+      <p className="bg-gray-300 text-black">{user}</p>
       <span className="bg-white dark:bg-dark h-full flex items-center px-3">
         <p>Edit</p>
       </span>
     </div>
   </Container>
 );
-const Avatar = () => (
+const Avatar = ({ avatar }: { avatar: any }) => (
   <Container name="Change Avatar">
-    <img className="bg-blue-400 h-24 w-24 rounded-full" src="" alt="avatar" />
+    <img
+      className="bg-blue-400 h-24 w-24 rounded-full"
+      src={avatar}
+      alt="avatar"
+    />
   </Container>
 );
 const Discord = () => (
