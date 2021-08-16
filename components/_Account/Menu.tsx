@@ -5,7 +5,7 @@ const Menu = ({ selection }: { selection: any }) => {
   const [openBilling, setOpenBilling] = useState(true);
   return (
     <div className="md:border-r">
-      <div className="text-gray-600 dark:text-white pl-8 flex sm:pl-0 md:max-w-max md:grid md:gap-12 lg:flex-1 md:pr-12">
+      <div className="text-gray-600 dark:text-white pl-8 sm:pl-16 flex md:pl-0 md:max-w-max md:grid md:gap-12 lg:flex-1 md:pr-12">
         {/** Account */}
         <ul className="list-none grid md:block md:space-y-4 relative">
           <h6

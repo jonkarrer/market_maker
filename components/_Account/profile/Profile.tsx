@@ -14,7 +14,7 @@ export default function Profile() {
 
 const Username = () => (
   <Container name="Username">
-    <div className="flex items-center bg-gray-300 h-12 justify-between pl-3 md:w-80 rounded">
+    <div className="flex items-center bg-gray-300 h-12 justify-between pl-3 md:w-80 rounded 2xl:w-96">
       <p className="bg-gray-300 text-black">Username</p>
       <span className="bg-white dark:bg-dark h-full flex items-center px-3">
         <p>Edit</p>
@@ -29,7 +29,7 @@ const Avatar = () => (
 );
 const Discord = () => (
   <Container name="Discord">
-    <div className="flex items-center justify-between w-40 bg-blue-500 py-2 px-3 rounded">
+    <div className="flex items-center justify-between w-40 bg-blue-500 py-2 px-3 rounded 2xl:w-48">
       <p className="min-w-max">Link Discord</p>
       <img
         className="w-7"
@@ -41,7 +41,7 @@ const Discord = () => (
 );
 const Code = () => (
   <Container name="Your Unique Code">
-    <div className="flex items-center bg-gray-300 h-12 justify-between pl-3 md:w-80 rounded">
+    <div className="flex items-center bg-gray-300 h-12 justify-between pl-3 md:w-80 rounded 2xl:w-96">
       <p className="bg-gray-300 text-black">xxxxxxxxxxxxxxxx</p>
       <span className="bg-white dark:bg-dark h-full flex items-center px-3">
         <img src="/Account/copy.svg" alt="copy icon" />
@@ -58,6 +58,6 @@ const Container = ({
   name: string;
 }) => (
   <div className="grid gap-6 lg:grid-cols-2 lg:w-2/3">
-    <h6 className="self-center">{name}:</h6> {children}
+    <h6 className="self-center min-w-max">{name}:</h6> {children}
   </div>
 );
