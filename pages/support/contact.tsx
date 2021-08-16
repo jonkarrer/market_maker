@@ -5,7 +5,7 @@ export default function Contact() {
     <main>
       <Gradient pageName="Contact Us" />
       <section>
-        <div className="wrapper space-y-10 md:space-y-12">
+        <div className="wrapper space-y-10 md:space-y-12 lg:max-w-5xl 2xl:max-w-6xl">
           <h2 className="font-medium text-center text-4xl lg:text-5xl 2xl:text-6xl">
             How can we help?
           </h2>

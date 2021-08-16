@@ -13,7 +13,7 @@ const Splash = (): JSX.Element => (
             innovative interface. Made for retail investors.
           </span>
           <button className="border-2 border-white w-40 md:w-52 lg:text-2xl lg:py-3 2xl:w-60">
-            Get Started
+            <a href="http://docs.marketmakerlite.com/">Get Started</a>
           </button>
         </article>
       </div>

@@ -24,8 +24,8 @@ export default function Nav() {
         >
           <nav className="grid grid-flow-col md:space-x-8 lg:space-x-16 ">
             <Link href="/">mml</Link>
-            <Link href="/features">Features</Link>
-            <Link href="/learn">Learn</Link>
+            <a href="/#features">Features</a>
+            <a href="http://learn.marketmakerlite.com/">Learn</a>
             <Link href="/support">Support</Link>
           </nav>
           <div className="flex items-center md:space-x-8 ">
@@ -60,7 +60,7 @@ export default function Nav() {
         </div>
 
         {/** Mobile Menu */}
-        <div className="md:hidden z-50 fixed top-0 w-screen bg-gray-500 bg-opacity-50">
+        <div className="md:hidden z-50 fixed top-0 w-screen bg-gray-500 bg-opacity-60">
           <h1
             onClick={() => setMenuOpen(!isMenuOpen)}
             className="text-center text-3xl font-extrabold text-white py-3"
@@ -72,9 +72,15 @@ export default function Nav() {
               isMenuOpen ? "h-auto py-10 visible" : "h-0 py-0 invisible "
             }`}
           >
-            <Link href="/features">Features</Link>
-            <Link href="/learn">Learn</Link>
-            <Link href="/support">Support</Link>
+            <a href="/#features">
+              <p onClick={() => setMenuOpen(!isMenuOpen)}>Features</p>
+            </a>
+            <a href="http://learn.marketmakerlite.com/">
+              <p onClick={() => setMenuOpen(!isMenuOpen)}>Learn</p>
+            </a>
+            <Link href="/support">
+              <p onClick={() => setMenuOpen(!isMenuOpen)}>Support</p>
+            </Link>
             <hr />
             {!isLoading && !user && (
               <>

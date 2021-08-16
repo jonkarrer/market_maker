@@ -15,7 +15,7 @@ const Grid = () => (
     <Item
       name="Getting Started"
       image="/Support/start.svg"
-      link="/support/start"
+      link="http://docs.marketmakerlite.com/"
     />
     <Item name="Pricing" image="/Support/pricing.svg" link="/support/pricing" />
     <Item
