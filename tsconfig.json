@@ -25,8 +25,7 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/features.tsx",
-    "utils/hooks/useAccessKey.js",
-    "pages/dashboard.jsx",
+    "pages/Dashboard/dashboard.jsxssKey.js",
     "components/stripe/Checkout.jsx",
     "pages/api/charge.ts",
     "components/_Account/MenuContext.jsx"

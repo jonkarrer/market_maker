@@ -37,7 +37,7 @@ const Footer = () => {
 
         <nav
           id="links"
-          className="wrapper py-4 md:py-10 mx-auto grid grid-cols-2 justify-items-center gap-4 sm:flex sm:items-center sm:justify-between sm:text-sm md:text-base lg:text-lg 2xl:text-1.3vw"
+          className="wrapper py-4 md:py-10 mx-auto grid grid-cols-2 justify-items-center gap-4 sm:flex sm:items-center sm:justify-between sm:text-sm md:text-base lg:text-lg 2xl:text-1.3vw dark:text-white"
         >
           <a>MML C 2021</a>
           <a href="">About</a>

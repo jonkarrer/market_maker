@@ -1,7 +1,7 @@
 export default function Hamburger() {
   return (
-    <div>
-      <h1>Hamburger</h1>
+    <div className="h-full flex items-center">
+      <img className="w-6" src="/Dashboard/Header/hamburger.svg" alt="" />
     </div>
   );
 }

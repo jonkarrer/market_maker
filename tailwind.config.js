@@ -33,7 +33,6 @@ module.exports = {
         '220' : '1000px',
         '86%' : '86%',
         '95%' : '95%',
-      
       },
       height: {
         '34' : '135px',
@@ -51,8 +50,7 @@ module.exports = {
         '190' : '850px',
         '200' : '900px',
         '210' : '950px',
-        '220' : '1000px',
-        
+        '220' : '1000px'
       },
       maxHeight: {
         '3xl' : '1200px'
@@ -67,6 +65,7 @@ module.exports = {
         "gradBlue" : "#5653ff",
         "valueBlue" : "#2D86DB",
         "valuePurple" : "#5653FF",
+        "subheading" : "#ededed",
         "dark" : "hsla(200, 10%, 15%, .5)",
         "offBlack" : "hsla(200, 10%, 15%, .9)"
       },

@@ -1,7 +1,9 @@
+import UserIcon from "./UserIcon";
 export default function Setting() {
   return (
-    <div>
-      <h6>Setting</h6>
+    <div className="h-full flex items-center space-x-6">
+      <img className="w-5" src="/Dashboard/Header/gear.svg" alt="gear icon" />
+      <UserIcon />
     </div>
   );
 }

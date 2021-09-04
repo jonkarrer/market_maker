@@ -1,7 +1,8 @@
-import useAccessKey from "../utils/hooks/useAccessKey";
+import useAccessKey from "../../utils/hooks/useAccessKey";
 import { useUser, withPageAuthRequired } from "@auth0/nextjs-auth0";
 import { useEffect, useState } from "react";
-const Products = () => {
+
+const Dashboard = () => {
   const { isLoading, user } = useUser();
   const authUser = user?.sub?.replace("|", "%7C");
   const [loading, setLoading] = useState(true);
@@ -31,5 +32,5 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default Dashboard;
 export const getServerSideProps = withPageAuthRequired();

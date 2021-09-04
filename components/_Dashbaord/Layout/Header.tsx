@@ -9,13 +9,12 @@ import SubHeading from "./SubHeading";
 
 export default function Header() {
   return (
-    <header className="h-16 bg-splash w-full">
-      <div className="h-full w-full flex items-center">
+    <header className="bg-splash w-full">
+      <div className="w-11/12 h-14 mx-auto flex items-end justify-between">
         <Hamburger />
         <Navigation />
         <Search />
         <Settings />
-        <UserIcon />
       </div>
       <SubHeading />
     </header>
