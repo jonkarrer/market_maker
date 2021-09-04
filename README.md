@@ -67,7 +67,7 @@ Some unique code snippets:
   >
 ```
 
-- Remove header if user is in the register pages.
+- Remove header if user is in the dashboard.
 
 ```jsx
 function MyApp({ Component, pageProps, router }) {

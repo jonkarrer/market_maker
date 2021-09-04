@@ -1,5 +1,5 @@
 import Footer from "./Footer";
-import Nav from "./Header";
+import Header from "./Header";
 
 export interface IChildren {
   children: React.ReactNode;
@@ -7,7 +7,7 @@ export interface IChildren {
 function Layout({ children }: IChildren) {
   return (
     <>
-      <Nav />
+      <Header />
       <main>
         <div>{children}</div>
       </main>

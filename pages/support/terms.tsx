@@ -39,6 +39,7 @@ interface IItem {
   name: string;
   id: string;
 }
+
 const Item = ({ children, name, id }: IItem) => (
   <div className="grid gap-6">
     <h3 id={id} className="font-semibold">

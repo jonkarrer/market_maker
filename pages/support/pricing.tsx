@@ -2,6 +2,7 @@ import Gradient from "@/components/_Support/Gradient";
 import React from "react";
 import SubscriptionProvider from "@/components/SubscripContext";
 import { useSubscriptionContext } from "@/components/SubscripContext";
+import { Children } from "utils/interfaces";
 
 export default function Pricing() {
   return (
@@ -86,8 +87,7 @@ const PlanWrapper = () => (
   </div>
 );
 
-interface IPlan {
-  children: React.ReactNode;
+interface IPlan extends Children {
   name: string;
 }
 const Plan = ({ children, name }: IPlan) => {
@@ -117,6 +117,6 @@ const Plan = ({ children, name }: IPlan) => {
   );
 };
 
-const Benefits = ({ children }: { children: React.ReactNode }) => (
+const Benefits = ({ children }: Children) => (
   <div className="md:h-110 lg:h-110 2xl:h-120 space-y-3">{children}</div>
 );

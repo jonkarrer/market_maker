@@ -93,6 +93,7 @@ interface IChild {
   children: React.ReactNode;
   border?: string;
 }
+
 const Plan = ({ children }: IChild) => (
   <div className="grid text-center relative py-10 gap-12 border shadow-xl lg:gap-12 2xl:gap-14">
     {children}

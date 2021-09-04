@@ -1,4 +1,5 @@
 import React from "react";
+import { Children } from "utils/interfaces";
 
 const Start = () => (
   <section>
@@ -21,7 +22,7 @@ const Start = () => (
 
 export default Start;
 
-const Subscribe = ({ children }: { children: React.ReactNode }) => (
+const Subscribe = ({ children }: Children) => (
   <div className="py-3 m-auto md:text-xl lg:text-2xl 3xl:text-3xl cursor-pointer rounded dark:bg-black w-full">
     {children}
   </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Children } from "utils/interfaces";
 
 const Screenshots = () => (
   <section>
@@ -42,13 +43,11 @@ const Screenshots = () => (
 
 export default Screenshots;
 
-const Container = ({
-  children,
-  alignment,
-}: {
-  children: React.ReactNode;
+interface IContainer extends Children {
   alignment?: string;
-}) => (
+}
+
+const Container = ({ children, alignment }: IContainer) => (
   <div
     className={`grid gap-10 ${alignment} md:flex md:justify-between md:h-96 lg:h-100 2xl:h-110`}
   >
