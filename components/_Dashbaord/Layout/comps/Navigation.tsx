@@ -7,7 +7,7 @@ export default function Navigation() {
   const currentPath = router.pathname;
 
   return (
-    <div className="hidden lg:flex items-center lg:space-x-4 xl:space-x-6 xl:text-lg 2xl:text-2xl 2xl:space-x-8">
+    <div className="hidden lg:flex items-center lg:space-x-4 xl:space-x-8 xl:text-lg 2xl:text-2xl 2xl:space-x-10">
       <Option
         currentPath={currentPath}
         name="Market"

@@ -1,20 +1,5 @@
-.text_gradient_green {
-  font-size: 72px;
-  background: -webkit-linear-gradient(#eee, #333);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.text_gradient_blue {
-  font-size: 72px;
-  background: -webkit-linear-gradient(#eee, #333);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.text_gradient_purple {
-  font-size: 72px;
-  background: -webkit-linear-gradient(#eee, #2d86db);
+.text_gradient_splash {
+  background: -webkit-linear-gradient(270deg, #00beb3, #5653ff);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
