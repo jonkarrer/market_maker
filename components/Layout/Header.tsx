@@ -49,7 +49,7 @@ export default function Header() {
                     src={`${user.picture}`}
                   />
                 </Link>
-                <Link href="/dashboard">
+                <Link href="/dashboard/market">
                   <button className="md:text-lg backdrop-filter backdrop-blur-3xl backdrop-contrast-75 border-none">
                     Dashboard
                   </button>

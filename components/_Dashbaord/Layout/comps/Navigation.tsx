@@ -7,7 +7,7 @@ export default function Navigation() {
   const currentPath = router.pathname;
 
   return (
-    <div className="flex items-center space-x-8">
+    <div className="hidden lg:flex items-center lg:space-x-4 xl:space-x-6 xl:text-lg 2xl:text-2xl 2xl:space-x-8">
       <Option
         currentPath={currentPath}
         name="Market"
@@ -40,14 +40,10 @@ export default function Navigation() {
       />
       <Option
         currentPath={currentPath}
-        name="Portfolio Review"
+        name="Portfolio"
         link="/dashboard/portfolio"
       />
-      <Option
-        currentPath={currentPath}
-        name="Note Creator"
-        link="/dashboard/notes"
-      />
+      <Option currentPath={currentPath} name="Notes" link="/dashboard/notes" />
     </div>
   );
 }
