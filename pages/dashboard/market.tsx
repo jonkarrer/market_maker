@@ -1,7 +1,11 @@
+import { Tradeview } from "@/components/_Dashbaord/Markets";
+
 export default function Market() {
   return (
-    <div>
-      <h1>Market</h1>
-    </div>
+    <section className="dashboard_section min-h-screen">
+      <div className="dashboard_wrapper">
+        <Tradeview />
+      </div>
+    </section>
   );
 }

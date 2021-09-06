@@ -3,7 +3,8 @@ export default function SubHeading() {
     <header className="h-9 w-full flex items-center bg-subheading">
       <div className="lg:w-4/5 xl:w-3/4 2xl:w-2/3 m-auto flex justify-between">
         <Markets />
-        <div className="grid grid-flow-col gap-4">
+
+        <div className="hidden lg:grid grid-flow-col gap-4">
           <div className="gradient-box-small z-10">
             <span className="flex justify-evenly bg-subheading rounded-md w-24 z-20">
               <img src="/Dashboard/Header/lock.svg" alt="" />{" "}
