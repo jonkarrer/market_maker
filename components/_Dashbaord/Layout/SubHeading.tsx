@@ -27,7 +27,7 @@ const Markets = () => {
   let style = "text-black dark:text-black text-xs xl:text-base 2xl:text-xl";
 
   return (
-    <div className="flex items-center space-x-3 lg:space-x-8">
+    <div className="flex items-center space-x-2 lg:space-x-8">
       <a className={style} href="/">
         Home
       </a>

@@ -47,7 +47,7 @@ export default function MobileHeader() {
                 src={`${user.picture}`}
               />
             </Link>
-            <Link href="/dashboard">
+            <Link href="/dashboard/market">
               <button>
                 <a className="">Dashboard</a>
               </button>

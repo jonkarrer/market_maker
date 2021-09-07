@@ -37,10 +37,7 @@ export default function Ticker({ symbol, item }: ITrade) {
     return () => parent.removeChild(parent.firstChild);
   });
   return (
-    <div
-      id={item}
-      className="lg:w-52 lg:h-36 xl:w-52 xl:h-36 2xl:w-64 2xl:h-54"
-    >
+    <div id={item} className="w-52 h-36 2xl:w-64 2xl:h-54">
       <div className="tradingview-widget-container">
         <div className="tradingview-widget-container__widget"></div>
       </div>

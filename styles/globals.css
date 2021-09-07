@@ -78,6 +78,6 @@ span {
     @apply w-11/12 m-auto;
   }
   .dashboard_button {
-    @apply text-center cursor-pointer z-20 h-full text-sm;
+    @apply text-center cursor-pointer z-20 h-6 flex items-center justify-center text-xs lg:h-full lg:text-sm;
   }
 }

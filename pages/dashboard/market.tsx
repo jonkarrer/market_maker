@@ -10,7 +10,7 @@ export default function Market() {
   return (
     <section className="dashboard_section">
       <div
-        className="dashboard_wrapper flex justify-between"
+        className="dashboard_wrapper grid gap-16 lg:flex lg:justify-between"
         style={{ maxWidth: "1600px" }}
       >
         <div className="grid gap-16">

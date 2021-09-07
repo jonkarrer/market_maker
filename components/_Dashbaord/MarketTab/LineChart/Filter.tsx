@@ -3,13 +3,13 @@ import Button from "./Button";
 
 export default function Filter() {
   return (
-    <div className="flex space-x-8">
+    <div className="grid gap-5 lg:flex lg:space-x-8">
       <span className="flex items-center space-x-2">
-        <a className="font-bold">Index:</a>
+        <a className="font-bold hidden lg:block">Index:</a>
         <Dropdown />
       </span>
       <span className="flex items-center space-x-2">
-        <a className="font-bold">Indicators:</a>
+        <a className="font-bold hidden lg:block">Indicators:</a>
         <Button item="GEX" />
         <Button item="NOPE" />
         <Button item="Dark Pools" />

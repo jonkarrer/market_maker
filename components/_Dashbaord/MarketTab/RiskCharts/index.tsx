@@ -3,7 +3,7 @@ import Chart from "./Chart";
 
 export default function RiskCharts() {
   return (
-    <div className="space-y-2">
+    <div className="space-y-3">
       <Filter />
       <Chart />
     </div>
