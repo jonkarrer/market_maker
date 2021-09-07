@@ -9,7 +9,10 @@ import {
 export default function Market() {
   return (
     <section className="dashboard_section">
-      <div className="dashboard_wrapper flex justify-between 2xl:justify-evenly">
+      <div
+        className="dashboard_wrapper flex justify-between"
+        style={{ maxWidth: "1600px" }}
+      >
         <div className="grid gap-16">
           <Tradeview />
           <LineChart />
