@@ -8,7 +8,7 @@ import {
 
 export default function Market() {
   return (
-    <section className="dashboard_section min-h-screen">
+    <section className="dashboard_section">
       <div className="dashboard_wrapper flex justify-between">
         <div className="grid gap-4">
           <Tradeview />
