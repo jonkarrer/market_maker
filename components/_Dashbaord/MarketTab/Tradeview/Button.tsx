@@ -13,7 +13,7 @@ export default function Button({ item, selected, setSelected }: IButton) {
       onClick={() => setSelected(item)}
     >
       <div
-        className={`text-center w-20 cursor-pointer z-20 h-full ${
+        className={`dashboard_button w-20 ${
           selected === item
             ? "text-white bg-splash rounded-none"
             : "text_gradient_splash rounded-lg"

@@ -8,7 +8,7 @@ export default function Button({ item }: { item: string }) {
       onClick={() => setSelected(!selected)}
     >
       <div
-        className={`text-center w-24 cursor-pointer z-20 h-full ${
+        className={`dashboard_button w-20 ${
           selected
             ? "text-white bg-splash rounded-none"
             : "text_gradient_splash rounded-lg"

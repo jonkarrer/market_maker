@@ -3,7 +3,7 @@ import Filter from "./Filter";
 
 export default function Tradeview() {
   return (
-    <div className="grid gap-2">
+    <div className="grid">
       <Filter />
       <div className="flex space-x-4">
         <Ticker symbol="FX:EURUSD" item="one" />

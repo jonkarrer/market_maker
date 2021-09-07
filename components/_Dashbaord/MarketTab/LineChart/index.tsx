@@ -3,7 +3,7 @@ import Graph from "./Graph";
 
 export default function LineChart() {
   return (
-    <div className="grid gap-2">
+    <div className="grid">
       <Filter />
       <Graph />
     </div>

@@ -4,15 +4,15 @@ export default function SubHeading() {
       <div className="lg:w-4/5 xl:w-3/4 2xl:w-2/3 m-auto flex justify-between">
         <Markets />
 
-        <div className="hidden lg:grid grid-flow-col gap-4">
+        <div className="hidden lg:grid grid-flow-col gap-4 text-sm">
           <div className="gradient-box-small z-10">
-            <span className="flex justify-evenly bg-subheading rounded-md w-24 z-20">
+            <span className="flex justify-evenly bg-subheading rounded w-24 z-20">
               <img src="/Dashboard/Header/lock.svg" alt="" />{" "}
               <a className="text_gradient_splash">Arrange</a>
             </span>
           </div>
           <div className="gradient-box-small z-10">
-            <span className="flex justify-evenly bg-subheading rounded-md w-24 z-20">
+            <span className="flex justify-evenly bg-subheading rounded w-24 z-20">
               <img src="/Dashboard/Header/export.svg" alt="" />{" "}
               <a className="text_gradient_splash">Export</a>
             </span>
