@@ -10,7 +10,7 @@ export default function Market() {
   return (
     <section className="dashboard_section min-h-screen">
       <div className="dashboard_wrapper flex justify-between">
-        <div className="grid gap-8">
+        <div className="grid gap-4">
           <Tradeview />
           <LineChart />
           <RiskCharts />
