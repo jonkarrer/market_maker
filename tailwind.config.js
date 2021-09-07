@@ -31,6 +31,8 @@ module.exports = {
         '200' : '900px',
         '210' : '950px',
         '220' : '1000px',
+        '230' : '1075px',
+        '240' : '1150px',
         '86%' : '86%',
         '95%' : '95%'
       },
@@ -50,7 +52,9 @@ module.exports = {
         '190' : '850px',
         '200' : '900px',
         '210' : '950px',
-        '220' : '1000px'
+        '220' : '1000px',
+        '230' : '1075px',
+        '240' : '1150px',
       },
       maxHeight: {
         '3xl' : '1200px'
@@ -67,7 +71,7 @@ module.exports = {
         "valuePurple" : "#5653FF",
         "subheading" : "#ededed",
         "dark" : "hsla(200, 10%, 15%, .5)",
-        "offBlack" : "hsla(200, 10%, 15%, .9)"
+        "offBlack" : "hsla(200, 10%, 15%, .9)",
       },
       borderWidth: {
         '1px' : '1px',

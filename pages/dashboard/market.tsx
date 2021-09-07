@@ -9,8 +9,8 @@ import {
 export default function Market() {
   return (
     <section className="dashboard_section">
-      <div className="dashboard_wrapper flex justify-between">
-        <div className="grid gap-4">
+      <div className="dashboard_wrapper flex justify-between 2xl:justify-evenly">
+        <div className="grid gap-16">
           <Tradeview />
           <LineChart />
           <RiskCharts />
