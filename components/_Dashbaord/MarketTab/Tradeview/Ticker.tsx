@@ -22,7 +22,7 @@ export default function Ticker({ symbol, item }: ITrade) {
       width: "100%",
       height: "100%",
       locale: "en",
-      dateRange: "3M",
+      dateRange: "1M",
       colorTheme: theme,
       trendLineColor: "rgba(41, 98, 255, 1)",
       underLineColor: "rgba(41, 98, 255, 0.3)",
@@ -37,7 +37,7 @@ export default function Ticker({ symbol, item }: ITrade) {
     return () => parent.removeChild(parent.firstChild);
   });
   return (
-    <div id={item} className="xl:w-60 xl:h-44 bg-dark">
+    <div id={item} className="xl:w-56 xl:h-40 bg-dark">
       <div className="tradingview-widget-container">
         <div className="tradingview-widget-container__widget"></div>
       </div>
