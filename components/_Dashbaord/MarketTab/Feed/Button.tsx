@@ -16,7 +16,7 @@ export default function Button({ item, selected, setSelected }: IButton) {
         className={`dashboard_button w-16 text-xs ${
           selected === item
             ? "text-white bg-splash rounded-none"
-            : "text_gradient_splash rounded-lg"
+            : "text_black rounded-lg"
         }`}
       >
         <a>{item}</a>

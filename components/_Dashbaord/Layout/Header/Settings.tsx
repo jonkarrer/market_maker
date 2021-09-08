@@ -1,4 +1,5 @@
-import UserIcon from "./UserIcon";
+import UserIcon from "./comps/UserIcon";
+
 export default function Setting() {
   return (
     <div className="h-full flex items-center space-x-8 lg:space-x-6">

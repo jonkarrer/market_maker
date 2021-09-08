@@ -1,15 +1,13 @@
-import {
-  Hamburger,
-  Navigation,
-  Search,
-  Settings,
-  UserIcon,
-} from "./comps/index";
+import Hamburger from "./Hamburger";
+import Navigation from "./Navigation";
+import Search from "./Search";
+import Settings from "./Settings";
+
 import SubHeading from "./SubHeading";
 
 export default function Header() {
   return (
-    <header className="bg-splash w-full">
+    <header className="bg-splash w-full relative">
       <div className="w-11/12 h-14 2xl:h-16 mx-auto flex items-end justify-between">
         <Hamburger />
         <Navigation />

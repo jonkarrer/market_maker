@@ -5,7 +5,7 @@ import { Children } from "utils/interfaces";
 
 export default function DashLayout({ children }: Children) {
   return (
-    <div>
+    <div className="static">
       <Header />
       <main>{children}</main>
       <Footer />

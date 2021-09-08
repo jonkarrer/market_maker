@@ -11,7 +11,7 @@ export default function Button({ item }: { item: string }) {
         className={`dashboard_button w-16 lg:w-20 ${
           selected
             ? "text-white bg-splash rounded-none"
-            : "text_gradient_splash rounded-lg"
+            : "text-black rounded-lg"
         }`}
       >
         <a>{item}</a>
