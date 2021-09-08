@@ -4,14 +4,14 @@ export default function Button({ item }: { item: string }) {
   const [selected, setSelected] = useState(false);
   return (
     <div
-      className="gradient-box-small bg-white"
+      className="gradient-box-small bg-white dark:bg-black"
       onClick={() => setSelected(!selected)}
     >
       <div
         className={`dashboard_button w-16 lg:w-20 ${
           selected
             ? "text-white bg-splash rounded-none"
-            : "text-black rounded-lg"
+            : "text-black dark:text-white rounded-lg"
         }`}
       >
         <a>{item}</a>

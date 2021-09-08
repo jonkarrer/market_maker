@@ -9,14 +9,14 @@ interface IButton {
 export default function Button({ item, selected, setSelected }: IButton) {
   return (
     <div
-      className="gradient-box-small bg-white"
+      className="gradient-box-small bg-white dark:bg-black"
       onClick={() => setSelected(item)}
     >
       <div
         className={`dashboard_button w-16 lg:w-20 ${
           selected === item
             ? "text-white bg-splash rounded-none"
-            : "text-black rounded-lg"
+            : "text-black dark:text-white rounded-lg"
         }`}
       >
         <a>{item}</a>

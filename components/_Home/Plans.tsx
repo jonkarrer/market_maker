@@ -23,7 +23,7 @@ export default function Plans(): JSX.Element {
               <p>Financial literacy tools</p>
             </Benefits>
             <Subscribe border="border-4">
-              <a>Get Started</a>
+              <a className="dark:text-white">Get Started</a>
             </Subscribe>
           </Plan>
 
@@ -52,7 +52,7 @@ export default function Plans(): JSX.Element {
             </Benefits>
             <div className="gradient-box">
               <Subscribe>
-                <a>Subscribe Monthly</a>
+                <a className="dark:text-white">Subscribe Monthly</a>
               </Subscribe>
             </div>
           </Plan>
@@ -79,7 +79,7 @@ export default function Plans(): JSX.Element {
             </Benefits>
             <div className="gradient-box">
               <Subscribe>
-                <a>Subscribe Annually</a>
+                <a className="dark:text-white">Subscribe Annually</a>
               </Subscribe>
             </div>
           </Plan>

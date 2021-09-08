@@ -6,9 +6,9 @@ export default function Dropdown() {
     <div className="grid gap-6">
       <div
         onClick={() => setToggle(!toggle)}
-        className="bg-subheading rounded flex items-center justify-between px-3 relative cursor-pointer w-20"
+        className="bg-subheading rounded flex items-center justify-between px-3 relative cursor-pointer w-32"
       >
-        <a className="text-black">SPY</a>
+        <a className="text-black">2002/10/5</a>
         <a className="text-black cursor-pointer text-xs">▼</a>
         <div
           className={`${
@@ -16,13 +16,13 @@ export default function Dropdown() {
           } absolute bottom-0 left-0 w-full transform translate-y-full`}
         >
           <div className="bg-gray-200 px-3 py-1 relative">
-            <p className="text-black">RYE</p>
+            <p className="text-black">2002/10/5</p>
           </div>
           <div className="px-3 py-1 relative bg-gray-300">
-            <p className="text-black">LYE</p>
+            <p className="text-black">2002/10/5</p>
           </div>
           <div className="bg-gray-200 px-3 py-1 relative">
-            <p className="text-black">BHU</p>
+            <p className="text-black">2002/10/5</p>
           </div>
         </div>
       </div>

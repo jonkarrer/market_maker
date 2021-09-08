@@ -12,7 +12,9 @@ const Start = () => (
         </p>
         <div className="gradient-box w-44 md:w-72">
           <Subscribe>
-            <a href="">Subscribe Now</a>
+            <a href="" className="dark:text-white">
+              Subscribe Now
+            </a>
           </Subscribe>
         </div>
       </article>
