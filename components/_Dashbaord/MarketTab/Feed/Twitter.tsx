@@ -8,7 +8,7 @@ export default function Twitter() {
     document.head.appendChild(s);
   }, []);
   return (
-    <div className="h-120 lg:h-140 xl:h-160 2xl:h-180 overflow-scroll">
+    <div className=" h-120 lg:h-140 xl:h-160 2xl:h-180 overflow-scroll">
       <div></div>
       <a
         className="twitter-timeline"

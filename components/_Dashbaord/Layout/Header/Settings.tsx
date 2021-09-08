@@ -15,7 +15,7 @@ export default function Setting() {
       <UserIcon />
 
       <div
-        className={`bg-subheading pt-8 flex flex-col items-center space-y-36 fixed right-0 z-50 lg:w-80 lg:text-lg transition-all ${
+        className={`bg-subheading pt-8 flex flex-col items-center space-y-36 fixed right-0 z-50 lg:w-80 2xl:w-100 lg:text-lg transition-all ${
           open ? "transform-none" : "transform translate-x-full"
         }`}
         style={{ height: "calc(100vh - 90px)", top: "90px" }}

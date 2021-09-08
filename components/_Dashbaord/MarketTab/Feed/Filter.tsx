@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function Filter() {
   const [selected, setSelected] = useState("Twitter");
   return (
-    <div className="flex justify-between space-x-2 lg:space-x-0 lg:w-full">
+    <div className="flex justify-between lg:w-full">
       <Button item="Twitter" selected={selected} setSelected={setSelected} />
       <Button item="News" selected={selected} setSelected={setSelected} />
       <Button

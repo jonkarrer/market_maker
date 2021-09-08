@@ -11,12 +11,12 @@ export default function Hamburger() {
         onClick={() => setOpen(!open)}
       />
       <nav
-        className={`bg-subheading flex flex-col justify-evenly px-6 fixed left-0 z-50 lg:w-80 lg:text-lg transition-all ${
+        className={`bg-subheading flex flex-col justify-evenly px-6 fixed left-0 z-50 lg:w-80 lg:text-lg 2xl:text-xl transition-all ${
           open ? "transform-none" : "transform -translate-x-full"
         }`}
         style={{ height: "calc(100vh - 90px)", top: "90px" }}
       >
-        <div className="grid gap-4 border-b-4 pb-6">
+        <div className="grid gap-4 border-b-4 pb-6 2xl:gap-6 2xl:pb-10">
           <a href="/dashboard/market">Markets</a>
           <a href="/dashboard/equties">Equities</a>
           <a href="/dashboard/options">Options</a>
@@ -25,11 +25,11 @@ export default function Hamburger() {
           <a href="/dashboard/portfolio">Portfolio Review</a>
           <a href="/dashboard/notes">Notes Creator</a>
         </div>
-        <div className="grid gap-4 border-b-4 pb-6">
+        <div className="grid gap-4 border-b-4 pb-6 2xl:gap-6 2xl:pb-10">
           <a href="/support">Documentation / Help</a>
           <a href="/">Financial Literacy / Learning</a>
         </div>
-        <div className="grid gap-4">
+        <div className="grid gap-4 pb-6 2xl:gap-6">
           <a href="/">Join the Discord</a>
           <a href="/">Feature Request</a>
           <a href="/">Account Settings</a>

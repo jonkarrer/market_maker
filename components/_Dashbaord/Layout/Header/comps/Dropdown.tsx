@@ -12,7 +12,7 @@ export default function Dropdown({ title, children }: IDrop) {
       <h6>{title}</h6>
       <div
         onClick={() => setToggle(!toggle)}
-        className="bg-darkGrey flex items-center justify-between px-3 py-1 relative cursor-pointer md:w-72"
+        className="bg-darkGrey flex items-center justify-between px-3 py-1 relative cursor-pointer w-72 2xl:w-85"
       >
         <p className="text-white">System Preface (default)</p>
         <h6 className="text-white">▼</h6>

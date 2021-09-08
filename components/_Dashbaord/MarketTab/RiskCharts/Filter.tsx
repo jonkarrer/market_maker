@@ -8,7 +8,7 @@ export default function Filter() {
         <a className="font-bold hidden lg:block">Expiry Date:</a>
         <Dropdown />
       </span>
-      <span className="flex items-center space-x-2">
+      <span className="flex items-center lg:space-x-2">
         <a className="font-bold hidden lg:block">Indicators:</a>
         <Button item="Put Call Ratio" />
         <Button item="Max Pain" />
