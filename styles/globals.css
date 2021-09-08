@@ -40,7 +40,7 @@ span {
     @apply md:max-w-screen-3xl m-auto py-16 md:py-20 2xl:py-28;
   }
   .dashboard_section {
-    @apply md:max-w-screen-3xl m-auto py-6 md:py-8 2xl:py-14;
+    @apply md:max-w-screen-3xl m-auto py-6 md:py-8 lg:mt-24 2xl:py-14;
   }
   header {
     @apply max-w-screen-3xl left-0 right-0 m-auto;
