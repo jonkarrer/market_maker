@@ -72,7 +72,7 @@ module.exports = {
         "valuePurple" : "#5653FF",
         "subheading" : "#ededed",
         "dark" : "hsla(200, 10%, 15%, .5)",
-        "offBlack" : "hsla(200, 10%, 15%, .9)",
+        "offBlack" : "hsla(200, 10%, 15%, .9)"
       },
       borderWidth: {
         '1px' : '1px',

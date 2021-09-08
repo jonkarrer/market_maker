@@ -3,9 +3,9 @@ import Filter from "./Filter";
 
 export default function Tradeview() {
   return (
-    <div className="overflow-hidden space-y-3">
+    <div className="overflow-hidden lg:overflow-auto space-y-3">
       <Filter />
-      <div className="max-w-screen-sm overflow-x-scroll lg:max-w-screen-3xl">
+      <div className="max-w-screen-sm overflow-x-scroll lg:overflow-auto lg:max-w-screen-3xl">
         <div className="grid grid-flow-col space-x-2 lg:flex lg:w-auto xl:space-x-4">
           <Ticker symbol="FX:EURUSD" item="one" />
           <Ticker symbol="FX:USDJPY" item="two" />
