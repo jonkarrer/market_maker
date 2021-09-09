@@ -5,6 +5,7 @@ import {
   Table,
   Feed,
 } from "@/components/_Dashbaord/MarketTab";
+import { data_stream } from "@/components/_Dashbaord/MarketTab/data";
 
 export default function Market() {
   return (
@@ -19,7 +20,7 @@ export default function Market() {
           <RiskCharts />
         </div>
         <div className="flex flex-col items-center space-y-6">
-          <Table />
+          <Table data={data_stream} />
           <Feed />
         </div>
       </div>

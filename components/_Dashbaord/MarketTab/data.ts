@@ -1,3 +1,78 @@
+export const data_stream = [
+  {
+    Raoul: 123,
+    Josiane: 74,
+    Marcel: 125,
+    René: 10,
+    Paul: 125,
+    Jacques: 69,
+  },
+  {
+    Raoul: 112,
+    Josiane: 194,
+    Marcel: 124,
+    René: 166,
+    Paul: 32,
+    Jacques: 65,
+  },
+  {
+    Raoul: 22,
+    Josiane: 30,
+    Marcel: 83,
+    René: 86,
+    Paul: 77,
+    Jacques: 46,
+  },
+  {
+    Raoul: 37,
+    Josiane: 103,
+    Marcel: 55,
+    René: 172,
+    Paul: 141,
+    Jacques: 27,
+  },
+  {
+    Raoul: 12,
+    Josiane: 126,
+    Marcel: 148,
+    René: 22,
+    Paul: 35,
+    Jacques: 150,
+  },
+  {
+    Raoul: 105,
+    Josiane: 53,
+    Marcel: 50,
+    René: 157,
+    Paul: 90,
+    Jacques: 198,
+  },
+  {
+    Raoul: 81,
+    Josiane: 179,
+    Marcel: 167,
+    René: 129,
+    Paul: 172,
+    Jacques: 125,
+  },
+  {
+    Raoul: 102,
+    Josiane: 149,
+    Marcel: 94,
+    René: 179,
+    Paul: 110,
+    Jacques: 178,
+  },
+  {
+    Raoul: 10,
+    Josiane: 123,
+    Marcel: 55,
+    René: 123,
+    Paul: 116,
+    Jacques: 194,
+  },
+];
+
 export const data_bar = [
   {
     country: "AD",

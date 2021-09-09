@@ -28,7 +28,8 @@
     "pages/Dashboard/dashboard.jsxssKey.js",
     "components/stripe/Checkout.jsx",
     "pages/api/charge.ts",
-    "components/_Account/MenuContext.jsx"
+    "components/_Account/MenuContext.jsx",
+    "components/_Dashbaord/MarketTab/Table/index.jsx"
   ],
   "exclude": ["node_modules"]
 }

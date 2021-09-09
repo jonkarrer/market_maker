@@ -1,6 +1,6 @@
 import Filter from "./Filter";
 import Chart from "./Chart";
-import { data_bar } from "../LineChart/data";
+import { data_bar } from "../data";
 
 export default function RiskCharts() {
   return (
