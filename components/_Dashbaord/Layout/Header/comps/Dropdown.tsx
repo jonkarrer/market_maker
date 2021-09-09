@@ -9,7 +9,7 @@ export default function Dropdown({ title, children }: IDrop) {
   const [toggle, setToggle] = useState(true);
   return (
     <div className="grid gap-2">
-      <h6>{title}</h6>
+      <h6 className="text-black">{title}</h6>
       <div
         onClick={() => setToggle(!toggle)}
         className="bg-darkGrey flex items-center justify-between px-3 py-1 relative cursor-pointer w-72 2xl:w-85"
