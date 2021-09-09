@@ -1,6 +1,8 @@
 import Gradient from "@/components/_Support/Gradient";
 
 export default function Contact() {
+  const style =
+    "border outline-none w-full p-1 dark:bg-offBlack dark:border-none";
   return (
     <main>
       <Gradient pageName="Contact Us" />
@@ -15,26 +17,16 @@ export default function Contact() {
           >
             <label htmlFor="" className="space-y-3">
               <p>Your email address:</p>
-              <input
-                className="border outline-none w-full p-1 dark:bg-offBlack dark:border-none"
-                type="text"
-                name=""
-                id=""
-              />
+              <input className={style} type="text" name="" id="" />
             </label>
             <label htmlFor="" className="space-y-3">
               <p>Subject:</p>
-              <input
-                className="border outline-none w-full p-1 dark:bg-offBlack dark:border-none"
-                type="text"
-                name=""
-                id=""
-              />
+              <input className={style} type="text" name="" id="" />
             </label>
             <label htmlFor="" className="space-y-3">
               <p>Details:</p>
               <textarea
-                className="border outline-none w-full p-1 h-32 md:h-40 dark:bg-offBlack dark:border-none"
+                className={`${style} h-32 md:h-40`}
                 name=""
                 id=""
               ></textarea>

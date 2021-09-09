@@ -25,7 +25,7 @@ const Start = () => (
 export default Start;
 
 const Subscribe = ({ children }: Children) => (
-  <div className="py-3 m-auto md:text-xl lg:text-2xl 3xl:text-3xl cursor-pointer rounded dark:bg-black w-full">
+  <div className="cursor-pointer rounded dark:bg-black w-full py-3 m-auto md:text-xl lg:text-2xl 3xl:text-3xl">
     {children}
   </div>
 );

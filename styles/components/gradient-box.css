@@ -1,3 +1,9 @@
+/*
+*
+  This is the gradient border for the buttons
+*
+*/
+
 .gradient-box {
   display: flex;
   align-items: center;

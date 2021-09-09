@@ -1,3 +1,9 @@
+/*
+*
+  This gives the letters the gradient effect. For some reason safari is rejecting this.
+*
+*/
+
 .text_gradient_splash {
   background: -webkit-linear-gradient(270deg, #00beb3, #5653ff);
   background-clip: text;
